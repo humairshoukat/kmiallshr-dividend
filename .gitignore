@@ -39,6 +39,7 @@ Thumbs.db
 *.swo
 
 # Local temporary files
+/tmp/
 *.tmp
 *.temp
 .cache/

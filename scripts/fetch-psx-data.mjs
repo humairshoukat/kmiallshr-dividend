@@ -10,21 +10,6 @@ const COMPANY_URL = "https://dps.psx.com.pk/company";
 const FACE_VALUE_ASSUMPTION = 10;
 const CONCURRENCY = 3;
 
-const MONTHS = {
-  january: 1,
-  february: 2,
-  march: 3,
-  april: 4,
-  may: 5,
-  june: 6,
-  july: 7,
-  august: 8,
-  september: 9,
-  october: 10,
-  november: 11,
-  december: 12,
-};
-
 function clean(value = "") {
   return value.replace(/\s+/g, " ").trim();
 }
@@ -241,12 +226,7 @@ async function fetchFiscalYearEnd(symbol) {
     }
   });
 
-  const fiscalYearEndMonth = MONTHS[fiscalYearEndLabel.toLowerCase()] ?? 6;
-
-  return {
-    fiscalYearEndLabel,
-    fiscalYearEndMonth,
-  };
+  return fiscalYearEndLabel;
 }
 
 function payoutIdentity(payout) {
@@ -262,7 +242,7 @@ async function buildStockRecord(
   const payoutRows = await fetchCompanyPayouts(stock.symbol);
   const dividendRows = payoutRows.filter((row) => row.detail.includes("(D)"));
 
-  const fiscal = await fetchFiscalYearEnd(stock.symbol);
+  const fiscalYearEndLabel = await fetchFiscalYearEnd(stock.symbol);
   const summaryBuckets = Object.fromEntries(
     fiscalYears.map((year) => [year, []]),
   );
@@ -352,8 +332,7 @@ async function buildStockRecord(
     symbol: stock.symbol,
     name: stock.name,
     latestPrice: round(stock.latestPrice),
-    fiscalYearEndLabel: fiscal.fiscalYearEndLabel,
-    fiscalYearEndMonth: fiscal.fiscalYearEndMonth,
+    fiscalYearEndLabel,
     sourceAsOf,
     companyUrl: `${COMPANY_URL}/${stock.symbol}`,
     indexUrl: INDEX_URL,

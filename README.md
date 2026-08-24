@@ -1,73 +1,139 @@
 # KMIALLSHR Dividend Board
 
-Next.js app for every current KMIALLSHR constituent on PSX, including companies
-with no dividends in the reporting window.
+A Next.js dashboard for exploring cash dividends and current prices for companies
+in the Pakistan Stock Exchange (PSX) KMIALLSHR index.
 
-It shows:
-- a rolling window covering the previous two completed financial years and the
-  current financial year
-- all three annual dividend totals side by side for every company
-- payout interval labels such as `Single`, `Biannual`, `Triannual`, and `Quarterly`
-- yearly cash return on a default Rs 100,000 holding per stock
-- configurable withholding tax, zakat, and face-value assumption
+The project stores a committed PSX data snapshot, so the dashboard works without
+making requests to PSX at page-load time. Separate importer scripts refresh that
+snapshot when required.
 
-## Data source
+## What the app shows
 
-The importer pulls from official PSX endpoints:
-- current KMIALLSHR constituent list: `https://dps.psx.com.pk/indices/KMIALLSHR`
-- per-symbol payout feed: `https://dps.psx.com.pk/company/<SYMBOL>` and `POST https://dps.psx.com.pk/company/payouts`
+### Dividend Board (`/`)
 
-`data/stocks.json` is a generated snapshot for the latest import date included in
-the repo. Every refresh starts by downloading the live KMIALLSHR constituent list,
-then writes a record for every constituent. Companies without a dividend receive
-explicit zero totals instead of being omitted.
+- A rolling three-financial-year dividend view
+- Dividend paid per share, payout count, and payout interval for each year
+- Estimated gross and net cash return for a configurable investment per stock
+- Configurable withholding tax, zakat, and share face-value assumptions
+- Search by company name or symbol
+- Ranking by net dividend yield for the selected financial year
 
-The refresh also merges newly published payout rows into the existing local
-snapshot. This preserves observed history when older rows later roll out of the
-finite PSX company payout feed.
+The ranked table shows companies that paid a dividend in the selected year. The
+snapshot itself still contains every constituent returned by the KMIALLSHR index
+page, including companies with zero payouts.
 
-## Local setup
+### Price Snapshot (`/price-hikes`)
 
-1. Install dependencies:
+- The latest imported price for each constituent
+- The source date associated with each price
+
+This route does not calculate price changes. The dataset contains one current
+price per stock, so price-performance calculations would require a separate dated
+price history.
+
+## Tech stack
+
+- Next.js 16 with the App Router
+- React 19 and TypeScript
+- Plain CSS
+- Cheerio for parsing PSX HTML responses
+- Node's built-in test runner for importer tests
+
+## Requirements
+
+- Node.js 20.18.1 or newer
+- npm
+- Internet access when refreshing PSX data
+- `pdftotext` from Poppler only when running the historical archive backfill
+
+## Local development
+
+Install the locked dependencies:
 
 ```bash
-npm install
+npm ci
 ```
 
-2. Refresh the PSX dataset if needed:
-
-```bash
-npm run data:fetch
-```
-
-3. Start the app:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-## Scripts
+Open [http://localhost:3000](http://localhost:3000).
+
+## Commands
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local Next.js development server |
+| `npm run build` | Create an optimized production build |
+| `npm start` | Serve a completed production build |
+| `npm run lint` | Lint application and importer code |
+| `npm run test:data` | Run data-parser unit tests |
+| `npm run data:fetch` | Refresh constituents, prices, and payouts from PSX |
+| `npm run data:backfill-2024` | Import July–December 2024 payouts from PSX archive PDFs |
+
+Run the project checks with:
 
 ```bash
-npm run data:fetch         # scrape PSX and write data/stocks.json
-npm run data:backfill-2024 # restore Jul-Dec 2024 from daily archive PDFs
 npm run test:data
 npm run lint
 npm run build
 ```
 
-## Notes
+## Data sources and refresh behavior
 
-- The latest financial year is year-to-date and reflects cash dividends already
-  published on PSX as of the import date. The three displayed years roll forward
-  automatically after the start of Pakistan's July–June financial year.
-- Dividend rows are assigned by their PSX announcement date to one shared
-  July–June financial-year cycle. For example, FY25 is July 2024 through June
-  2025, FY26 is July 2025 through June 2026, and FY27 is July 2026 through June
-  2027. A company's own fiscal-year end is informational and does not affect
-  this grouping.
-- The July-December 2024 backfill uses PSX daily announcement-sheet PDFs and
-  requires Poppler's `pdftotext`. Normal live refreshes retain the archived rows,
-  so the backfill does not need to run each time.
-- PSX payout rows are published as dividend percentages. The app converts them to rupees per share using a configurable face value assumption, defaulting to Rs 10.
-- `data/stocks.json` contains one current price per stock. Historical price-hike calculations require a separate dated price history and are not derived from the current snapshot.
+The importer uses official PSX pages and endpoints:
+
+- KMIALLSHR constituents and latest prices:
+  `https://dps.psx.com.pk/indices/KMIALLSHR`
+- Company details: `https://dps.psx.com.pk/company/<SYMBOL>`
+- Company payout feed: `https://dps.psx.com.pk/company/payouts`
+- Historical announcement sheets:
+  `https://dps.psx.com.pk/download/announce/<YYYY-MM-DD>.pdf`
+
+`data/stocks.json` is the generated, committed snapshot consumed by the app.
+`npm run data:fetch` performs the following work:
+
+1. Downloads the current KMIALLSHR constituent list and latest prices.
+2. Fetches each constituent's company page and payout rows.
+3. Keeps only the rolling three-year July–June reporting window.
+4. Merges previously observed payouts from the existing snapshot, preserving
+   records that may have rolled out of PSX's finite live feed.
+5. Writes the new snapshot atomically only after every constituent succeeds.
+
+The archive backfill is a one-off recovery tool for July through December 2024.
+It downloads daily PSX PDFs into the ignored `tmp/` directory, extracts their
+text with `pdftotext`, and merges matching dividend announcements into the
+current snapshot.
+
+## Financial-year and return methodology
+
+- Reporting years use one shared July–June cycle. An announcement dated between
+  July 2024 and June 2025 belongs to FY25, regardless of the company's own
+  financial year end.
+- PSX publishes cash dividends as percentages of share face value. The importer
+  stores both that percentage and a per-share value based on a default Rs 10
+  face value.
+- The dashboard scales per-share dividends when the face-value assumption is
+  changed.
+- Estimated shares held are `investment / latest price`; fractional shares are
+  therefore included in the estimate.
+- Net cash is gross dividend cash after the combined withholding-tax and zakat
+  percentages entered in the dashboard.
+
+The current financial year is year-to-date as of the snapshot date. Calculations
+are estimates for exploration, not tax or investment advice.
+
+## Project structure
+
+```text
+data/stocks.json                 Generated PSX snapshot
+scripts/fetch-psx-data.mjs       Live PSX importer
+scripts/backfill-psx-archive.mjs Historical PDF backfill
+scripts/fetch-psx-data.test.mjs  Importer unit tests
+src/app/                         Next.js routes, layout, and global styles
+src/components/                  Dashboard and navigation components
+src/lib/stocks.ts                Snapshot types and application data loader
+```
