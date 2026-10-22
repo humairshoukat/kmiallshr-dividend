@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  buildStockRecord,
   extractDividendPercent,
   financialYearFromPayoutDate,
   getFiscalYearWindow,
@@ -10,6 +11,65 @@ import {
   extractArchivePayouts,
   periodLabelForArchive,
 } from "./backfill-psx-archive.mjs";
+
+test("payout requests use the request ID from each company page", async (t) => {
+  const requests = [];
+  t.mock.method(globalThis, "fetch", async (url, options) => {
+    requests.push({ url, options });
+    if (url === "https://dps.psx.com.pk/company/FFC") {
+      return new Response(`
+        <script>window.__ps = {"lc":"en","_k":"ffc-request-id"};</script>
+        <div class="item__head">Fiscal Year End</div><p>December</p>
+      `);
+    }
+    if (url === "https://dps.psx.com.pk/company/EFERT") {
+      return new Response(`
+        <script>window.__ps = {"lc":"en","_k":"efert-request-id"};</script>
+      `);
+    }
+    assert.equal(url, "https://dps.psx.com.pk/company/payouts");
+    assert.equal(options.method, "POST");
+    assert.equal(options.headers["content-type"], "application/x-www-form-urlencoded");
+    assert.equal(options.headers["x-requested-with"], "XMLHttpRequest");
+    const symbol = new URLSearchParams(options.body).get("symbol");
+    assert.equal(options.headers["x-req-id"], `${symbol.toLowerCase()}-request-id`);
+    return new Response(`<table><tbody><tr>
+      <td>July 29, 2026 3:23 PM</td><td>30/06/2026(HYR)</td>
+      <td>145%(ii) (D)</td><td>11/08/2026 - 13/08/2026</td>
+    </tr></tbody></table>`);
+  });
+
+  for (const symbol of ["FFC", "EFERT"]) {
+    const record = await buildStockRecord(
+      { symbol, name: symbol, latestPrice: 500 },
+      "2026-10-22",
+      [2025, 2026, 2027],
+    );
+    assert.equal(record.fiscalYearEndLabel, symbol === "FFC" ? "December" : "June");
+    assert.equal(record.payouts.length, 1);
+    assert.equal(record.payouts[0].dividendPerShare, 14.5);
+    assert.equal(record.summary.fy27.totalDividendPerShare, 14.5);
+  }
+  assert.equal(requests.length, 4);
+  assert.equal(requests[0].url, "https://dps.psx.com.pk/company/FFC");
+  assert.equal(requests[2].url, "https://dps.psx.com.pk/company/EFERT");
+});
+
+test("missing payout request IDs stop the import before requesting payouts", async (t) => {
+  for (const config of ["", '<script>window.__ps = {"lc":"en"};</script>']) {
+    const fetchMock = t.mock.method(globalThis, "fetch", async () => new Response(config));
+    await assert.rejects(
+      buildStockRecord(
+        { symbol: "FFC", name: "FFC", latestPrice: 500 },
+        "2026-10-22",
+        [2025, 2026, 2027],
+      ),
+      /PSX company page for FFC is missing its payout request ID/,
+    );
+    assert.equal(fetchMock.mock.callCount(), 1);
+    fetchMock.mock.restore();
+  }
+});
 
 test("the rolling window changes at midnight in Pakistan on July 1", () => {
   assert.deepEqual(

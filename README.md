@@ -90,6 +90,8 @@ The importer uses official PSX pages and endpoints:
   `https://dps.psx.com.pk/indices/KMIALLSHR`
 - Company details: `https://dps.psx.com.pk/company/<SYMBOL>`
 - Company payout feed: `https://dps.psx.com.pk/company/payouts`
+  (POST with the company page's `window.__ps._k` value in `X-Req-Id` and
+  `X-Requested-With: XMLHttpRequest`; requests without the ID return 404)
 - Historical announcement sheets:
   `https://dps.psx.com.pk/download/announce/<YYYY-MM-DD>.pdf`
 

@@ -4,7 +4,7 @@
     "name": "Al-Abid Silk Mills Limited",
     "latestPrice": 3.49,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AASM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -39,9 +39,9 @@
   {
     "symbol": "ABOT",
     "name": "Abbott Laboratories (Pakistan) Limited",
-    "latestPrice": 928.66,
+    "latestPrice": 941.66,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ABOT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -97,9 +97,9 @@
   {
     "symbol": "ACPL",
     "name": "Attock Cement Pakistan Limited",
-    "latestPrice": 228.14,
+    "latestPrice": 242.51,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ACPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -167,9 +167,9 @@
   {
     "symbol": "ADAMS",
     "name": "Adam Sugar Mills Limited",
-    "latestPrice": 66.62,
+    "latestPrice": 67.09,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ADAMS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -225,9 +225,9 @@
   {
     "symbol": "AGIL",
     "name": "Agriauto Industries Limited",
-    "latestPrice": 147.86,
+    "latestPrice": 137.9,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AGIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -283,9 +283,9 @@
   {
     "symbol": "AGP",
     "name": "AGP Limited",
-    "latestPrice": 153,
+    "latestPrice": 160.94,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AGP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -361,9 +361,9 @@
   {
     "symbol": "AGTL",
     "name": "Al-Ghazi Tractors Limited",
-    "latestPrice": 343.73,
+    "latestPrice": 360.89,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AGTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -398,9 +398,9 @@
   {
     "symbol": "AHTM",
     "name": "Ahmad Hassan Textile Mills Limited",
-    "latestPrice": 89.58,
+    "latestPrice": 92.01,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AHTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -424,10 +424,10 @@
         "totalDividendPerShare": 1.5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 7.5,
+        "totalDividendPerShare": 0.75
       }
     },
     "payouts": [
@@ -440,15 +440,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 15,
         "dividendPerShare": 1.5
+      },
+      {
+        "announcedAt": "2026-10-05",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "7.50%(F) (D)",
+        "bookClosure": "21/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 7.5,
+        "dividendPerShare": 0.75
       }
     ]
   },
   {
     "symbol": "AIRLINK",
     "name": "Air Link Communication Limited",
-    "latestPrice": 126.95,
+    "latestPrice": 117.12,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AIRLINK",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -526,9 +536,9 @@
   {
     "symbol": "AKGL",
     "name": "Al-Khair Gadoon Limited",
-    "latestPrice": 57.35,
+    "latestPrice": 53.61,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AKGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -563,9 +573,9 @@
   {
     "symbol": "ALNRS",
     "name": "Al-Noor Sugar Mills Limited",
-    "latestPrice": 125.6,
+    "latestPrice": 116,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ALNRS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -611,9 +621,9 @@
   {
     "symbol": "ANL",
     "name": "Azgard Nine Limited",
-    "latestPrice": 9.18,
+    "latestPrice": 9.11,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ANL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -648,9 +658,9 @@
   {
     "symbol": "ANTM",
     "name": "AN Textile Mills Limited",
-    "latestPrice": 70.67,
+    "latestPrice": 68.27,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ANTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -685,9 +695,9 @@
   {
     "symbol": "ARCTM",
     "name": "Arctic Textile Mills Limited",
-    "latestPrice": 45.24,
+    "latestPrice": 79.4,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ARCTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -722,9 +732,9 @@
   {
     "symbol": "ARPL",
     "name": "Archroma Pakistan Limited",
-    "latestPrice": 444.9,
+    "latestPrice": 379.89,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ARPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -790,9 +800,9 @@
   {
     "symbol": "ASC",
     "name": "Al Shaheer Corporation Limited",
-    "latestPrice": 8.72,
+    "latestPrice": 7.83,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ASC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -827,9 +837,9 @@
   {
     "symbol": "ASHT",
     "name": "Ashfaq Textile Mills Limited",
-    "latestPrice": 36.6,
+    "latestPrice": 38.46,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ASHT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -864,9 +874,9 @@
   {
     "symbol": "ASL",
     "name": "Aisha Steel Mills Limited",
-    "latestPrice": 16.86,
+    "latestPrice": 14.33,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ASL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -901,9 +911,9 @@
   {
     "symbol": "ASTM",
     "name": "Asim Textile Mills Limited",
-    "latestPrice": 130.74,
+    "latestPrice": 52.86,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ASTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -938,9 +948,9 @@
   {
     "symbol": "ATBA",
     "name": "Atlas Battery Limited",
-    "latestPrice": 163.96,
+    "latestPrice": 162.26,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ATBA",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -988,9 +998,9 @@
   {
     "symbol": "ATRL",
     "name": "Attock Refinery Limited",
-    "latestPrice": 1130.66,
+    "latestPrice": 1137.56,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ATRL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1078,9 +1088,9 @@
   {
     "symbol": "AVN",
     "name": "Avanceon Limited",
-    "latestPrice": 28.48,
+    "latestPrice": 26.84,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AVN",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1128,7 +1138,7 @@
     "name": "Allawasaya Tex. & Finishing Mills Ltd",
     "latestPrice": 1601.11,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/AWTX",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1163,9 +1173,9 @@
   {
     "symbol": "BAFS",
     "name": "Baba Farid Sugar Mills Limited",
-    "latestPrice": 449.18,
+    "latestPrice": 445,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BAFS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1211,9 +1221,9 @@
   {
     "symbol": "BATA",
     "name": "Bata Pakistan Limited",
-    "latestPrice": 860.14,
+    "latestPrice": 841.95,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BATA",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1261,9 +1271,9 @@
   {
     "symbol": "BBFL",
     "name": "Big Bird Foods Limited",
-    "latestPrice": 41.02,
+    "latestPrice": 37.16,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BBFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1298,9 +1308,9 @@
   {
     "symbol": "BCL",
     "name": "Bolan Castings Limited",
-    "latestPrice": 73.89,
+    "latestPrice": 74.51,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1335,9 +1345,9 @@
   {
     "symbol": "BECO",
     "name": "Beco Steel Limited",
-    "latestPrice": 4.4,
+    "latestPrice": 4.14,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BECO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1372,9 +1382,9 @@
   {
     "symbol": "BERG",
     "name": "Berger Paints Pakistan Limited",
-    "latestPrice": 124.04,
+    "latestPrice": 104.92,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BERG",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1398,10 +1408,10 @@
         "totalDividendPerShare": 5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       }
     },
     "payouts": [
@@ -1426,15 +1436,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 50,
         "dividendPerShare": 5
+      },
+      {
+        "announcedAt": "2026-09-23",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "50%(F) (D)",
+        "bookClosure": "16/10/2026 - 23/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 50,
+        "dividendPerShare": 5
       }
     ]
   },
   {
     "symbol": "BFAGRO",
     "name": "Barkat Frisian Agro Limited",
-    "latestPrice": 30.58,
+    "latestPrice": 28.91,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BFAGRO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1469,9 +1489,9 @@
   {
     "symbol": "BFBIO",
     "name": "BF Biosciences Limited",
-    "latestPrice": 124.5,
+    "latestPrice": 126.51,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BFBIO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1506,9 +1526,9 @@
   {
     "symbol": "BFMOD",
     "name": "B.F. Modaraba",
-    "latestPrice": 20.62,
+    "latestPrice": 22.96,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BFMOD",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1532,20 +1552,31 @@
         "totalDividendPerShare": 0
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 5,
+        "totalDividendPerShare": 0.5
       }
     },
-    "payouts": []
+    "payouts": [
+      {
+        "announcedAt": "2026-10-05",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "5%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 5,
+        "dividendPerShare": 0.5
+      }
+    ]
   },
   {
     "symbol": "BHAT",
     "name": "Bhanero Textile Mills Limited",
-    "latestPrice": 819.53,
+    "latestPrice": 801.86,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BHAT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1580,9 +1611,9 @@
   {
     "symbol": "BIFO",
     "name": "Biafo Industries Limited",
-    "latestPrice": 114.8,
+    "latestPrice": 103.17,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BIFO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1606,10 +1637,10 @@
         "totalDividendPerShare": 6
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 25,
+        "totalDividendPerShare": 2.5
       }
     },
     "payouts": [
@@ -1644,15 +1675,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 25,
         "dividendPerShare": 2.5
+      },
+      {
+        "announcedAt": "2026-09-24",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "25%(F) (D)",
+        "bookClosure": "16/10/2026 - 23/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 25,
+        "dividendPerShare": 2.5
       }
     ]
   },
   {
     "symbol": "BIPL",
     "name": "BankIslami Pakistan Limited",
-    "latestPrice": 24.93,
+    "latestPrice": 24.3,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BIPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1740,9 +1781,9 @@
   {
     "symbol": "BLUEX",
     "name": "Blue-Ex Limited",
-    "latestPrice": 6.15,
+    "latestPrice": 5.71,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BLUEX",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1777,9 +1818,9 @@
   {
     "symbol": "BNL",
     "name": "Bunnys Limited",
-    "latestPrice": 5.84,
+    "latestPrice": 5.07,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BNL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1814,9 +1855,9 @@
   {
     "symbol": "BNWM",
     "name": "Bannu Woollen Mills Limited",
-    "latestPrice": 65.67,
+    "latestPrice": 61.99,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BNWM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1851,9 +1892,9 @@
   {
     "symbol": "BPL",
     "name": "Burshane LPG (Pakistan) Limited",
-    "latestPrice": 58.37,
+    "latestPrice": 45.69,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1899,9 +1940,9 @@
   {
     "symbol": "BRRG",
     "name": "B.R.R Guardian Limited",
-    "latestPrice": 42.71,
+    "latestPrice": 38.75,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BRRG",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1959,9 +2000,9 @@
   {
     "symbol": "BTL",
     "name": "Blessed Textiles Limited",
-    "latestPrice": 845.45,
+    "latestPrice": 756.61,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -1996,9 +2037,9 @@
   {
     "symbol": "BUXL",
     "name": "Buxly Paints Limited",
-    "latestPrice": 688.29,
+    "latestPrice": 282.92,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BUXL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2033,9 +2074,9 @@
   {
     "symbol": "BWHL",
     "name": "Baluchistan Wheels Limited",
-    "latestPrice": 218.07,
+    "latestPrice": 218,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/BWHL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2123,9 +2164,9 @@
   {
     "symbol": "CCM",
     "name": "Crescent Cotton Mills Limited",
-    "latestPrice": 42.49,
+    "latestPrice": 40.3,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CCM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2160,9 +2201,9 @@
   {
     "symbol": "CEPB",
     "name": "Century Paper & Board Mills Limited",
-    "latestPrice": 26.63,
+    "latestPrice": 25.07,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CEPB",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2197,9 +2238,9 @@
   {
     "symbol": "CFL",
     "name": "Crescent Fibres Limited",
-    "latestPrice": 59.4,
+    "latestPrice": 75.1,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2234,9 +2275,9 @@
   {
     "symbol": "CHAS",
     "name": "Chashma Sugar Mills Limited",
-    "latestPrice": 83.03,
+    "latestPrice": 91.95,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CHAS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2271,9 +2312,9 @@
   {
     "symbol": "CHCC",
     "name": "Cherat Cement Company Limited",
-    "latestPrice": 277.25,
+    "latestPrice": 262.47,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CHCC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2361,9 +2402,9 @@
   {
     "symbol": "CLOV",
     "name": "Clover Pakistan Limited",
-    "latestPrice": 6.34,
+    "latestPrice": 5.56,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CLOV",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2398,9 +2439,9 @@
   {
     "symbol": "CNERGY",
     "name": "Cnergyico PK Limited",
-    "latestPrice": 13.21,
+    "latestPrice": 12.52,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CNERGY",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2435,9 +2476,9 @@
   {
     "symbol": "COLG",
     "name": "Colgate-Palmolive (Pakistan) Limited",
-    "latestPrice": 1133.13,
+    "latestPrice": 1107.28,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/COLG",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2493,9 +2534,9 @@
   {
     "symbol": "CPHL",
     "name": "Citi Pharma Ltd.",
-    "latestPrice": 75.98,
+    "latestPrice": 61.47,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CPHL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2553,9 +2594,9 @@
   {
     "symbol": "CPPL",
     "name": "Cherat Packaging Limited",
-    "latestPrice": 102.34,
+    "latestPrice": 91.68,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CPPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2643,9 +2684,9 @@
   {
     "symbol": "CRTM",
     "name": "The Crescent Textile Mills Limited",
-    "latestPrice": 63.89,
+    "latestPrice": 61.79,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CRTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2680,9 +2721,9 @@
   {
     "symbol": "CSAP",
     "name": "Crescent Steel & Allied Products Limited",
-    "latestPrice": 91.61,
+    "latestPrice": 85.81,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/CSAP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2780,9 +2821,9 @@
   {
     "symbol": "DAAG",
     "name": "Data Agro Limited",
-    "latestPrice": 85.12,
+    "latestPrice": 111.84,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DAAG",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2817,9 +2858,9 @@
   {
     "symbol": "DADX",
     "name": "Dadex Eternit Limited",
-    "latestPrice": 106.21,
+    "latestPrice": 180.29,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DADX",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2856,7 +2897,7 @@
     "name": "Dadabhoy Sack Limited",
     "latestPrice": 7,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DBSL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2891,9 +2932,9 @@
   {
     "symbol": "DCL",
     "name": "Dewan Cement Limited",
-    "latestPrice": 9.73,
+    "latestPrice": 9.05,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -2928,9 +2969,9 @@
   {
     "symbol": "DCR",
     "name": "Dolmen City REIT",
-    "latestPrice": 39.7,
+    "latestPrice": 39.53,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DCR",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3050,9 +3091,9 @@
   {
     "symbol": "DFSM",
     "name": "Dewan Farooque Spinning Mills Limited",
-    "latestPrice": 13.08,
+    "latestPrice": 15.24,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DFSM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3087,9 +3128,9 @@
   {
     "symbol": "DGKC",
     "name": "D.G. Khan Cement Company Limited",
-    "latestPrice": 196.27,
+    "latestPrice": 182.17,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DGKC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3145,9 +3186,9 @@
   {
     "symbol": "DINT",
     "name": "Din Textile Mills Limited",
-    "latestPrice": 65.56,
+    "latestPrice": 59.56,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DINT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3182,9 +3223,9 @@
   {
     "symbol": "DMC",
     "name": "D.M. Corporation Limited.",
-    "latestPrice": 157.36,
+    "latestPrice": 173.44,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DMC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3219,9 +3260,9 @@
   {
     "symbol": "DNCC",
     "name": "Dandot Cement Company Limited",
-    "latestPrice": 16.51,
+    "latestPrice": 21.69,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DNCC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3256,9 +3297,9 @@
   {
     "symbol": "DOL",
     "name": "Descon Oxychem Limited",
-    "latestPrice": 30.37,
+    "latestPrice": 28.52,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DOL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3346,9 +3387,9 @@
   {
     "symbol": "DSL",
     "name": "Dost Steels Limited",
-    "latestPrice": 4.43,
+    "latestPrice": 4.19,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DSL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3383,9 +3424,9 @@
   {
     "symbol": "DWSM",
     "name": "Dewan Sugar Mills Limited",
-    "latestPrice": 6.62,
+    "latestPrice": 7.57,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DWSM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3420,9 +3461,9 @@
   {
     "symbol": "DYNO",
     "name": "Dynea Pakistan Limited",
-    "latestPrice": 330.89,
+    "latestPrice": 323.15,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/DYNO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3510,9 +3551,9 @@
   {
     "symbol": "ECOP",
     "name": "Ecopack Limited",
-    "latestPrice": 49.21,
+    "latestPrice": 43.18,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ECOP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3580,9 +3621,9 @@
   {
     "symbol": "EFERT",
     "name": "Engro Fertilizers Limited",
-    "latestPrice": 189.85,
+    "latestPrice": 194.46,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/EFERT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3606,10 +3647,10 @@
         "totalDividendPerShare": 14.75
       },
       "fy27": {
-        "payoutCount": 1,
-        "intervalLabel": "Single",
-        "totalDividendPercent": 17.5,
-        "totalDividendPerShare": 1.75
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 72.5,
+        "totalDividendPerShare": 7.25
       }
     },
     "payouts": [
@@ -3706,15 +3747,25 @@
         "fiscalYear": 2027,
         "dividendPercent": 17.5,
         "dividendPerShare": 1.75
+      },
+      {
+        "announcedAt": "2026-10-19",
+        "periodLabel": "30/09/2026(IIIQ)",
+        "periodEnd": "30/09/2026",
+        "detail": "55%(iii) (D)",
+        "bookClosure": "02/11/2026 - 03/11/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 55,
+        "dividendPerShare": 5.5
       }
     ]
   },
   {
     "symbol": "ELCM",
     "name": "Elahi Cotton Mills Limited",
-    "latestPrice": 338.21,
+    "latestPrice": 228,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ELCM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3749,9 +3800,9 @@
   {
     "symbol": "ELSM",
     "name": "Ellcot Spinning Mills Limited",
-    "latestPrice": 148.25,
+    "latestPrice": 178.26,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ELSM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3775,10 +3826,10 @@
         "totalDividendPerShare": 4
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 65,
+        "totalDividendPerShare": 6.5
       }
     },
     "payouts": [
@@ -3803,15 +3854,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 40,
         "dividendPerShare": 4
+      },
+      {
+        "announcedAt": "2026-09-29",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "65%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 65,
+        "dividendPerShare": 6.5
       }
     ]
   },
   {
     "symbol": "EMCO",
     "name": "Emco Industries Limited",
-    "latestPrice": 36.98,
+    "latestPrice": 38.35,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/EMCO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3846,9 +3907,9 @@
   {
     "symbol": "ENGROH",
     "name": "Engro Holdings Limited",
-    "latestPrice": 263.33,
+    "latestPrice": 255.87,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ENGROH",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3883,9 +3944,9 @@
   {
     "symbol": "EPCL",
     "name": "Engro Polymer & Chemicals Limited",
-    "latestPrice": 34.58,
+    "latestPrice": 31.63,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/EPCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3920,9 +3981,9 @@
   {
     "symbol": "EPQL",
     "name": "Engro Powergen Qadirpur Limited",
-    "latestPrice": 23.9,
+    "latestPrice": 24,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/EPQL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -3946,10 +4007,10 @@
         "totalDividendPerShare": 4.25
       },
       "fy27": {
-        "payoutCount": 1,
-        "intervalLabel": "Single",
-        "totalDividendPercent": 10,
-        "totalDividendPerShare": 1
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 17.5,
+        "totalDividendPerShare": 1.75
       }
     },
     "payouts": [
@@ -4026,15 +4087,25 @@
         "fiscalYear": 2027,
         "dividendPercent": 10,
         "dividendPerShare": 1
+      },
+      {
+        "announcedAt": "2026-10-19",
+        "periodLabel": "30/09/2026(IIIQ)",
+        "periodEnd": "30/09/2026",
+        "detail": "7.5%(ii) (D)",
+        "bookClosure": "20/10/2026 - 31/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 7.5,
+        "dividendPerShare": 0.75
       }
     ]
   },
   {
     "symbol": "EXIDE",
     "name": "Exide Pakistan Limited",
-    "latestPrice": 430.07,
+    "latestPrice": 427.58,
     "fiscalYearEndLabel": "March",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/EXIDE",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4102,9 +4173,9 @@
   {
     "symbol": "FABL",
     "name": "Faysal Bank Limited",
-    "latestPrice": 94.32,
+    "latestPrice": 91.12,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FABL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4234,9 +4305,9 @@
   {
     "symbol": "FANM",
     "name": "First Al-Noor Modaraba",
-    "latestPrice": 9.53,
+    "latestPrice": 9.92,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FANM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4271,9 +4342,9 @@
   {
     "symbol": "FASM",
     "name": "Faisal Spinning Mills Limited",
-    "latestPrice": 300.01,
+    "latestPrice": 285.85,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FASM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4308,9 +4379,9 @@
   {
     "symbol": "FATIMA",
     "name": "Fatima Fertilizer Company Limited",
-    "latestPrice": 148.76,
+    "latestPrice": 134.98,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FATIMA",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4388,9 +4459,9 @@
   {
     "symbol": "FCCL",
     "name": "Fauji Cement Company Limited",
-    "latestPrice": 52.96,
+    "latestPrice": 51.3,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FCCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4458,9 +4529,9 @@
   {
     "symbol": "FCEPL",
     "name": "Frieslandcampina Engro Pakistan Limited",
-    "latestPrice": 136.9,
+    "latestPrice": 128.15,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FCEPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4516,9 +4587,9 @@
   {
     "symbol": "FCL",
     "name": "Fast Cables Limited",
-    "latestPrice": 27.45,
+    "latestPrice": 24.05,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4586,9 +4657,9 @@
   {
     "symbol": "FECM",
     "name": "First Elite Capital Modaraba",
-    "latestPrice": 19.6,
+    "latestPrice": 17.92,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FECM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4623,9 +4694,9 @@
   {
     "symbol": "FECTC",
     "name": "Fecto Cement Limited",
-    "latestPrice": 95.61,
+    "latestPrice": 90,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FECTC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4681,9 +4752,9 @@
   {
     "symbol": "FEM",
     "name": "First Equity Modaraba",
-    "latestPrice": 11.04,
+    "latestPrice": 12,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FEM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4718,9 +4789,9 @@
   {
     "symbol": "FEROZ",
     "name": "Ferozsons Laboratories Limited",
-    "latestPrice": 349.74,
+    "latestPrice": 324.47,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FEROZ",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4744,10 +4815,10 @@
         "totalDividendPerShare": 4
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 55,
+        "totalDividendPerShare": 5.5
       }
     },
     "payouts": [
@@ -4772,15 +4843,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 40,
         "dividendPerShare": 4
+      },
+      {
+        "announcedAt": "2026-09-29",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "55%(F) (D)",
+        "bookClosure": "21/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 55,
+        "dividendPerShare": 5.5
       }
     ]
   },
   {
     "symbol": "FFC",
     "name": "Fauji Fertilizer Company Limited",
-    "latestPrice": 540.51,
+    "latestPrice": 535.95,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FFC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4898,9 +4979,9 @@
   {
     "symbol": "FFL",
     "name": "Fauji Foods Limited",
-    "latestPrice": 14.72,
+    "latestPrice": 13.94,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4935,9 +5016,9 @@
   {
     "symbol": "FFLM",
     "name": "First Fidelity Leasing Modaraba",
-    "latestPrice": 11.24,
+    "latestPrice": 11.89,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FFLM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -4972,9 +5053,9 @@
   {
     "symbol": "FHAM",
     "name": "First Habib Modaraba",
-    "latestPrice": 31,
+    "latestPrice": 27.38,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FHAM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5032,9 +5113,9 @@
   {
     "symbol": "FIBLM",
     "name": "First IBL Modaraba",
-    "latestPrice": 15.76,
+    "latestPrice": 15.03,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FIBLM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5069,9 +5150,9 @@
   {
     "symbol": "FIL",
     "name": "Fateh Industries Limited",
-    "latestPrice": 260.46,
+    "latestPrice": 452.34,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5106,9 +5187,9 @@
   {
     "symbol": "FIMM",
     "name": "First Imrooz Modaraba",
-    "latestPrice": 215.99,
+    "latestPrice": 211.53,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FIMM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5132,10 +5213,10 @@
         "totalDividendPerShare": 15
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 10
       }
     },
     "payouts": [
@@ -5160,15 +5241,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 150,
         "dividendPerShare": 15
+      },
+      {
+        "announcedAt": "2026-09-28",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "100%(F) (D)",
+        "bookClosure": "14/10/2026 - 27/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 100,
+        "dividendPerShare": 10
       }
     ]
   },
   {
     "symbol": "FLYNG",
     "name": "Flying Cement Company Limited",
-    "latestPrice": 35.2,
+    "latestPrice": 32.2,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FLYNG",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5203,9 +5294,9 @@
   {
     "symbol": "FML",
     "name": "Feroze1888 Mills Limited",
-    "latestPrice": 48,
+    "latestPrice": 43.49,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5242,7 +5333,7 @@
     "name": "First National Bank Modaraba",
     "latestPrice": 0.64,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FNBM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5277,9 +5368,9 @@
   {
     "symbol": "FPJM",
     "name": "First Punjab Modaraba",
-    "latestPrice": 27.21,
+    "latestPrice": 18.48,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FPJM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5314,9 +5405,9 @@
   {
     "symbol": "FPRM",
     "name": "First Paramount Modaraba",
-    "latestPrice": 12.33,
+    "latestPrice": 11.48,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FPRM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5351,9 +5442,9 @@
   {
     "symbol": "FRCL",
     "name": "Frontier Ceramics Limited",
-    "latestPrice": 79.1,
+    "latestPrice": 80,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FRCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5388,9 +5479,9 @@
   {
     "symbol": "FRSM",
     "name": "Faran Sugar Mills Limited",
-    "latestPrice": 42.01,
+    "latestPrice": 42.4,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FRSM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5425,9 +5516,9 @@
   {
     "symbol": "FTMM",
     "name": "First Treet Manufacturing Modaraba",
-    "latestPrice": 20.02,
+    "latestPrice": 20.51,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FTMM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5473,9 +5564,9 @@
   {
     "symbol": "FTSM",
     "name": "First Tri-Star Modaraba",
-    "latestPrice": 44,
+    "latestPrice": 29.96,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FTSM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5523,9 +5614,9 @@
   {
     "symbol": "FZCM",
     "name": "Fazal Cloth Mills Limited",
-    "latestPrice": 257.91,
+    "latestPrice": 275.5,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/FZCM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5549,20 +5640,31 @@
         "totalDividendPerShare": 0
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 150,
+        "totalDividendPerShare": 15
       }
     },
-    "payouts": []
+    "payouts": [
+      {
+        "announcedAt": "2026-10-01",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "150%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 150,
+        "dividendPerShare": 15
+      }
+    ]
   },
   {
     "symbol": "GADT",
     "name": "Gadoon Textile Mills Limited",
-    "latestPrice": 295.28,
+    "latestPrice": 281.93,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GADT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5608,9 +5710,9 @@
   {
     "symbol": "GAL",
     "name": "Ghandhara Automobiles Limited",
-    "latestPrice": 537.34,
+    "latestPrice": 483.8,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GAL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5666,9 +5768,9 @@
   {
     "symbol": "GATI",
     "name": "Gatron (Industries) Limited",
-    "latestPrice": 90.32,
+    "latestPrice": 81.29,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GATI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5703,9 +5805,9 @@
   {
     "symbol": "GATM",
     "name": "Gul Ahmed Textile Mills Limited",
-    "latestPrice": 22.91,
+    "latestPrice": 20.32,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GATM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5740,9 +5842,9 @@
   {
     "symbol": "GCIL",
     "name": "Ghani Chemical Industries Limited",
-    "latestPrice": 32.88,
+    "latestPrice": 31.27,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GCIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5788,9 +5890,9 @@
   {
     "symbol": "GCWL",
     "name": "Ghani Chemworld Limited",
-    "latestPrice": 14.43,
+    "latestPrice": 12,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GCWL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5825,9 +5927,9 @@
   {
     "symbol": "GDL",
     "name": "Ghani Dairies Limited",
-    "latestPrice": 17.68,
+    "latestPrice": 18.88,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GDL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5862,9 +5964,9 @@
   {
     "symbol": "GEMBCEM",
     "name": "Burj Clean Energy Modaraba(GEM)",
-    "latestPrice": 11.3,
+    "latestPrice": 11.8,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GEMBCEM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5888,10 +5990,10 @@
         "totalDividendPerShare": 0.39
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 6,
+        "totalDividendPerShare": 0.6
       }
     },
     "payouts": [
@@ -5904,15 +6006,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 3.9,
         "dividendPerShare": 0.39
+      },
+      {
+        "announcedAt": "2026-09-29",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "6%(F) (D)",
+        "bookClosure": "19/10/2026 - 26/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 6,
+        "dividendPerShare": 0.6
       }
     ]
   },
   {
     "symbol": "GEMMEL",
     "name": "Mughal Energy Limited(GEM)",
-    "latestPrice": 43.21,
+    "latestPrice": 37.25,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GEMMEL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5947,9 +6059,9 @@
   {
     "symbol": "GEMPACRA",
     "name": "The Pakistan Credit Rating Agency Ltd",
-    "latestPrice": 33.48,
+    "latestPrice": 39,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GEMPACRA",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -5984,9 +6096,9 @@
   {
     "symbol": "GEMPAPL",
     "name": "Pak Agro Packaging Limited(GEM)",
-    "latestPrice": 11,
+    "latestPrice": 9.99,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GEMPAPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6032,9 +6144,9 @@
   {
     "symbol": "GFIL",
     "name": "Ghazi Fabrics International Limited",
-    "latestPrice": 26.54,
+    "latestPrice": 26.05,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GFIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6069,9 +6181,9 @@
   {
     "symbol": "GGGL",
     "name": "Ghani Global Glass Limited",
-    "latestPrice": 7.75,
+    "latestPrice": 7.51,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GGGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6106,9 +6218,9 @@
   {
     "symbol": "GGL",
     "name": "Ghani Global Holdings Limited",
-    "latestPrice": 19.98,
+    "latestPrice": 19.26,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6143,9 +6255,9 @@
   {
     "symbol": "GHGL",
     "name": "Ghani Glass Limited",
-    "latestPrice": 40.18,
+    "latestPrice": 38.85,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GHGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6243,9 +6355,9 @@
   {
     "symbol": "GHNI",
     "name": "Ghandhara Industries Limited",
-    "latestPrice": 1075.58,
+    "latestPrice": 1008.86,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GHNI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6301,9 +6413,9 @@
   {
     "symbol": "GIL",
     "name": "Good Luck Industries Ltd.",
-    "latestPrice": 2408.45,
+    "latestPrice": 2646.3,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6327,10 +6439,10 @@
         "totalDividendPerShare": 3
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 30,
+        "totalDividendPerShare": 3
       }
     },
     "payouts": [
@@ -6355,15 +6467,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 30,
         "dividendPerShare": 3
+      },
+      {
+        "announcedAt": "2026-10-05",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "30%(F) (D)",
+        "bookClosure": "19/10/2026 - 26/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 30,
+        "dividendPerShare": 3
       }
     ]
   },
   {
     "symbol": "GLAXO",
     "name": "GlaxoSmithKline Pakistan Limited",
-    "latestPrice": 322.61,
+    "latestPrice": 313.52,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GLAXO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6439,9 +6561,9 @@
   {
     "symbol": "GOC",
     "name": "GOC (Pak) Limited.",
-    "latestPrice": 164.85,
+    "latestPrice": 225.42,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GOC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6509,9 +6631,9 @@
   {
     "symbol": "GTYR",
     "name": "Ghandhara Tyre & Rubber Company Limited",
-    "latestPrice": 25.05,
+    "latestPrice": 24.84,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GTYR",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6559,9 +6681,9 @@
   {
     "symbol": "GVGL",
     "name": "Ghani Value Glass Limited",
-    "latestPrice": 54.6,
+    "latestPrice": 48.52,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GVGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6649,9 +6771,9 @@
   {
     "symbol": "GWLC",
     "name": "Gharibwal Cement Limited",
-    "latestPrice": 50.14,
+    "latestPrice": 45.91,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/GWLC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6717,9 +6839,9 @@
   {
     "symbol": "HAEL",
     "name": "Hala Enterprises Limited",
-    "latestPrice": 23.09,
+    "latestPrice": 24.42,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HAEL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6754,9 +6876,9 @@
   {
     "symbol": "HAFL",
     "name": "Hafiz Limited",
-    "latestPrice": 430.06,
+    "latestPrice": 442.98,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HAFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6780,10 +6902,10 @@
         "totalDividendPerShare": 2.5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 10,
+        "totalDividendPerShare": 1
       }
     },
     "payouts": [
@@ -6808,15 +6930,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 25,
         "dividendPerShare": 2.5
+      },
+      {
+        "announcedAt": "2026-09-30",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "10%(F) (D)",
+        "bookClosure": "15/10/2026 - 22/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 10,
+        "dividendPerShare": 1
       }
     ]
   },
   {
     "symbol": "HALEON",
     "name": "Haleon Pakistan Limited",
-    "latestPrice": 696.7,
+    "latestPrice": 677.73,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HALEON",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6916,7 +7048,7 @@
     "name": "Hamid Textile Mills Limited",
     "latestPrice": 0.97,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HATM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -6951,9 +7083,9 @@
   {
     "symbol": "HCAR",
     "name": "Honda Atlas Cars (Pakistan) Limited",
-    "latestPrice": 223.61,
+    "latestPrice": 204.45,
     "fiscalYearEndLabel": "March",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HCAR",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7009,9 +7141,9 @@
   {
     "symbol": "HINO",
     "name": "Hinopak Motors Limited",
-    "latestPrice": 322.82,
+    "latestPrice": 301.79,
     "fiscalYearEndLabel": "March",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HINO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7057,9 +7189,9 @@
   {
     "symbol": "HINOON",
     "name": "Highnoon Laboratories Limited",
-    "latestPrice": 938.51,
+    "latestPrice": 930.91,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HINOON",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7115,9 +7247,9 @@
   {
     "symbol": "HPL",
     "name": "Hoechst Pakistan Limited",
-    "latestPrice": 3937.39,
+    "latestPrice": 3989.89,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7195,9 +7327,9 @@
   {
     "symbol": "HRPL",
     "name": "Habib Rice Product Limited.",
-    "latestPrice": 20.75,
+    "latestPrice": 19.23,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HRPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7232,9 +7364,9 @@
   {
     "symbol": "HTL",
     "name": "Hi-Tech Lubricants Limited",
-    "latestPrice": 39.45,
+    "latestPrice": 35.4,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7280,9 +7412,9 @@
   {
     "symbol": "HUBC",
     "name": "The Hub Power Company Limited",
-    "latestPrice": 203.52,
+    "latestPrice": 194.89,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/HUBC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7390,9 +7522,9 @@
   {
     "symbol": "IBFL",
     "name": "Ibrahim Fibres Limited",
-    "latestPrice": 273.86,
+    "latestPrice": 244.13,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/IBFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7427,9 +7559,9 @@
   {
     "symbol": "IBLHL",
     "name": "IBL HealthCare Limited",
-    "latestPrice": 43.65,
+    "latestPrice": 41.23,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/IBLHL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7464,9 +7596,9 @@
   {
     "symbol": "ICCI",
     "name": "ICC Industries Limited",
-    "latestPrice": 14.08,
+    "latestPrice": 14.82,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ICCI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7501,9 +7633,9 @@
   {
     "symbol": "ICL",
     "name": "Ittehad Chemicals Limted",
-    "latestPrice": 128.77,
+    "latestPrice": 125.65,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ICL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7527,10 +7659,10 @@
         "totalDividendPerShare": 3
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 30,
+        "totalDividendPerShare": 3
       }
     },
     "payouts": [
@@ -7575,15 +7707,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 10,
         "dividendPerShare": 1
+      },
+      {
+        "announcedAt": "2026-09-22",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "30%(F) (D)",
+        "bookClosure": "21/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 30,
+        "dividendPerShare": 3
       }
     ]
   },
   {
     "symbol": "IDEAL",
     "name": "Ideal Dynamics Limited",
-    "latestPrice": 42.22,
+    "latestPrice": 54.06,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/IDEAL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7618,9 +7760,9 @@
   {
     "symbol": "IDRT",
     "name": "Idrees Textile Mills Limited",
-    "latestPrice": 34.57,
+    "latestPrice": 34.33,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/IDRT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7655,9 +7797,9 @@
   {
     "symbol": "ILP",
     "name": "Interloop Limited",
-    "latestPrice": 100,
+    "latestPrice": 93.05,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ILP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7735,9 +7877,9 @@
   {
     "symbol": "IMAGE",
     "name": "Image Pakistan Limited",
-    "latestPrice": 25.66,
+    "latestPrice": 24.19,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/IMAGE",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7761,10 +7903,10 @@
         "totalDividendPerShare": 1
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 10,
+        "totalDividendPerShare": 1
       }
     },
     "payouts": [
@@ -7787,15 +7929,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 10,
         "dividendPerShare": 1
+      },
+      {
+        "announcedAt": "2026-10-06",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "10%(F) (D)",
+        "bookClosure": "23/10/2026 - 30/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 10,
+        "dividendPerShare": 1
       }
     ]
   },
   {
     "symbol": "INIL",
     "name": "International Industries Limited",
-    "latestPrice": 163.34,
+    "latestPrice": 155.58,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/INIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7873,9 +8025,9 @@
   {
     "symbol": "INKL",
     "name": "International Knitwear Limited",
-    "latestPrice": 96.21,
+    "latestPrice": 96.08,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/INKL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7933,9 +8085,9 @@
   {
     "symbol": "IPAK",
     "name": "International Packaging Films Limited",
-    "latestPrice": 35.46,
+    "latestPrice": 30.17,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/IPAK",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -7991,9 +8143,9 @@
   {
     "symbol": "IREIT",
     "name": "Image REIT",
-    "latestPrice": 7.92,
+    "latestPrice": 7.66,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/IREIT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8059,9 +8211,9 @@
   {
     "symbol": "ISIL",
     "name": "Ismail Industries Limited",
-    "latestPrice": 1822.61,
+    "latestPrice": 1825.93,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ISIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8129,9 +8281,9 @@
   {
     "symbol": "ISL",
     "name": "International Steels Limited",
-    "latestPrice": 81.09,
+    "latestPrice": 78.82,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ISL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8209,9 +8361,9 @@
   {
     "symbol": "ITANZ",
     "name": "Itanz Technologies Limited",
-    "latestPrice": 33.95,
+    "latestPrice": 30.76,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ITANZ",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8257,9 +8409,9 @@
   {
     "symbol": "ITTEFAQ",
     "name": "Ittefaq Iron Industries Limited",
-    "latestPrice": 8.03,
+    "latestPrice": 8.07,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ITTEFAQ",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8294,9 +8446,9 @@
   {
     "symbol": "JATM",
     "name": "J.A. Textile Mills Limited",
-    "latestPrice": 40.77,
+    "latestPrice": 48.97,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/JATM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8331,9 +8483,9 @@
   {
     "symbol": "JDMT",
     "name": "Janana De Malucho Textile Mills Limited",
-    "latestPrice": 129.26,
+    "latestPrice": 107.8,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/JDMT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8368,9 +8520,9 @@
   {
     "symbol": "JDWS",
     "name": "JDW Sugar Mills Limited",
-    "latestPrice": 904,
+    "latestPrice": 888.06,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/JDWS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8456,9 +8608,9 @@
   {
     "symbol": "JSML",
     "name": "Jauharabad Sugar Mills Limited",
-    "latestPrice": 53.39,
+    "latestPrice": 48,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/JSML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8493,9 +8645,9 @@
   {
     "symbol": "JUBS",
     "name": "Jubilee Spinning & Weaving Mills Ltd.",
-    "latestPrice": 55.23,
+    "latestPrice": 41.08,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/JUBS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8530,9 +8682,9 @@
   {
     "symbol": "JVDC",
     "name": "Javedan Corporation Limited",
-    "latestPrice": 144.65,
+    "latestPrice": 131.54,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/JVDC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8600,9 +8752,9 @@
   {
     "symbol": "KCL",
     "name": "Karam Ceramics Limited",
-    "latestPrice": 176.71,
+    "latestPrice": 160,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8637,9 +8789,9 @@
   {
     "symbol": "KEL",
     "name": "K-Electric Limited",
-    "latestPrice": 6.74,
+    "latestPrice": 5.73,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KEL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8674,9 +8826,9 @@
   {
     "symbol": "KHYT",
     "name": "Khyber Textile Mills Limited",
-    "latestPrice": 1811.83,
+    "latestPrice": 1725,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KHYT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8711,9 +8863,9 @@
   {
     "symbol": "KOHC",
     "name": "Kohat Cement Company Limited",
-    "latestPrice": 90.86,
+    "latestPrice": 82.07,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KOHC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8748,9 +8900,9 @@
   {
     "symbol": "KOHE",
     "name": "Kohinoor Energy Limited",
-    "latestPrice": 15.53,
+    "latestPrice": 14.39,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KOHE",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8798,9 +8950,9 @@
   {
     "symbol": "KOHTM",
     "name": "Kohat Textile Mills Limited",
-    "latestPrice": 101.54,
+    "latestPrice": 90.75,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KOHTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8824,10 +8976,10 @@
         "totalDividendPerShare": 1
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 15,
+        "totalDividendPerShare": 1.5
       }
     },
     "payouts": [
@@ -8862,15 +9014,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 10,
         "dividendPerShare": 1
+      },
+      {
+        "announcedAt": "2026-10-01",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "15%(F) (D)",
+        "bookClosure": "21/10/2026 - 27/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 15,
+        "dividendPerShare": 1.5
       }
     ]
   },
   {
     "symbol": "KPUS",
     "name": "Khairpur Sugar Mills Limited",
-    "latestPrice": 820.92,
+    "latestPrice": 1571.06,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KPUS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8905,9 +9067,9 @@
   {
     "symbol": "KSBP",
     "name": "KSB Pumps Company Limited",
-    "latestPrice": 214.92,
+    "latestPrice": 208.94,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KSBP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8953,9 +9115,9 @@
   {
     "symbol": "KSTM",
     "name": "Khalid Siraj Textile Mills Limited",
-    "latestPrice": 12.85,
+    "latestPrice": 12.8,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KSTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -8990,9 +9152,9 @@
   {
     "symbol": "KTML",
     "name": "Kohinoor Textile Mills Limited",
-    "latestPrice": 42.81,
+    "latestPrice": 39.98,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/KTML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9038,9 +9200,9 @@
   {
     "symbol": "LCI",
     "name": "Lucky Core Industries Limited",
-    "latestPrice": 209.42,
+    "latestPrice": 193.19,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/LCI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9128,9 +9290,9 @@
   {
     "symbol": "LEUL",
     "name": "Leather Up Limited",
-    "latestPrice": 74.79,
+    "latestPrice": 67.25,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/LEUL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9165,9 +9327,9 @@
   {
     "symbol": "LIVEN",
     "name": "Liven Pharma Limited",
-    "latestPrice": 30.91,
+    "latestPrice": 31.77,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/LIVEN",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9202,9 +9364,9 @@
   {
     "symbol": "LOADS",
     "name": "Loads Limited",
-    "latestPrice": 12.66,
+    "latestPrice": 11.71,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/LOADS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9239,9 +9401,9 @@
   {
     "symbol": "LOTCHEM",
     "name": "Lotte Chemical Pakistan Limited",
-    "latestPrice": 25.08,
+    "latestPrice": 24.16,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/LOTCHEM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9297,9 +9459,9 @@
   {
     "symbol": "LPGL",
     "name": "Leiner Pak Gelatine Limited",
-    "latestPrice": 70.11,
+    "latestPrice": 72.63,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/LPGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9334,9 +9496,9 @@
   {
     "symbol": "LUCK",
     "name": "Lucky Cement Limited",
-    "latestPrice": 421.72,
+    "latestPrice": 400.28,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/LUCK",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9404,9 +9566,9 @@
   {
     "symbol": "MACFL",
     "name": "MACPAC Films Limited",
-    "latestPrice": 69.21,
+    "latestPrice": 73.14,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MACFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9464,9 +9626,9 @@
   {
     "symbol": "MACTER",
     "name": "Macter International Limited",
-    "latestPrice": 238.05,
+    "latestPrice": 244,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MACTER",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9524,9 +9686,9 @@
   {
     "symbol": "MARI",
     "name": "Mari Energies Limited",
-    "latestPrice": 635.95,
+    "latestPrice": 635.4,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MARI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9604,9 +9766,9 @@
   {
     "symbol": "MEBL",
     "name": "Meezan Bank Limited",
-    "latestPrice": 550.98,
+    "latestPrice": 546.95,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MEBL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9736,9 +9898,9 @@
   {
     "symbol": "MEHT",
     "name": "Mehmood Textile Mills Limited",
-    "latestPrice": 139.56,
+    "latestPrice": 125.15,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MEHT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9773,9 +9935,9 @@
   {
     "symbol": "MERIT",
     "name": "Merit Packaging Limited",
-    "latestPrice": 9.74,
+    "latestPrice": 8.68,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MERIT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9810,9 +9972,9 @@
   {
     "symbol": "MFFL",
     "name": "Mitchells Fruit Farms Limited",
-    "latestPrice": 164.1,
+    "latestPrice": 165.12,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MFFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9847,9 +10009,9 @@
   {
     "symbol": "MFL",
     "name": "Matco Foods Limited",
-    "latestPrice": 44.74,
+    "latestPrice": 43.91,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9884,9 +10046,9 @@
   {
     "symbol": "MIRKS",
     "name": "Mirpurkhas Sugar Mills Limited",
-    "latestPrice": 31.9,
+    "latestPrice": 30,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MIRKS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9921,9 +10083,9 @@
   {
     "symbol": "MLCF",
     "name": "Maple Leaf Cement Factory Limited",
-    "latestPrice": 94.78,
+    "latestPrice": 89.85,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MLCF",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9958,9 +10120,9 @@
   {
     "symbol": "MQTM",
     "name": "Maqbool Textile Mills Limited",
-    "latestPrice": 28.95,
+    "latestPrice": 25.69,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MQTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -9995,9 +10157,9 @@
   {
     "symbol": "MRNS",
     "name": "Mehran Sugar Mills Limited",
-    "latestPrice": 61.49,
+    "latestPrice": 59.05,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MRNS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10083,9 +10245,9 @@
   {
     "symbol": "MSCL",
     "name": "Metropolitan Steel Corporation Limited",
-    "latestPrice": 21.8,
+    "latestPrice": 19.77,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MSCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10120,9 +10282,9 @@
   {
     "symbol": "MTL",
     "name": "Millat Tractors Limited",
-    "latestPrice": 298.78,
+    "latestPrice": 290.18,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10200,7 +10362,7 @@
     "name": "Mubarak Textile Mills Limited",
     "latestPrice": 3.85,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MUBT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10235,9 +10397,9 @@
   {
     "symbol": "MUGHAL",
     "name": "Mughal Iron & Steel Industries Limited",
-    "latestPrice": 69.09,
+    "latestPrice": 62.69,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MUGHAL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10283,9 +10445,9 @@
   {
     "symbol": "MWMP",
     "name": "Mandviwala Mauser Plastic Industries",
-    "latestPrice": 96.87,
+    "latestPrice": 77.12,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/MWMP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10320,9 +10482,9 @@
   {
     "symbol": "NATM",
     "name": "Nadeem Textile Mills Limited",
-    "latestPrice": 69.38,
+    "latestPrice": 68.26,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NATM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10357,9 +10519,9 @@
   {
     "symbol": "NCML",
     "name": "Nazir Cotton Mills Limited",
-    "latestPrice": 16.29,
+    "latestPrice": 15.27,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NCML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10394,9 +10556,9 @@
   {
     "symbol": "NESTLE",
     "name": "Nestle Pakistan Limited",
-    "latestPrice": 7410,
+    "latestPrice": 6962.84,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NESTLE",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10506,9 +10668,9 @@
   {
     "symbol": "NETSOL",
     "name": "NetSol Technologies Limited",
-    "latestPrice": 126.76,
+    "latestPrice": 120.09,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NETSOL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10532,10 +10694,10 @@
         "totalDividendPerShare": 0
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 15,
+        "totalDividendPerShare": 1.5
       }
     },
     "payouts": [
@@ -10550,15 +10712,25 @@
         "dividendPercent": 30,
         "dividendPerShare": 3,
         "archiveUrl": "https://dps.psx.com.pk/download/announce/2024-09-12.pdf"
+      },
+      {
+        "announcedAt": "2026-09-29",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "15%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 15,
+        "dividendPerShare": 1.5
       }
     ]
   },
   {
     "symbol": "NML",
     "name": "Nishat Mills Limited",
-    "latestPrice": 132.34,
+    "latestPrice": 126.29,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10582,10 +10754,10 @@
         "totalDividendPerShare": 2
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 20,
+        "totalDividendPerShare": 2
       }
     },
     "payouts": [
@@ -10610,15 +10782,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 20,
         "dividendPerShare": 2
+      },
+      {
+        "announcedAt": "2026-09-30",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "20%(F) (D)",
+        "bookClosure": "21/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 20,
+        "dividendPerShare": 2
       }
     ]
   },
   {
     "symbol": "NNAR",
     "name": "Naya Nazimabad Apartment REIT",
-    "latestPrice": 22.48,
+    "latestPrice": 21.19,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NNAR",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10653,9 +10835,9 @@
   {
     "symbol": "NONS",
     "name": "Noon Sugar Mills Limited",
-    "latestPrice": 80.97,
+    "latestPrice": 82.53,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NONS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10701,9 +10883,9 @@
   {
     "symbol": "NRL",
     "name": "National Refinery Limited",
-    "latestPrice": 527.92,
+    "latestPrice": 600.03,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NRL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10738,9 +10920,9 @@
   {
     "symbol": "NRSL",
     "name": "Nimir Resins Limited",
-    "latestPrice": 36.72,
+    "latestPrice": 31.98,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NRSL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10798,9 +10980,9 @@
   {
     "symbol": "NSRM",
     "name": "The National Silk & Rayon Mills Limited",
-    "latestPrice": 205.04,
+    "latestPrice": 188.62,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/NSRM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10835,9 +11017,9 @@
   {
     "symbol": "OCTOPUS",
     "name": "Octopus Digital Limited",
-    "latestPrice": 28.41,
+    "latestPrice": 26.57,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/OCTOPUS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10872,9 +11054,9 @@
   {
     "symbol": "OGDC",
     "name": "Oil & Gas Development Company Limited",
-    "latestPrice": 317.49,
+    "latestPrice": 303.05,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/OGDC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -10992,9 +11174,9 @@
   {
     "symbol": "OLPM",
     "name": "OLP Modaraba",
-    "latestPrice": 26.8,
+    "latestPrice": 24,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/OLPM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11062,9 +11244,9 @@
   {
     "symbol": "OML",
     "name": "Olympia Mills Limited",
-    "latestPrice": 78.94,
+    "latestPrice": 72.7,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/OML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11099,9 +11281,9 @@
   {
     "symbol": "ORM",
     "name": "Orient Rental Mod",
-    "latestPrice": 10.93,
+    "latestPrice": 10.59,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ORM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11149,9 +11331,9 @@
   {
     "symbol": "OTSU",
     "name": "Otsuka Pakistan Limited",
-    "latestPrice": 339.23,
+    "latestPrice": 371.2,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/OTSU",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11186,9 +11368,9 @@
   {
     "symbol": "PAEL",
     "name": "Pak Elektron Limited",
-    "latestPrice": 36.55,
+    "latestPrice": 33.07,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PAEL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11223,9 +11405,9 @@
   {
     "symbol": "PAKD",
     "name": "Pak Datacom Limited",
-    "latestPrice": 121.01,
+    "latestPrice": 118.12,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PAKD",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11283,9 +11465,9 @@
   {
     "symbol": "PAKOXY",
     "name": "Pakistan Oxygen Limited",
-    "latestPrice": 335.9,
+    "latestPrice": 364.54,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PAKOXY",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11320,9 +11502,9 @@
   {
     "symbol": "PAKQATAR",
     "name": "Pak Qatar Family Takaful Limited",
-    "latestPrice": 17.03,
+    "latestPrice": 15.87,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PAKQATAR",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11368,9 +11550,9 @@
   {
     "symbol": "PIBTL",
     "name": "Pakistan International Bulk Terminal",
-    "latestPrice": 15.96,
+    "latestPrice": 13.1,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PIBTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11405,9 +11587,9 @@
   {
     "symbol": "PICT",
     "name": "Pakistan International Container",
-    "latestPrice": 41.27,
+    "latestPrice": 43.59,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PICT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11455,9 +11637,9 @@
   {
     "symbol": "PIM",
     "name": "Popular Islamic Modaraba",
-    "latestPrice": 51.25,
+    "latestPrice": 106.32,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PIM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11515,9 +11697,9 @@
   {
     "symbol": "PIOC",
     "name": "Pioneer Cement Limited",
-    "latestPrice": 246.59,
+    "latestPrice": 232.31,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PIOC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11585,9 +11767,9 @@
   {
     "symbol": "PKGS",
     "name": "Packages Limited",
-    "latestPrice": 706.83,
+    "latestPrice": 686.55,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PKGS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11643,9 +11825,9 @@
   {
     "symbol": "PMRS",
     "name": "The Premier Sugar Mills",
-    "latestPrice": 397.5,
+    "latestPrice": 361.44,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PMRS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11680,9 +11862,9 @@
   {
     "symbol": "POML",
     "name": "Punjab Oil Mills Limited",
-    "latestPrice": 152.22,
+    "latestPrice": 152.84,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/POML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11717,9 +11899,9 @@
   {
     "symbol": "POWER",
     "name": "Power Cement Limited",
-    "latestPrice": 22.5,
+    "latestPrice": 22.05,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/POWER",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11754,9 +11936,9 @@
   {
     "symbol": "PPL",
     "name": "Pakistan Petroleum Limited",
-    "latestPrice": 228.39,
+    "latestPrice": 216.67,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11886,9 +12068,9 @@
   {
     "symbol": "PPP",
     "name": "Pakistan Paper Products Limited",
-    "latestPrice": 144.83,
+    "latestPrice": 130.89,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PPP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -11956,9 +12138,9 @@
   {
     "symbol": "PQGTL",
     "name": "Pak Qatar General Takaful Limited",
-    "latestPrice": 12.84,
+    "latestPrice": 12.27,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PQGTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12004,9 +12186,9 @@
   {
     "symbol": "PREMA",
     "name": "At-Tahur Limited",
-    "latestPrice": 32.57,
+    "latestPrice": 31.92,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PREMA",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12041,9 +12223,9 @@
   {
     "symbol": "PRL",
     "name": "Pakistan Refinery Limited",
-    "latestPrice": 86.92,
+    "latestPrice": 99.88,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PRL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12091,9 +12273,9 @@
   {
     "symbol": "PSEL",
     "name": "Pakistan Services Limited",
-    "latestPrice": 1224.72,
+    "latestPrice": 971.21,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PSEL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12128,9 +12310,9 @@
   {
     "symbol": "PSO",
     "name": "Pakistan State Oil Company Limited",
-    "latestPrice": 349.58,
+    "latestPrice": 356.51,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PSO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12154,10 +12336,10 @@
         "totalDividendPerShare": 10
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 10
       }
     },
     "payouts": [
@@ -12182,15 +12364,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 100,
         "dividendPerShare": 10
+      },
+      {
+        "announcedAt": "2026-09-25",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "100%(F) (D)",
+        "bookClosure": "21/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 100,
+        "dividendPerShare": 10
       }
     ]
   },
   {
     "symbol": "PSYL",
     "name": "Pakistan Synthetics Limited",
-    "latestPrice": 143.03,
+    "latestPrice": 210.07,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PSYL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12225,9 +12417,9 @@
   {
     "symbol": "PTL",
     "name": "Panther Tyres Ltd.",
-    "latestPrice": 50.39,
+    "latestPrice": 45.51,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/PTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12283,9 +12475,9 @@
   {
     "symbol": "QTECH",
     "name": "Quantum Data Technologies Limited",
-    "latestPrice": 38.05,
+    "latestPrice": 34.23,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/QTECH",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12320,9 +12512,9 @@
   {
     "symbol": "QUET",
     "name": "Quetta Textile Mills Limited",
-    "latestPrice": 15.14,
+    "latestPrice": 14.41,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/QUET",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12357,9 +12549,9 @@
   {
     "symbol": "QUICE",
     "name": "Quice Food Industries Limited",
-    "latestPrice": 29.98,
+    "latestPrice": 26.75,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/QUICE",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12394,9 +12586,9 @@
   {
     "symbol": "REDCO",
     "name": "Redco Textiles Limited",
-    "latestPrice": 28.78,
+    "latestPrice": 26.39,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/REDCO",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12431,9 +12623,9 @@
   {
     "symbol": "REWM",
     "name": "Reliance Weaving Mills Limited",
-    "latestPrice": 166.64,
+    "latestPrice": 159.45,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/REWM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12468,9 +12660,9 @@
   {
     "symbol": "RMPL",
     "name": "Rafhan Maize Products Company Limited",
-    "latestPrice": 9000.71,
+    "latestPrice": 8510,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/RMPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12494,10 +12686,10 @@
         "totalDividendPerShare": 474
       },
       "fy27": {
-        "payoutCount": 1,
-        "intervalLabel": "Single",
-        "totalDividendPercent": 600,
-        "totalDividendPerShare": 60
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 1100,
+        "totalDividendPerShare": 110
       }
     },
     "payouts": [
@@ -12594,15 +12786,25 @@
         "fiscalYear": 2027,
         "dividendPercent": 600,
         "dividendPerShare": 60
+      },
+      {
+        "announcedAt": "2026-10-21",
+        "periodLabel": "30/09/2026(IIIQ)",
+        "periodEnd": "30/09/2026",
+        "detail": "500%(iii) (D)",
+        "bookClosure": "03/11/2026 - 04/11/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 500,
+        "dividendPerShare": 50
       }
     ]
   },
   {
     "symbol": "RPL",
     "name": "Roshan Packages Limited",
-    "latestPrice": 15.15,
+    "latestPrice": 14.14,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/RPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12650,9 +12852,9 @@
   {
     "symbol": "RUBY",
     "name": "Ruby Textile Mills Limited",
-    "latestPrice": 22.58,
+    "latestPrice": 18.62,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/RUBY",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12687,9 +12889,9 @@
   {
     "symbol": "RUPL",
     "name": "Rupali Polyester Limited",
-    "latestPrice": 30,
+    "latestPrice": 28.18,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/RUPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12724,9 +12926,9 @@
   {
     "symbol": "SANSM",
     "name": "Sanghar Sugar Mills Limited",
-    "latestPrice": 119.61,
+    "latestPrice": 119.02,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SANSM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12761,9 +12963,9 @@
   {
     "symbol": "SAPT",
     "name": "Sapphire Textile Mills Limited",
-    "latestPrice": 1438.85,
+    "latestPrice": 1523.35,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SAPT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12787,10 +12989,10 @@
         "totalDividendPerShare": 10
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 10
       }
     },
     "payouts": [
@@ -12825,15 +13027,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 100,
         "dividendPerShare": 10
+      },
+      {
+        "announcedAt": "2026-09-24",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "100%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 100,
+        "dividendPerShare": 10
       }
     ]
   },
   {
     "symbol": "SARC",
     "name": "Sardar Chemical Industries Limited",
-    "latestPrice": 91.65,
+    "latestPrice": 72.6,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SARC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12857,10 +13069,10 @@
         "totalDividendPerShare": 1.5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 15,
+        "totalDividendPerShare": 1.5
       }
     },
     "payouts": [
@@ -12873,15 +13085,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 15,
         "dividendPerShare": 1.5
+      },
+      {
+        "announcedAt": "2026-09-28",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "15%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 15,
+        "dividendPerShare": 1.5
       }
     ]
   },
   {
     "symbol": "SASML",
     "name": "Sindh Abadgars Sugar Mills Limited",
-    "latestPrice": 353.07,
+    "latestPrice": 300,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SASML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -12927,9 +13149,9 @@
   {
     "symbol": "SAZEW",
     "name": "Sazgar Engineering Works Limited",
-    "latestPrice": 1747.92,
+    "latestPrice": 1496.46,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SAZEW",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13039,9 +13261,9 @@
   {
     "symbol": "SEARL",
     "name": "The Searle Company Limited",
-    "latestPrice": 80.12,
+    "latestPrice": 77.4,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SEARL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13065,20 +13287,31 @@
         "totalDividendPerShare": 0
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 10,
+        "totalDividendPerShare": 1
       }
     },
-    "payouts": []
+    "payouts": [
+      {
+        "announcedAt": "2026-09-25",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "10%(F) (D)",
+        "bookClosure": "15/10/2026 - 22/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 10,
+        "dividendPerShare": 1
+      }
+    ]
   },
   {
     "symbol": "SEL",
     "name": "Sitara Energy Limited",
-    "latestPrice": 26.78,
+    "latestPrice": 24.1,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SEL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13113,9 +13346,9 @@
   {
     "symbol": "SELECT",
     "name": "Select Technologies Limited",
-    "latestPrice": 28.43,
+    "latestPrice": 26.3,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SELECT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13150,9 +13383,9 @@
   {
     "symbol": "SERT",
     "name": "Service Industries Textiles Limited",
-    "latestPrice": 39.95,
+    "latestPrice": 36,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SERT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13189,7 +13422,7 @@
     "name": "SG.Allied Businesses Limited",
     "latestPrice": 126,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SGABL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13224,9 +13457,9 @@
   {
     "symbol": "SGF",
     "name": "Service GlobalFootwear Limited",
-    "latestPrice": 106.53,
+    "latestPrice": 109.02,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SGF",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13282,9 +13515,9 @@
   {
     "symbol": "SGPL",
     "name": "S.G. Power Limited",
-    "latestPrice": 32.92,
+    "latestPrice": 22.97,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SGPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13319,9 +13552,9 @@
   {
     "symbol": "SHCM",
     "name": "Shadman Cotton Mills Limited",
-    "latestPrice": 56.12,
+    "latestPrice": 60.41,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SHCM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13356,9 +13589,9 @@
   {
     "symbol": "SHDT",
     "name": "Shadab Textile Mills Limited",
-    "latestPrice": 55.61,
+    "latestPrice": 44.84,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SHDT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13382,10 +13615,10 @@
         "totalDividendPerShare": 1.25
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 12.5,
+        "totalDividendPerShare": 1.25
       }
     },
     "payouts": [
@@ -13422,15 +13655,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 12.5,
         "dividendPerShare": 1.25
+      },
+      {
+        "announcedAt": "2026-09-25",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "12.5%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 12.5,
+        "dividendPerShare": 1.25
       }
     ]
   },
   {
     "symbol": "SHFA",
     "name": "Shifa International Hospitals Limited",
-    "latestPrice": 446,
+    "latestPrice": 447.95,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SHFA",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13498,9 +13741,9 @@
   {
     "symbol": "SHSML",
     "name": "Shahmurad Sugar Mills Limited",
-    "latestPrice": 360.78,
+    "latestPrice": 335,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SHSML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13556,9 +13799,9 @@
   {
     "symbol": "SIEM",
     "name": "Siemens (Pakistan) Engineering",
-    "latestPrice": 1700.37,
+    "latestPrice": 1564.17,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SIEM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13593,9 +13836,9 @@
   {
     "symbol": "SINDM",
     "name": "Sindh Modaraba",
-    "latestPrice": 30.91,
+    "latestPrice": 53.78,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SINDM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13619,10 +13862,10 @@
         "totalDividendPerShare": 1.35
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 14,
+        "totalDividendPerShare": 1.4
       }
     },
     "payouts": [
@@ -13647,15 +13890,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 13.5,
         "dividendPerShare": 1.35
+      },
+      {
+        "announcedAt": "2026-09-24",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "14%(F) (D)",
+        "bookClosure": "13/10/2026 - 20/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 14,
+        "dividendPerShare": 1.4
       }
     ]
   },
   {
     "symbol": "SITC",
     "name": "Sitara Chemical Industries Limited",
-    "latestPrice": 751.46,
+    "latestPrice": 616.54,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SITC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13679,10 +13932,10 @@
         "totalDividendPerShare": 11
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 130,
+        "totalDividendPerShare": 13
       }
     },
     "payouts": [
@@ -13707,15 +13960,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 110,
         "dividendPerShare": 11
+      },
+      {
+        "announcedAt": "2026-09-29",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "130%(F) (D)",
+        "bookClosure": "21/10/2026 - 27/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 130,
+        "dividendPerShare": 13
       }
     ]
   },
   {
     "symbol": "SKRS",
     "name": "Sakrand Sugar Mills Limited",
-    "latestPrice": 24.73,
+    "latestPrice": 21.36,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SKRS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13750,9 +14013,9 @@
   {
     "symbol": "SLGL",
     "name": "Secure Logistics-Trax Group Limited",
-    "latestPrice": 14.35,
+    "latestPrice": 15.14,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SLGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13787,9 +14050,9 @@
   {
     "symbol": "SLM",
     "name": "Service Long March Tyres Limited",
-    "latestPrice": 22.79,
+    "latestPrice": 21.86,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SLM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13824,9 +14087,9 @@
   {
     "symbol": "SMCPL",
     "name": "Safe Mix Concrete Limited",
-    "latestPrice": 39.98,
+    "latestPrice": 36.01,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SMCPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13850,10 +14113,10 @@
         "totalDividendPerShare": 2.5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 30,
+        "totalDividendPerShare": 3
       }
     },
     "payouts": [
@@ -13878,15 +14141,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 25,
         "dividendPerShare": 2.5
+      },
+      {
+        "announcedAt": "2026-10-01",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "30%(F) (D)",
+        "bookClosure": "20/10/2026 - 27/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 30,
+        "dividendPerShare": 3
       }
     ]
   },
   {
     "symbol": "SML",
     "name": "Shakarganj Limited",
-    "latestPrice": 97,
+    "latestPrice": 92.66,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13921,9 +14194,9 @@
   {
     "symbol": "SNAI",
     "name": "Sana Industries Limited",
-    "latestPrice": 33.98,
+    "latestPrice": 34.95,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SNAI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -13958,9 +14231,9 @@
   {
     "symbol": "SNGP",
     "name": "Sui Northern Gas Pipelines Limited",
-    "latestPrice": 90.91,
+    "latestPrice": 91.83,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SNGP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14028,9 +14301,9 @@
   {
     "symbol": "SOYASUP",
     "name": "Agro Processors & Atmospheric Gases Ltd",
-    "latestPrice": 31.35,
+    "latestPrice": 28.57,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SOYASUP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14065,9 +14338,9 @@
   {
     "symbol": "SPEL",
     "name": "SPEL Limited",
-    "latestPrice": 42.55,
+    "latestPrice": 39.22,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SPEL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14145,9 +14418,9 @@
   {
     "symbol": "SPL",
     "name": "Sitara Peroxide Limited",
-    "latestPrice": 43.93,
+    "latestPrice": 48.94,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14182,9 +14455,9 @@
   {
     "symbol": "SPSL",
     "name": "Sitara Petroleum Service Limited",
-    "latestPrice": 16.51,
+    "latestPrice": 14.34,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SPSL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14219,9 +14492,9 @@
   {
     "symbol": "SRR",
     "name": "Signature Residency REIT",
-    "latestPrice": 16.96,
+    "latestPrice": 17.5,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SRR",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14256,9 +14529,9 @@
   {
     "symbol": "SRVI",
     "name": "Service Industries Limited",
-    "latestPrice": 176.85,
+    "latestPrice": 176.51,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SRVI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14314,9 +14587,9 @@
   {
     "symbol": "SSGC",
     "name": "Sui Southern Gas Company Limited",
-    "latestPrice": 23.81,
+    "latestPrice": 23.21,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SSGC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14362,9 +14635,9 @@
   {
     "symbol": "SSML",
     "name": "Saritow Spinning Mills Limited",
-    "latestPrice": 20.29,
+    "latestPrice": 17.94,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SSML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14399,9 +14672,9 @@
   {
     "symbol": "SSOM",
     "name": "S.S.Oil Mills Limited",
-    "latestPrice": 457.66,
+    "latestPrice": 393.39,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SSOM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14425,10 +14698,10 @@
         "totalDividendPerShare": 5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       }
     },
     "payouts": [
@@ -14441,15 +14714,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 50,
         "dividendPerShare": 5
+      },
+      {
+        "announcedAt": "2026-10-06",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "50%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 50,
+        "dividendPerShare": 5
       }
     ]
   },
   {
     "symbol": "STCL",
     "name": "Shabbir Tiles & Ceramics Limited",
-    "latestPrice": 9.12,
+    "latestPrice": 8.79,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/STCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14497,9 +14780,9 @@
   {
     "symbol": "STJT",
     "name": "Shahtaj Textile Limited",
-    "latestPrice": 146.24,
+    "latestPrice": 123.95,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/STJT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14523,10 +14806,10 @@
         "totalDividendPerShare": 0
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 115,
+        "totalDividendPerShare": 11.5
       }
     },
     "payouts": [
@@ -14541,15 +14824,25 @@
         "dividendPercent": 10,
         "dividendPerShare": 1,
         "archiveUrl": "https://dps.psx.com.pk/download/announce/2024-09-26.pdf"
+      },
+      {
+        "announcedAt": "2026-09-24",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "115%(F) (D)",
+        "bookClosure": "19/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 115,
+        "dividendPerShare": 11.5
       }
     ]
   },
   {
     "symbol": "STL",
     "name": "Supernet Technologies Limited",
-    "latestPrice": 23.83,
+    "latestPrice": 22.78,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/STL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14573,20 +14866,31 @@
         "totalDividendPerShare": 0
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 2.5,
+        "totalDividendPerShare": 0.25
       }
     },
-    "payouts": []
+    "payouts": [
+      {
+        "announcedAt": "2026-09-24",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "2.5%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 2.5,
+        "dividendPerShare": 0.25
+      }
+    ]
   },
   {
     "symbol": "STML",
     "name": "Shams Textile Mills Limited",
-    "latestPrice": 50.77,
+    "latestPrice": 42.25,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/STML",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14621,9 +14925,9 @@
   {
     "symbol": "STYLERS",
     "name": "Stylers International Limited",
-    "latestPrice": 50.03,
+    "latestPrice": 43.56,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/STYLERS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14647,10 +14951,10 @@
         "totalDividendPerShare": 1.5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 7.5,
+        "totalDividendPerShare": 0.75
       }
     },
     "payouts": [
@@ -14705,15 +15009,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 5,
         "dividendPerShare": 0.5
+      },
+      {
+        "announcedAt": "2026-09-28",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "7.50%(F) (D)",
+        "bookClosure": "20/10/2026 - 27/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 7.5,
+        "dividendPerShare": 0.75
       }
     ]
   },
   {
     "symbol": "SUHJ",
     "name": "Suhail Jute Mills Limited",
-    "latestPrice": 169.14,
+    "latestPrice": 167.63,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SUHJ",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14748,9 +15062,9 @@
   {
     "symbol": "SURC",
     "name": "Suraj Cotton Mills Limited",
-    "latestPrice": 155.68,
+    "latestPrice": 123.97,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SURC",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14774,10 +15088,10 @@
         "totalDividendPerShare": 5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 10
       }
     },
     "payouts": [
@@ -14802,6 +15116,16 @@
         "fiscalYear": 2026,
         "dividendPercent": 50,
         "dividendPerShare": 5
+      },
+      {
+        "announcedAt": "2026-09-28",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "100%(F) (D)",
+        "bookClosure": "15/10/2026 - 22/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 100,
+        "dividendPerShare": 10
       }
     ]
   },
@@ -14810,7 +15134,7 @@
     "name": "Standard Worldwide Limited",
     "latestPrice": 316.53,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SWL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14845,9 +15169,9 @@
   {
     "symbol": "SYM",
     "name": "Symmetry Group Limited",
-    "latestPrice": 12.99,
+    "latestPrice": 12.08,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SYM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14871,10 +15195,10 @@
         "totalDividendPerShare": 0.5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 10,
+        "totalDividendPerShare": 1
       }
     },
     "payouts": [
@@ -14899,15 +15223,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 5,
         "dividendPerShare": 0.5
+      },
+      {
+        "announcedAt": "2026-09-30",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "10%(F) (D)",
+        "bookClosure": "17/10/2026 - 23/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 10,
+        "dividendPerShare": 1
       }
     ]
   },
   {
     "symbol": "SYS",
     "name": "Systems Limited",
-    "latestPrice": 121.12,
+    "latestPrice": 113.86,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SYS",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -14963,9 +15297,9 @@
   {
     "symbol": "SZTM",
     "name": "Shahzad Textile Mills Limited",
-    "latestPrice": 83.45,
+    "latestPrice": 109.52,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/SZTM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15000,9 +15334,9 @@
   {
     "symbol": "TATM",
     "name": "Tata Textile Mills Limited",
-    "latestPrice": 161.16,
+    "latestPrice": 141.66,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TATM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15048,9 +15382,9 @@
   {
     "symbol": "TCORP",
     "name": "Tariq Corporation Limited",
-    "latestPrice": 19.68,
+    "latestPrice": 19,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TCORP",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15085,9 +15419,9 @@
   {
     "symbol": "TELE",
     "name": "Telecard Limited",
-    "latestPrice": 7.68,
+    "latestPrice": 6.98,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TELE",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15122,9 +15456,9 @@
   {
     "symbol": "TGL",
     "name": "Tariq Glass Industries Limited",
-    "latestPrice": 165.34,
+    "latestPrice": 155.92,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TGL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15190,9 +15524,9 @@
   {
     "symbol": "THCCL",
     "name": "Thatta Cement Company Limited",
-    "latestPrice": 76.68,
+    "latestPrice": 64.91,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/THCCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15262,9 +15596,9 @@
   {
     "symbol": "TICL",
     "name": "The Thal Industries Corporation Limited",
-    "latestPrice": 1025.42,
+    "latestPrice": 781.26,
     "fiscalYearEndLabel": "September",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TICL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15310,9 +15644,9 @@
   {
     "symbol": "TISL",
     "name": "Tasdeeq Information Services Limited",
-    "latestPrice": 5,
+    "latestPrice": 4.59,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TISL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15347,9 +15681,9 @@
   {
     "symbol": "TOMCL",
     "name": "The Organic Meat Company Limited",
-    "latestPrice": 32.51,
+    "latestPrice": 28.61,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TOMCL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15384,9 +15718,9 @@
   {
     "symbol": "TOWL",
     "name": "Towellers Limited",
-    "latestPrice": 133.07,
+    "latestPrice": 122.77,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TOWL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15434,9 +15768,9 @@
   {
     "symbol": "TPLRF1",
     "name": "TPL REIT Fund I",
-    "latestPrice": 9.3,
+    "latestPrice": 8.77,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TPLRF1",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15471,9 +15805,9 @@
   {
     "symbol": "TREET",
     "name": "Treet Corporation Limited",
-    "latestPrice": 22.44,
+    "latestPrice": 23.27,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TREET",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15508,9 +15842,9 @@
   {
     "symbol": "TRSM",
     "name": "Trust Modaraba",
-    "latestPrice": 13.8,
+    "latestPrice": 13.99,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/TRSM",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15558,9 +15892,9 @@
   {
     "symbol": "UBDL",
     "name": "United Brands Limited",
-    "latestPrice": 26.58,
+    "latestPrice": 23.74,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/UBDL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15595,9 +15929,9 @@
   {
     "symbol": "UDLI",
     "name": "UDL International Limited",
-    "latestPrice": 16.29,
+    "latestPrice": 15.8,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/UDLI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15621,10 +15955,10 @@
         "totalDividendPerShare": 0.5
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 12.5,
+        "totalDividendPerShare": 1.25
       }
     },
     "payouts": [
@@ -15637,15 +15971,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 5,
         "dividendPerShare": 0.5
+      },
+      {
+        "announcedAt": "2026-09-29",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "12.50%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 12.5,
+        "dividendPerShare": 1.25
       }
     ]
   },
   {
     "symbol": "UDPL",
     "name": "United Distributors Pakistan Limited",
-    "latestPrice": 109.35,
+    "latestPrice": 98.04,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/UDPL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15763,9 +16107,9 @@
   {
     "symbol": "UNITY",
     "name": "Unity Foods Limited",
-    "latestPrice": 8.29,
+    "latestPrice": 7.79,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/UNITY",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15800,9 +16144,9 @@
   {
     "symbol": "UPFL",
     "name": "Unilever Pakistan Foods Limited",
-    "latestPrice": 25000,
+    "latestPrice": 27886.93,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/UPFL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15828,8 +16172,8 @@
       "fy27": {
         "payoutCount": 1,
         "intervalLabel": "Single",
-        "totalDividendPercent": 350,
-        "totalDividendPerShare": 35
+        "totalDividendPercent": 3500,
+        "totalDividendPerShare": 350
       }
     },
     "payouts": [
@@ -15921,20 +16265,20 @@
         "announcedAt": "2026-08-27",
         "periodLabel": "30/06/2026(HYR)",
         "periodEnd": "30/06/2026",
-        "detail": "350%(ii) (D)",
+        "detail": "3500%(ii) (D)",
         "bookClosure": "08/09/2026 - 0/09//2026",
         "fiscalYear": 2027,
-        "dividendPercent": 350,
-        "dividendPerShare": 35
+        "dividendPercent": 3500,
+        "dividendPerShare": 350
       }
     ]
   },
   {
     "symbol": "WAFI",
     "name": "Wafi Energy Pakistan Limited",
-    "latestPrice": 164.81,
+    "latestPrice": 153.59,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/WAFI",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -15990,9 +16334,9 @@
   {
     "symbol": "WAHDAT",
     "name": "Wahdat Poultry Farm Limited",
-    "latestPrice": 14.54,
+    "latestPrice": 13.64,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/WAHDAT",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -16027,9 +16371,9 @@
   {
     "symbol": "WAHN",
     "name": "Wah Noble Chemicals Limited",
-    "latestPrice": 264.74,
+    "latestPrice": 228.9,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/WAHN",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -16053,10 +16397,10 @@
         "totalDividendPerShare": 10
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       }
     },
     "payouts": [
@@ -16081,15 +16425,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 100,
         "dividendPerShare": 10
+      },
+      {
+        "announcedAt": "2026-09-23",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "50%(F) (D)",
+        "bookClosure": "21/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 50,
+        "dividendPerShare": 5
       }
     ]
   },
   {
     "symbol": "WASL",
     "name": "Wasl Mobility Modaraba",
-    "latestPrice": 5.88,
+    "latestPrice": 6.28,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/WASL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -16124,9 +16478,9 @@
   {
     "symbol": "WAVES",
     "name": "Waves Corporation Limited",
-    "latestPrice": 8.91,
+    "latestPrice": 8.68,
     "fiscalYearEndLabel": "December",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/WAVES",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -16161,9 +16515,9 @@
   {
     "symbol": "ZAHID",
     "name": "Zahidjee Textile Mills Limited",
-    "latestPrice": 64.9,
+    "latestPrice": 60.61,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ZAHID",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -16198,9 +16552,9 @@
   {
     "symbol": "ZAL",
     "name": "Zarea Limited",
-    "latestPrice": 38.9,
+    "latestPrice": 37.28,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ZAL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -16224,10 +16578,10 @@
         "totalDividendPerShare": 10
       },
       "fy27": {
-        "payoutCount": 0,
-        "intervalLabel": "",
-        "totalDividendPercent": 0,
-        "totalDividendPerShare": 0
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 10
       }
     },
     "payouts": [
@@ -16240,15 +16594,25 @@
         "fiscalYear": 2026,
         "dividendPercent": 100,
         "dividendPerShare": 10
+      },
+      {
+        "announcedAt": "2026-09-30",
+        "periodLabel": "30/06/2026(YR)",
+        "periodEnd": "30/06/2026",
+        "detail": "100%(F) (D)",
+        "bookClosure": "22/10/2026 - 28/10/2026",
+        "fiscalYear": 2027,
+        "dividendPercent": 100,
+        "dividendPerShare": 10
       }
     ]
   },
   {
     "symbol": "ZIL",
     "name": "ZIL Limited",
-    "latestPrice": 325.57,
+    "latestPrice": 295.11,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ZIL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,
@@ -16304,9 +16668,9 @@
   {
     "symbol": "ZTL",
     "name": "Zephyr Textiles Limited",
-    "latestPrice": 15.61,
+    "latestPrice": 15.97,
     "fiscalYearEndLabel": "June",
-    "sourceAsOf": "2026-09-22",
+    "sourceAsOf": "2026-10-22",
     "companyUrl": "https://dps.psx.com.pk/company/ZTL",
     "indexUrl": "https://dps.psx.com.pk/indices/KMIALLSHR",
     "faceValueAssumption": 10,

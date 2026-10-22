@@ -182,11 +182,13 @@ function round(value) {
   return Number(value.toFixed(4));
 }
 
-async function fetchCompanyPayouts(symbol) {
+async function fetchCompanyPayouts(symbol, requestId) {
   const html = await fetchText(PAYOUTS_URL, {
     method: "POST",
     headers: {
       "content-type": "application/x-www-form-urlencoded",
+      "x-req-id": requestId,
+      "x-requested-with": "XMLHttpRequest",
     },
     body: `symbol=${encodeURIComponent(symbol)}`,
   });
@@ -215,9 +217,24 @@ async function fetchCompanyPayouts(symbol) {
   return rows;
 }
 
-async function fetchFiscalYearEnd(symbol) {
+async function fetchCompanyDetails(symbol) {
   const html = await fetchText(`${COMPANY_URL}/${symbol}`);
   const $ = load(html);
+  // PSX's AJAX setup sends window.__ps._k as X-Req-Id. Without it,
+  // the payout endpoint returns 404 even for valid symbols.
+  const configScript = $("script")
+    .map((_, script) => $(script).text())
+    .get()
+    .find((script) => /window\.__ps\s*=/.test(script));
+  const configJson = configScript?.match(/window\.__ps\s*=\s*(\{[\s\S]*?\})\s*;/)?.[1];
+  const requestId = configJson ? JSON.parse(configJson)._k : null;
+
+  if (typeof requestId !== "string" || !requestId.trim()) {
+    throw new Error(
+      `PSX company page for ${symbol} is missing its payout request ID; existing data was not changed.`,
+    );
+  }
+
   let fiscalYearEndLabel = "June";
 
   $("div.item__head").each((_, head) => {
@@ -226,7 +243,7 @@ async function fetchFiscalYearEnd(symbol) {
     }
   });
 
-  return fiscalYearEndLabel;
+  return { fiscalYearEndLabel, requestId };
 }
 
 function payoutIdentity(payout) {
@@ -239,10 +256,10 @@ async function buildStockRecord(
   fiscalYears,
   previousRecord,
 ) {
-  const payoutRows = await fetchCompanyPayouts(stock.symbol);
+  const { fiscalYearEndLabel, requestId } = await fetchCompanyDetails(stock.symbol);
+  const payoutRows = await fetchCompanyPayouts(stock.symbol, requestId);
   const dividendRows = payoutRows.filter((row) => row.detail.includes("(D)"));
 
-  const fiscalYearEndLabel = await fetchFiscalYearEnd(stock.symbol);
   const summaryBuckets = Object.fromEntries(
     fiscalYears.map((year) => [year, []]),
   );
@@ -435,6 +452,7 @@ if (
 }
 
 export {
+  buildStockRecord,
   extractDividendPercent,
   financialYearFromPayoutDate,
   getFiscalYearWindow,
