@@ -16,10 +16,10 @@
 html { font-size: 14px; background: var(--background); }
 body { margin: 0; color: var(--foreground); font-family: var(--font-sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
-button, input { font: inherit; }
-button, a, input, summary { -webkit-tap-highlight-color: transparent; }
+button, input, select { font: inherit; }
+button, a, input, select, summary { -webkit-tap-highlight-color: transparent; }
 button, a, summary { touch-action: manipulation; }
-button, input, a, summary { outline-offset: 4px; }
+button, input, select, a, summary { outline-offset: 4px; }
 :focus-visible { outline: 2px solid var(--accent); }
 button { cursor: pointer; }
 ::selection { background: #dbece2; }
@@ -82,6 +82,13 @@ button { cursor: pointer; }
 .search-field:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px #32745c10; }
 .search-field input::-webkit-search-cancel-button { display: none; }
 .clear-search { padding: 0 3px; font-size: 20px; border: 0; background: none; color: var(--ink-soft); }
+.price-controls .search-field { min-height: 44px; }
+.sort-field { position: relative; display: flex; align-items: center; gap: 12px; width: 280px; min-height: 44px; padding: 0 13px; border: 1px solid var(--line-strong); border-radius: 9px; background: var(--surface); color: var(--ink-soft); font-size: 11px; }
+.sort-field > span { flex-shrink: 0; }
+.sort-field select { appearance: none; -webkit-appearance: none; flex: 1; min-width: 0; width: 100%; min-height: 42px; padding: 11px 22px 11px 0; border: 0; border-radius: 0; background: transparent; color: var(--foreground); font-size: 12px; font-weight: 500; cursor: pointer; outline: none; }
+.sort-field > .icon { position: absolute; right: 13px; top: 50%; width: 14px; height: 14px; transform: translateY(-50%) rotate(90deg); pointer-events: none; }
+.sort-field:hover { border-color: #aebbb3; }
+.sort-field:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px #32745c10; }
 
 .assumptions-panel { border: 1px solid var(--line); border-radius: 11px; background: var(--surface); margin-bottom: 22px; }
 .assumptions-panel summary { display: flex; align-items: center; gap: 25px; min-height: 58px; padding: 14px 20px; list-style: none; cursor: pointer; }
@@ -201,6 +208,8 @@ th.selected-column { background: #f3f6f4; }
   .control-band { margin-top: 22px; gap: 13px; flex-wrap: wrap; }
   .search-field { width: 100%; }
   .search-field input, .field input { font-size: 16px; }
+  .price-controls .sort-field { width: 100%; }
+  .price-controls .sort-field select { font-size: 16px; }
   .period-control { width: 100%; justify-content: space-between; }
   .period-note { display: block; font-size: 10px; }
   .assumptions-panel summary { padding: 13px 15px; gap: 12px; min-height: 55px; }
