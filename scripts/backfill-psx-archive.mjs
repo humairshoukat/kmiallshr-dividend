@@ -4,11 +4,16 @@ import path from "node:path";
 import process from "node:process";
 import { promisify } from "node:util";
 import { pathToFileURL } from "node:url";
+import {
+  fetchPSX,
+  financialYearFromPayoutDate,
+  getFiscalYearWindow,
+  payoutsMatch,
+  sourceDate,
+} from "./fetch-psx-data.mjs";
 
 const execFileAsync = promisify(execFile);
 const ARCHIVE_BASE_URL = "https://dps.psx.com.pk/download/announce";
-const ARCHIVE_START = "2024-07-01";
-const ARCHIVE_END = "2024-12-31";
 const FACE_VALUE_ASSUMPTION = 10;
 const CONCURRENCY = 3;
 
@@ -21,8 +26,7 @@ function fiscalYearKey(year) {
 }
 
 function financialYearFromDateKey(dateKey) {
-  const [year, month] = dateKey.split("-").map(Number);
-  return month >= 7 ? year + 1 : year;
+  return financialYearFromPayoutDate(new Date(`${dateKey}T00:00:00Z`));
 }
 
 function intervalLabelForCount(count) {
@@ -48,7 +52,7 @@ function dateKeysBetween(start, end) {
 }
 
 function periodLabelForArchive(periodType, periodEnd) {
-  const normalizedType = periodType.toLowerCase();
+  const normalizedType = periodType.toLowerCase().replace(/\s+/g, " ");
   let suffix = "";
 
   if (normalizedType === "annual") suffix = "YR";
@@ -56,6 +60,7 @@ function periodLabelForArchive(periodType, periodEnd) {
     suffix = "HYR";
   } else if (
     normalizedType === "nine months" ||
+    normalizedType === "nine month" ||
     normalizedType === "3rd quarter"
   ) {
     suffix = "IIIQ";
@@ -73,8 +78,9 @@ function periodLabelForArchive(periodType, periodEnd) {
 function extractArchivePayouts(text, announcedAt) {
   const financialResults = text
     .replaceAll("\r", "")
+    .replaceAll("\f", "\n")
     .split(/\n\s*Board Meeting in Progress/i)[0];
-  const rowPattern = /^(\d+)\s+([A-Z][A-Z0-9-]{1,15})(?:\s|$)/gm;
+  const rowPattern = /^(\d+)[ \t]+([A-Z][A-Z0-9-]{1,15})(?:[ \t]|$)/gim;
   const rowStarts = [...financialResults.matchAll(rowPattern)];
   const payouts = [];
 
@@ -82,15 +88,15 @@ function extractArchivePayouts(text, announcedAt) {
     const start = rowStarts[index].index;
     const end = rowStarts[index + 1]?.index ?? financialResults.length;
     const row = financialResults.slice(start, end);
-    const symbol = rowStarts[index][2];
+    const symbol = rowStarts[index][2].toUpperCase();
     const dividend = row.match(
       /\bDividend\s+([\d,.]+)%\s*(?:\(([^)\n]+)\))?/i,
     );
     const period = row.match(
-      /\b(?:(Annual|Half Year|Nine Months|1st Quarter|First Quarter|2nd Quarter|3rd Quarter)\s+)?(\d{2}-\s*\d{2}-\d{4})\b/i,
+      /\b(?:(Annual|Half\s+Year|Nine\s+Months?|1st\s+Quarter|First\s+Quarter|2nd\s+Quarter|3rd\s+Quarter)\s*)?(\d{2}-\s*\d{2}-\s*\d{4})\b/i,
     );
 
-    if (!dividend || !period) {
+    if (!dividend || /already\s+announced|revised\s+dates?\s+of\s+book\s+closure/i.test(row)) {
       continue;
     }
 
@@ -103,16 +109,13 @@ function extractArchivePayouts(text, announcedAt) {
     const closureDates = [...row.matchAll(/\b\d{2}-[A-Za-z]{3}-\d{4}\b/g)].map(
       (match) => match[0],
     );
-    const normalizedPeriodEnd = period[2].replace(/\s+/g, "");
-    const periodEnd = normalizedPeriodEnd.replaceAll("-", "/");
+    const normalizedPeriodEnd = period?.[2].replace(/\s+/g, "");
+    const periodEnd = normalizedPeriodEnd?.replaceAll("-", "/") ?? announcedAt;
 
     payouts.push({
       symbol,
       announcedAt,
-      periodLabel: periodLabelForArchive(
-        period[1] ?? "",
-        normalizedPeriodEnd,
-      ),
+      periodLabel: period ? periodLabelForArchive(period[1] ?? "", normalizedPeriodEnd) : "-",
       periodEnd,
       detail: `${dividendPercent}%${dividendKind ? `(${dividendKind})` : ""} (D)`,
       bookClosure: closureDates.slice(-2).join(" - "),
@@ -140,7 +143,7 @@ async function downloadArchiveSheet(dateKey, archiveDirectory) {
     if (error?.code !== "ENOENT") throw error;
   }
 
-  const response = await fetch(`${ARCHIVE_BASE_URL}/${dateKey}.pdf`, {
+  const response = await fetchPSX(`${ARCHIVE_BASE_URL}/${dateKey}.pdf`, {
     headers: { "user-agent": "Mozilla/5.0" },
   });
 
@@ -190,7 +193,7 @@ async function runPool(items, task, concurrency) {
 }
 
 function archivePayoutIdentity(payout) {
-  return [payout.announcedAt, payout.periodEnd, payout.dividendPercent].join("|");
+  return [payout.announcedAt, payout.periodEnd.replace(/\s+/g, "")].join("|");
 }
 
 function normalizeArchivedPayout(payout) {
@@ -223,21 +226,20 @@ function rebuildSummary(stock) {
   return { ...stock, summary };
 }
 
-async function main() {
-  const outputFile = path.join(process.cwd(), "data", "stocks.json");
-  const temporaryOutputFile = `${outputFile}.tmp`;
+async function collectArchivePayouts() {
+  const fiscalYears = getFiscalYearWindow();
+  const archiveStart = `${fiscalYears[0]}-01-01`;
+  const archiveEnd = [sourceDate(), `${fiscalYears.at(-1)}-12-31`].sort()[0];
   const archiveDirectory = path.join(
     process.cwd(),
     "tmp",
     "pdfs",
-    "psx-announcements-2024-h2",
+    "psx-announcements-2025-2026",
   );
-  const stocks = JSON.parse(await readFile(outputFile, "utf8"));
-  const currentSymbols = new Set(stocks.map((stock) => stock.symbol));
 
   await mkdir(archiveDirectory, { recursive: true });
 
-  const dates = dateKeysBetween(ARCHIVE_START, ARCHIVE_END);
+  const dates = dateKeysBetween(archiveStart, archiveEnd);
   const sheets = await runPool(
     dates,
     async (dateKey) => {
@@ -254,19 +256,34 @@ async function main() {
         return { dateKey, payouts: [] };
       }
       const payouts = extractArchivePayouts(text, dateKey).filter((payout) =>
-        currentSymbols.has(payout.symbol),
+        fiscalYears.includes(payout.fiscalYear),
       );
       process.stdout.write(
-        `processed archive ${dateKey}: ${payouts.length} current-constituent payouts\n`,
+        `processed archive ${dateKey}: ${payouts.length} payouts\n`,
       );
       return { dateKey, payouts };
     },
     CONCURRENCY,
   );
 
-  const archivePayouts = sheets.flatMap((sheet) => sheet.payouts);
+  return {
+    archiveStart,
+    archiveEnd,
+    archivePayouts: sheets.flatMap((sheet) => sheet.payouts),
+  };
+}
+
+function mergeArchivePayouts(stocks, archivePayouts, archiveEnd) {
+  const fiscalYears = getFiscalYearWindow();
   const payoutsBySymbol = new Map();
-  for (const payout of archivePayouts) {
+  for (const originalPayout of archivePayouts) {
+    const payout = {
+      ...originalPayout,
+      fiscalYear: financialYearFromDateKey(originalPayout.announcedAt),
+    };
+    if (!fiscalYears.includes(payout.fiscalYear) || payout.announcedAt > archiveEnd) {
+      continue;
+    }
     const symbolPayouts = payoutsBySymbol.get(payout.symbol) ?? [];
     symbolPayouts.push(payout);
     payoutsBySymbol.set(payout.symbol, symbolPayouts);
@@ -274,12 +291,26 @@ async function main() {
   let added = 0;
 
   const updatedStocks = stocks.map((stock) => {
-    const payouts = stock.payouts.map(normalizeArchivedPayout);
+    const normalizedPayouts = stock.payouts
+      .map(normalizeArchivedPayout)
+      .map((payout) => ({
+        ...payout,
+        fiscalYear: financialYearFromDateKey(payout.announcedAt),
+      }))
+      .filter((payout) =>
+        fiscalYears.includes(payout.fiscalYear) && payout.announcedAt <= archiveEnd,
+      );
+    const payouts = [];
+    for (const payout of normalizedPayouts) {
+      const existingIndex = payouts.findIndex((existing) => payoutsMatch(existing, payout));
+      if (existingIndex < 0) payouts.push(payout);
+      else if (payouts[existingIndex].archiveUrl && !payout.archiveUrl) payouts[existingIndex] = payout;
+    }
     const identities = new Set(payouts.map(archivePayoutIdentity));
 
     for (const payout of payoutsBySymbol.get(stock.symbol) ?? []) {
       const identity = archivePayoutIdentity(payout);
-      if (identities.has(identity)) continue;
+      if (identities.has(identity) || payouts.some((existing) => payoutsMatch(existing, payout))) continue;
 
       identities.add(identity);
       payouts.push(payout);
@@ -288,12 +319,23 @@ async function main() {
 
     return rebuildSummary({
       ...stock,
+      fiscalYears,
+      currentFiscalYear: fiscalYears.at(-1),
       payouts: payouts.sort((a, b) =>
         a.announcedAt.localeCompare(b.announcedAt),
       ),
     });
   });
 
+  return { updatedStocks, added };
+}
+
+async function main() {
+  const { archiveStart, archiveEnd, archivePayouts } = await collectArchivePayouts();
+  const outputFile = path.join(process.cwd(), "data", "stocks.json");
+  const temporaryOutputFile = `${outputFile}.tmp`;
+  const stocks = JSON.parse(await readFile(outputFile, "utf8"));
+  const { updatedStocks, added } = mergeArchivePayouts(stocks, archivePayouts, archiveEnd);
   await writeFile(
     temporaryOutputFile,
     `${JSON.stringify(updatedStocks, null, 2)}\n`,
@@ -301,7 +343,7 @@ async function main() {
   await rename(temporaryOutputFile, outputFile);
 
   process.stdout.write(
-    `added ${added} archived payouts from ${ARCHIVE_START} through ${ARCHIVE_END}\n`,
+    `added ${added} archived payouts from ${archiveStart} through ${archiveEnd}\n`,
   );
 }
 
@@ -315,4 +357,9 @@ if (
   });
 }
 
-export { extractArchivePayouts, periodLabelForArchive };
+export {
+  collectArchivePayouts,
+  extractArchivePayouts,
+  mergeArchivePayouts,
+  periodLabelForArchive,
+};

@@ -11,7 +11,7 @@ snapshot when required.
 
 ### Dividend Board (`/`)
 
-- A rolling three-financial-year dividend view
+- Calendar-year dividend totals for 2025 and 2026 (January–December)
 - Dividend paid per share, payout count, and payout interval for each year
 - Estimated gross and net cash return for a configurable investment per stock
 - Configurable withholding tax, zakat, and share face-value assumptions
@@ -72,7 +72,8 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run lint` | Lint application and importer code |
 | `npm run test:data` | Run data-parser unit tests |
 | `npm run data:fetch` | Refresh constituents, prices, and payouts from PSX |
-| `npm run data:backfill-2024` | Import July–December 2024 payouts from PSX archive PDFs |
+| `npm run data:backfill` | Backfill 2025–2026 payouts from PSX archive PDFs through today |
+| `npm run data:refresh` | Refresh live data, then backfill historical announcements |
 
 Run the project checks with:
 
@@ -100,21 +101,24 @@ The importer uses official PSX pages and endpoints:
 
 1. Downloads the current KMIALLSHR constituent list and latest prices.
 2. Fetches each constituent's company page and payout rows.
-3. Keeps only the rolling three-year July–June reporting window.
+3. Keeps only announcements dated in calendar years 2025 and 2026 through today.
 4. Merges previously observed payouts from the existing snapshot, preserving
    records that may have rolled out of PSX's finite live feed.
 5. Writes the new snapshot atomically only after every constituent succeeds.
 
-The archive backfill is a one-off recovery tool for July through December 2024.
+The archive backfill checks January 1, 2025 through today (capped at December 31, 2026).
 It downloads daily PSX PDFs into the ignored `tmp/` directory, extracts their
 text with `pdftotext`, and merges matching dividend announcements into the
-current snapshot.
+current snapshot without duplicating live-feed records. Missing, placeholder,
+or unreadable sheets cannot contribute records. Run `npm run data:refresh` for
+both the live refresh and historical backfill.
 
 ## Financial-year and return methodology
 
-- Reporting years use one shared July–June cycle. An announcement dated between
-  July 2024 and June 2025 belongs to FY25, regardless of the company's own
-  financial year end.
+- Reporting years use one shared January–December cycle based on announcement
+  dates in Pakistan time. An announcement dated January 1 through December 31,
+  2025 belongs to 2025, regardless of the company's own financial year end or
+  the accounting period covered by that dividend. Only 2025 and 2026 are retained.
 - PSX publishes cash dividends as percentages of share face value. The importer
   stores both that percentage and a per-share value based on a default Rs 10
   face value.

@@ -9,6 +9,7 @@ const PAYOUTS_URL = "https://dps.psx.com.pk/company/payouts";
 const COMPANY_URL = "https://dps.psx.com.pk/company";
 const FACE_VALUE_ASSUMPTION = 10;
 const CONCURRENCY = 3;
+let nextRequestAt = 0;
 
 function clean(value = "") {
   return value.replace(/\s+/g, " ").trim();
@@ -29,14 +30,8 @@ function pakistanDateParts(date = new Date()) {
   );
 }
 
-function getFiscalYearWindow(date = new Date()) {
-  const { year, month } = pakistanDateParts(date);
-  const currentFiscalYear = month >= 7 ? year + 1 : year;
-
-  return Array.from(
-    { length: 3 },
-    (_, index) => currentFiscalYear - 2 + index,
-  );
+function getFiscalYearWindow() {
+  return [2025, 2026];
 }
 
 function fiscalYearKey(year) {
@@ -60,12 +55,16 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function fetchText(url, options = {}, attempts = 4) {
+async function fetchPSX(url, options = {}, attempts = 6) {
   let lastError = null;
 
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
+      const wait = Math.max(0, nextRequestAt - Date.now());
+      nextRequestAt = Date.now() + wait + 1000;
+      if (wait > 0) await sleep(wait);
       const response = await fetch(url, {
+        signal: AbortSignal.timeout(30_000),
         ...options,
         headers: {
           "user-agent": "kmiallshr-data-import/1.0",
@@ -73,18 +72,33 @@ async function fetchText(url, options = {}, attempts = 4) {
         },
       });
 
-      if (!response.ok) {
+      if (response.status === 429) {
+        const retryAfter = Number(response.headers.get("retry-after"));
+        const delay = retryAfter > 0
+          ? retryAfter * 1000
+          : Math.min(15_000 * 2 ** (attempt - 1), 60_000);
+        nextRequestAt = Math.max(nextRequestAt, Date.now() + delay);
+        process.stdout.write(`PSX rate limit; retrying ${url} after ${delay / 1000}s\n`);
+      }
+
+      if (response.status === 429 || response.status >= 500) {
         throw new Error(`${response.status} ${url}`);
       }
 
-      return await response.text();
+      return response;
     } catch (error) {
       lastError = error;
-      await sleep(500 * attempt);
+      if (attempt < attempts) await sleep(500 * attempt);
     }
   }
 
   throw lastError;
+}
+
+async function fetchText(url, options = {}) {
+  const response = await fetchPSX(url, options);
+  if (!response.ok) throw new Error(`${response.status} ${url}`);
+  return response.text();
 }
 
 function parseIndexConstituents(html) {
@@ -142,9 +156,7 @@ function parsePeriodEnd(periodLabel, announcedAt) {
 }
 
 function financialYearFromPayoutDate(date) {
-  const { year, month } = pakistanDateParts(date);
-
-  return month >= 7 ? year + 1 : year;
+  return pakistanDateParts(date).year;
 }
 
 function extractDividendPercent(detail) {
@@ -247,7 +259,16 @@ async function fetchCompanyDetails(symbol) {
 }
 
 function payoutIdentity(payout) {
-  return [payout.announcedAt, payout.periodLabel].join("|");
+  // Archive and live feeds can use different suffixes for the same period.
+  return [payout.announcedAt, payout.periodEnd.replace(/\s+/g, "")].join("|");
+}
+
+function payoutsMatch(left, right) {
+  if (left.announcedAt !== right.announcedAt) return false;
+  if (payoutIdentity(left) === payoutIdentity(right)) return true;
+  // When PSX omits the period, the announcement date is the fallback period end.
+  return (left.periodEnd === left.announcedAt || right.periodEnd === right.announcedAt)
+    && left.dividendPercent === right.dividendPercent;
 }
 
 async function buildStockRecord(
@@ -275,8 +296,11 @@ async function buildStockRecord(
 
     const fiscalYear = financialYearFromPayoutDate(announcedAt);
 
-    if (fiscalYears.includes(fiscalYear)) {
+    if (fiscalYears.includes(fiscalYear) && dateKey(announcedAt) <= sourceAsOf) {
       const reassignedPayout = { ...payout, fiscalYear };
+      const existingPayout = [...payoutsByIdentity.values()].find((item) => payoutsMatch(item, reassignedPayout));
+      if (existingPayout && !existingPayout.archiveUrl && reassignedPayout.archiveUrl) continue;
+      if (existingPayout) payoutsByIdentity.delete(payoutIdentity(existingPayout));
       payoutsByIdentity.set(
         payoutIdentity(reassignedPayout),
         reassignedPayout,
@@ -294,7 +318,7 @@ async function buildStockRecord(
 
     const fiscalYear = financialYearFromPayoutDate(announcedAt);
 
-    if (!fiscalYears.includes(fiscalYear)) {
+    if (!fiscalYears.includes(fiscalYear) || dateKey(announcedAt) > sourceAsOf) {
       continue;
     }
 
@@ -317,6 +341,8 @@ async function buildStockRecord(
       dividendPerShare: round(dividendPerShare),
     };
 
+    const previousPayout = [...payoutsByIdentity.values()].find((item) => payoutsMatch(item, payout));
+    if (previousPayout) payoutsByIdentity.delete(payoutIdentity(previousPayout));
     payoutsByIdentity.set(payoutIdentity(payout), payout);
   }
 
@@ -387,7 +413,7 @@ async function main() {
   const temporaryOutputFile = `${outputFile}.tmp`;
   const now = new Date();
   const sourceAsOf = sourceDate(now);
-  const fiscalYears = getFiscalYearWindow(now);
+  const fiscalYears = getFiscalYearWindow();
   let previousRecords = [];
 
   try {
@@ -437,7 +463,7 @@ async function main() {
   await rename(temporaryOutputFile, outputFile);
 
   process.stdout.write(
-    `wrote all ${sorted.length} current KMIALLSHR records for FY${String(fiscalYears[0]).slice(-2)}–FY${String(fiscalYears.at(-1)).slice(-2)} to ${outputFile}\n`,
+    `wrote all ${sorted.length} current KMIALLSHR records for calendar years ${fiscalYears.join(" and ")} to ${outputFile}\n`,
   );
 }
 
@@ -457,4 +483,7 @@ export {
   financialYearFromPayoutDate,
   getFiscalYearWindow,
   parseIndexConstituents,
+  sourceDate,
+  fetchPSX,
+  payoutsMatch,
 };

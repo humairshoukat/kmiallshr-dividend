@@ -17,7 +17,7 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "KMIALLSHR Dividend Board",
   description:
-    "Every current PSX KMIALLSHR constituent with rolling three-year dividend totals and after-tax holding returns.",
+    "Every current PSX KMIALLSHR constituent with January–December dividend totals for 2025 and 2026 and after-tax holding returns.",
 };
 
 export default function RootLayout({

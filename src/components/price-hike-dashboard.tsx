@@ -1,4 +1,6 @@
 import type { Stock } from "@/lib/stocks";
+import { Icon } from "./ui-icon";
+import { SnapshotMeta } from "./snapshot-meta";
 
 type PriceHikeDashboardProps = {
   stocks: Stock[];
@@ -17,76 +19,60 @@ export function PriceHikeDashboard({ stocks }: PriceHikeDashboardProps) {
   const rows = [...stocks].sort((a, b) => b.latestPrice - a.latestPrice);
 
   return (
-    <div className="shell">
+    <main className="shell price-shell">
       <header className="market-header">
         <div className="market-title">
-          <p className="eyebrow text-xs">PSX · KMIALLSHR</p>
-          <h1>Latest Price Snapshot</h1>
-          <p className="lede text-sm">
-            The local dataset contains the latest imported price for each stock.
-            Historical price hikes need at least two dated prices per stock and
-            cannot be calculated from this snapshot alone.
-          </p>
+          <p className="eyebrow">Markets <span>/</span> KMIALLSHR</p>
+          <h1>Price snapshot<span className="heading-dot">.</span></h1>
+          <p className="lede">The latest prices across the index, all in one place.</p>
         </div>
 
-        <div className="market-meta">
-          <div>
-            <span className="stat-label">Snapshot</span>
-            <strong>{sourceAsOf || "N/A"}</strong>
-          </div>
-          <div>
-            <span className="stat-label">Stocks</span>
-            <strong>{stocks.length}</strong>
-          </div>
-        </div>
+        <SnapshotMeta date={sourceAsOf} />
       </header>
 
       <section className="table-panel market-surface">
         <div className="table-header">
           <div>
-            <p className="eyebrow text-xs">Available local data</p>
-            <h2>Current prices</h2>
+            <h2>Index constituents <span className="count-badge">{stocks.length}</span></h2>
+            <p>Sorted by latest share price, highest first.</p>
           </div>
-          <p className="methodology text-xs">
-            Add dated price history to the generated JSON before restoring
-            low-to-peak hike calculations.
-          </p>
+          <span className="table-context"><span className="status-dot" />KMIALLSHR</span>
         </div>
 
-        <div className="table-wrap">
-          <table className="text-sm">
+        <div className="table-wrap" tabIndex={0} role="region" aria-label="Constituent prices, scroll horizontally for more columns">
+          <table className="price-table">
             <thead>
               <tr>
-                <th>Stock</th>
-                <th>Latest price</th>
-                <th>Snapshot date</th>
+                <th scope="col">Company</th>
+                <th scope="col">Latest price <span className="column-subtitle">Per share · PKR</span></th>
+                <th scope="col">Snapshot date</th>
               </tr>
             </thead>
             <tbody>
-              {rows.map((stock) => (
+              {rows.map((stock, index) => (
                 <tr key={stock.symbol}>
                   <td>
-                    <div className="stock-cell text-sm">
+                    <div className="company-cell"><span className="row-rank">{String(index + 1).padStart(2, "0")}</span><div className="stock-cell">
                       <a
                         href={stock.companyUrl}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {stock.symbol}
+                        {stock.symbol}<Icon name="arrow" />
                       </a>
-                      <div className="text-xs">
-                        <strong>{stock.name}</strong>
-                      </div>
-                    </div>
+                      <span className="company-name">{stock.name}</span>
+                    </div></div>
                   </td>
-                  <td>{formatCurrency(stock.latestPrice)}</td>
+                  <td><span>{formatCurrency(stock.latestPrice)}</span><span className="mobile-price-date">{stock.sourceAsOf}</span></td>
                   <td>{stock.sourceAsOf}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        <div className="table-footer"><span>{stocks.length} constituents</span><span>All amounts in PKR</span></div>
       </section>
-    </div>
+      <footer className="page-footer"><p>Prices reflect the latest imported snapshot. Price changes require historical data.</p><a href={stocks[0]?.indexUrl} target="_blank" rel="noreferrer">Source: Pakistan Stock Exchange<Icon name="arrow" /></a></footer>
+    </main>
   );
 }

@@ -9,7 +9,8 @@
     "lint": "eslint src scripts",
     "test:data": "node --test scripts/fetch-psx-data.test.mjs",
     "data:fetch": "node scripts/fetch-psx-data.mjs",
-    "data:backfill-2024": "node scripts/backfill-psx-archive.mjs"
+    "data:backfill": "node scripts/backfill-psx-archive.mjs",
+    "data:refresh": "npm run data:fetch && npm run data:backfill"
   },
   "dependencies": {
     "cheerio": "^1.2.0",
