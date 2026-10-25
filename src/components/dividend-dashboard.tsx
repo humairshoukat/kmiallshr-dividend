@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Icon } from "./ui-icon";
 import { SnapshotMeta } from "./snapshot-meta";
+import { FaceValueBadge } from "./face-value-badge";
 import type {
   FiscalYearKey,
   FiscalYearSummary,
@@ -68,25 +69,17 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
   const [investmentAmount, setInvestmentAmount] = useState("100000");
   const [withholdingTax, setWithholdingTax] = useState("15");
   const [zakatRate, setZakatRate] = useState("0");
-  const [faceValue, setFaceValue] = useState("10");
 
   const investment = Math.max(toNumber(investmentAmount), 0);
   const wht = Math.max(toNumber(withholdingTax), 0);
   const zakat = Math.max(toNumber(zakatRate), 0);
-  const configuredFaceValue = Math.max(toNumber(faceValue), 0);
   const combinedDeduction = Math.min((wht + zakat) / 100, 1);
   const term = search.trim().toLowerCase();
   const rows = stocks
     .map((stock) => {
       const summary = stock.summary[selectedYear] ?? EMPTY_SUMMARY;
-      const faceValueScale =
-        stock.faceValueAssumption > 0
-          ? configuredFaceValue / stock.faceValueAssumption
-          : 1;
-      const adjustedDividendPerShare =
-        summary.totalDividendPerShare * faceValueScale;
       const sharesHeld = stock.latestPrice > 0 ? investment / stock.latestPrice : 0;
-      const grossDividendCash = sharesHeld * adjustedDividendPerShare;
+      const grossDividendCash = sharesHeld * summary.totalDividendPerShare;
       const netDividendCash = grossDividendCash * (1 - combinedDeduction);
       const netYield = investment > 0 ? (netDividendCash / investment) * 100 : 0;
 
@@ -96,7 +89,10 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
         latestPrice: stock.latestPrice,
         fiscalYearEndLabel: stock.fiscalYearEndLabel,
         companyUrl: stock.companyUrl,
-        faceValueAssumption: stock.faceValueAssumption,
+        faceValue: stock.faceValue,
+        faceValueSourceUrl: stock.faceValueSourceUrl,
+        faceValueSourceAsOf: stock.faceValueSourceAsOf,
+        faceValueSourcePage: stock.faceValueSourcePage,
         summaries: stock.summary,
         payoutCount: summary.payoutCount,
         intervalLabel: summary.intervalLabel,
@@ -129,7 +125,6 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
     ).length,
     totalNetCash: rows.reduce((sum, row) => sum + row.netDividendCash, 0),
     topStock: rows[0] ?? null,
-    configuredFaceValue,
   };
   const activeTab = fiscalTabs.find((tab) => tab.key === selectedYear) ?? {
     key: fiscalYearKey(currentFiscalYear),
@@ -204,7 +199,6 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
             <label className="field"><span>Investment per stock (Rs)</span><input inputMode="decimal" value={investmentAmount} onChange={(event) => setInvestmentAmount(event.target.value)} /></label>
             <label className="field"><span>Withholding tax (%)</span><input inputMode="decimal" value={withholdingTax} onChange={(event) => setWithholdingTax(event.target.value)} /></label>
             <label className="field"><span>Zakat (%)</span><input inputMode="decimal" value={zakatRate} onChange={(event) => setZakatRate(event.target.value)} /></label>
-            <label className="field"><span>Share face value (Rs)</span><input inputMode="decimal" value={faceValue} onChange={(event) => setFaceValue(event.target.value)} /></label>
           </div>
         </div>
       </details>
@@ -212,7 +206,7 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
       <section className="table-panel market-surface" aria-labelledby="dividend-table-title">
         <div className="table-header">
           <div><h2 id="dividend-table-title">Dividend performance <span className="count-badge">{derived.rows.length}</span></h2>
-            <p>Cash dividends per share, ranked by {activeTab.label} net yield.</p></div>
+            <p>Dividends per current share, ranked by {activeTab.label} net yield.</p></div>
           <span className="table-context"><span className="status-dot" />{activeTab.label} {selectedYear === fiscalYearKey(currentFiscalYear) ? "year to date" : "full year"}</span>
         </div>
         <p className="mobile-table-hint">Scroll sideways to compare all columns<Icon name="chevron" /></p>
@@ -220,7 +214,7 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
           <table>
             <thead><tr>
               <th scope="col">Company</th><th scope="col">Latest price</th>
-              {fiscalTabs.map((tab) => <th scope="col" className={tab.key === selectedYear ? "selected-column" : ""} key={tab.key}>{tab.label} dividend <span className="column-subtitle">Per share / net yield</span></th>)}
+              {fiscalTabs.map((tab) => <th scope="col" className={tab.key === selectedYear ? "selected-column" : ""} key={tab.key}>{tab.label} dividend <span className="column-subtitle">Per current share / net yield</span></th>)}
               <th scope="col">Payout interval<span className="column-subtitle">{activeTab.label}</span></th>
               <th scope="col">Gross income<span className="column-subtitle">On your holding</span></th>
               <th scope="col">Net income<span className="column-subtitle">After deductions</span></th>
@@ -229,14 +223,13 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
               {derived.rows.map((row, index) => (
                 <tr key={row.symbol}>
                   <td><div className="company-cell"><span className="row-rank">{String(index + 1).padStart(2, "0")}</span>
-                    <div className="stock-cell"><a href={row.companyUrl} target="_blank" rel="noreferrer">{row.symbol}<Icon name="arrow" /></a>
+                    <div className="stock-cell"><div className="stock-heading"><a href={row.companyUrl} target="_blank" rel="noreferrer">{row.symbol}<Icon name="arrow" /></a><FaceValueBadge stock={row} /></div>
                       <span className="company-name" title={`${row.name} · Company year end: ${row.fiscalYearEndLabel}`}>{row.name}</span></div>
                   </div></td>
                   <td>{formatCurrency(row.latestPrice)}</td>
                   {fiscalTabs.map((tab) => {
                     const summary = row.summaries[tab.key] ?? EMPTY_SUMMARY;
-                    const faceValueScale = configuredFaceValue / (row.faceValueAssumption || 10);
-                    const dividendPerShare = summary.totalDividendPerShare * faceValueScale;
+                    const dividendPerShare = summary.totalDividendPerShare;
                     const yearNetYield = row.latestPrice > 0 ? (dividendPerShare / row.latestPrice) * (1 - combinedDeduction) * 100 : 0;
                     return (
                       <td key={tab.key} className={tab.key === selectedYear ? "selected-column" : ""}>
@@ -259,7 +252,7 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
         <div className="table-footer"><span>Showing {derived.rows.length} of {derived.dividendPayers} dividend payers</span><span>All amounts in PKR</span></div>
       </section>
       <footer className="page-footer">
-        <p>January–December totals use announcement dates. Dividends assume a Rs {derived.configuredFaceValue.toFixed(2)} share face value.</p>
+        <p>January–December totals use announcement dates and each company’s PSX par value. Historical dividends are expressed per current share to match the latest prices.</p>
         <a href={stocks[0]?.indexUrl ?? "https://dps.psx.com.pk/indices/KMIALLSHR"} target="_blank" rel="noreferrer">Source: Pakistan Stock Exchange<Icon name="arrow" /></a>
       </footer>
     </main>

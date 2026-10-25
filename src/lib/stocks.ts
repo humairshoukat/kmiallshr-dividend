@@ -17,7 +17,11 @@ export type Stock = {
   sourceAsOf: string;
   companyUrl: string;
   indexUrl: string;
-  faceValueAssumption: number;
+  faceValue: number;
+  faceValueSourceUrl: string;
+  faceValueSourceAsOf: string;
+  faceValueSourcePage: number;
+  dividendPerShareBasis: "current-face-value";
   fiscalYears: number[];
   currentFiscalYear: number;
   summary: Record<FiscalYearKey, FiscalYearSummary>;
@@ -34,7 +38,10 @@ export function getStocks(): Stock[] {
         sourceAsOf,
         companyUrl,
         indexUrl,
-        faceValueAssumption,
+        faceValue,
+        faceValueSourceUrl,
+        faceValueSourceAsOf,
+        faceValueSourcePage,
         fiscalYears,
         currentFiscalYear,
         summary,
@@ -46,9 +53,13 @@ export function getStocks(): Stock[] {
         sourceAsOf,
         companyUrl,
         indexUrl,
-        faceValueAssumption,
+        faceValue,
+        faceValueSourceUrl,
+        faceValueSourceAsOf,
+        faceValueSourcePage,
         fiscalYears,
         currentFiscalYear,
+        dividendPerShareBasis: "current-face-value" as const,
         summary: summary as Record<FiscalYearKey, FiscalYearSummary>,
       }),
     )

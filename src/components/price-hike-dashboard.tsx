@@ -1,6 +1,7 @@
 import type { Stock } from "@/lib/stocks";
 import { Icon } from "./ui-icon";
 import { SnapshotMeta } from "./snapshot-meta";
+import { FaceValueBadge } from "./face-value-badge";
 
 type PriceHikeDashboardProps = {
   stocks: Stock[];
@@ -53,13 +54,13 @@ export function PriceHikeDashboard({ stocks }: PriceHikeDashboardProps) {
                 <tr key={stock.symbol}>
                   <td>
                     <div className="company-cell"><span className="row-rank">{String(index + 1).padStart(2, "0")}</span><div className="stock-cell">
-                      <a
+                      <div className="stock-heading"><a
                         href={stock.companyUrl}
                         target="_blank"
                         rel="noreferrer"
                       >
                         {stock.symbol}<Icon name="arrow" />
-                      </a>
+                      </a><FaceValueBadge stock={stock} /></div>
                       <span className="company-name">{stock.name}</span>
                     </div></div>
                   </td>

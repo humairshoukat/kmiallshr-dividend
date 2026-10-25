@@ -95,7 +95,7 @@ button { cursor: pointer; }
 .assumptions-panel[open] .assumptions-edit .icon { transform: rotate(90deg); }
 .assumptions-content { padding: 0 20px 20px; border-top: 1px solid var(--line); }
 .assumptions-content > p { font-size: 11px; color: var(--ink-soft); margin: 16px 0; }
-.field-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.field-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .field { display: grid; gap: 8px; }
 .field > span { color: var(--ink-soft); font-size: 11px; }
 .field input { width: 100%; min-height: 42px; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: 7px; background: #fcfdfc; color: var(--foreground); font-size: 13px; font-variant-numeric: tabular-nums; }
@@ -240,3 +240,7 @@ th.selected-column { background: #f3f6f4; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+.stock-heading { display: flex; align-items: center; gap: 8px; }
+.stock-cell .face-value-badge { color: var(--ink-soft); background: #f3f5f4; border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; font-size: 9px; font-weight: 500; white-space: nowrap; }
+.stock-cell .face-value-badge:hover { border-color: var(--accent); color: var(--accent); }

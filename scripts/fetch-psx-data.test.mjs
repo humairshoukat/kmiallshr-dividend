@@ -14,6 +14,13 @@ import {
   periodLabelForArchive,
 } from "./backfill-psx-archive.mjs";
 
+const FACE_VALUE_DATA = {
+  faceValue: 10,
+  faceValueSourceUrl: "https://dps.psx.com.pk/download/quote/2026-10-23.pdf",
+  faceValueSourceAsOf: "2026-10-23",
+  faceValueSourcePage: 5,
+};
+
 test("payout requests use the request ID from each company page", async (t) => {
   const requests = [];
   t.mock.method(globalThis, "fetch", async (url, options) => {
@@ -43,14 +50,14 @@ test("payout requests use the request ID from each company page", async (t) => {
 
   for (const symbol of ["FFC", "EFERT"]) {
     const record = await buildStockRecord(
-      { symbol, name: symbol, latestPrice: 500 },
+      { symbol, name: symbol, latestPrice: 500, ...FACE_VALUE_DATA, faceValue: symbol === "EFERT" ? 5 : 10 },
       "2026-10-22",
       [2025, 2026],
     );
     assert.equal(record.fiscalYearEndLabel, symbol === "FFC" ? "December" : "June");
     assert.equal(record.payouts.length, 1);
-    assert.equal(record.payouts[0].dividendPerShare, 14.5);
-    assert.equal(record.summary.fy26.totalDividendPerShare, 14.5);
+    assert.equal(record.payouts[0].dividendPerShare, symbol === "EFERT" ? 7.25 : 14.5);
+    assert.equal(record.summary.fy26.totalDividendPerShare, symbol === "EFERT" ? 7.25 : 14.5);
   }
   assert.equal(requests.length, 4);
   assert.equal(requests[0].url, "https://dps.psx.com.pk/company/FFC");
@@ -62,7 +69,7 @@ test("missing payout request IDs stop the import before requesting payouts", asy
     const fetchMock = t.mock.method(globalThis, "fetch", async () => new Response(config));
     await assert.rejects(
       buildStockRecord(
-        { symbol: "FFC", name: "FFC", latestPrice: 500 },
+        { symbol: "FFC", name: "FFC", latestPrice: 500, ...FACE_VALUE_DATA },
         "2026-10-22",
         [2025, 2026],
       ),
@@ -92,7 +99,7 @@ test("refresh migrates saved payouts into calendar years and replaces archive du
     ],
   };
   const record = await buildStockRecord(
-    { symbol: "FFC", name: "FFC", latestPrice: 500 },
+    { symbol: "FFC", name: "FFC", latestPrice: 500, ...FACE_VALUE_DATA },
     "2026-10-25", getFiscalYearWindow(), previousRecord,
   );
   assert.deepEqual(record.fiscalYears, [2025, 2026]);
@@ -179,7 +186,6 @@ Board Meeting in Progress
       bookClosure: "18-Oct-2024 - 25-Oct-2024",
       fiscalYear: 2024,
       dividendPercent: 10,
-      dividendPerShare: 1,
       archiveUrl:
         "https://dps.psx.com.pk/download/announce/2024-09-30.pdf",
     },
@@ -205,7 +211,7 @@ test("archive merging preserves live values, fills history, and excludes other y
     announcedAt, dividendPercent, dividendPerShare: dividendPercent / 10,
     fiscalYear, periodEnd: "30/06/2025", periodLabel: "30/06/2025(HYR)",
   });
-  const stock = { symbol: "TEST", latestPrice: 123, fiscalYears: [2025, 2026, 2027], payouts: [
+  const stock = { symbol: "TEST", ...FACE_VALUE_DATA, latestPrice: 123, fiscalYears: [2025, 2026, 2027], payouts: [
     payout("2024-12-31", 10, 2025), payout("2025-07-01", 20, 2026),
     { ...payout("2025-07-01", 20, 2026), periodEnd: "2025-07-01", archiveUrl: "archive" },
   ] };

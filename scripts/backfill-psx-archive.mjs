@@ -4,6 +4,7 @@ import path from "node:path";
 import process from "node:process";
 import { promisify } from "node:util";
 import { pathToFileURL } from "node:url";
+import { applyFaceValue } from "./fetch-psx-face-values.mjs";
 import {
   fetchPSX,
   financialYearFromPayoutDate,
@@ -14,28 +15,14 @@ import {
 
 const execFileAsync = promisify(execFile);
 const ARCHIVE_BASE_URL = "https://dps.psx.com.pk/download/announce";
-const FACE_VALUE_ASSUMPTION = 10;
 const CONCURRENCY = 3;
 
 function round(value) {
   return Number(value.toFixed(4));
 }
 
-function fiscalYearKey(year) {
-  return `fy${String(year).slice(-2)}`;
-}
-
 function financialYearFromDateKey(dateKey) {
   return financialYearFromPayoutDate(new Date(`${dateKey}T00:00:00Z`));
-}
-
-function intervalLabelForCount(count) {
-  if (count <= 0) return "";
-  if (count === 1) return "Single";
-  if (count === 2) return "Biannual";
-  if (count === 3) return "Triannual";
-  if (count === 4) return "Quarterly";
-  return `${count} payouts`;
 }
 
 function dateKeysBetween(start, end) {
@@ -121,9 +108,6 @@ function extractArchivePayouts(text, announcedAt) {
       bookClosure: closureDates.slice(-2).join(" - "),
       fiscalYear: financialYearFromDateKey(announcedAt),
       dividendPercent: round(dividendPercent),
-      dividendPerShare: round(
-        (dividendPercent / 100) * FACE_VALUE_ASSUMPTION,
-      ),
       archiveUrl: `${ARCHIVE_BASE_URL}/${announcedAt}.pdf`,
     });
   }
@@ -204,26 +188,6 @@ function normalizeArchivedPayout(payout) {
     periodLabel: payout.periodLabel.replace(/\s+/g, ""),
     periodEnd: payout.periodEnd.replace(/\s+/g, ""),
   };
-}
-
-function rebuildSummary(stock) {
-  const summary = {};
-
-  for (const year of stock.fiscalYears) {
-    const payouts = stock.payouts.filter((payout) => payout.fiscalYear === year);
-    summary[fiscalYearKey(year)] = {
-      payoutCount: payouts.length,
-      intervalLabel: intervalLabelForCount(payouts.length),
-      totalDividendPercent: round(
-        payouts.reduce((sum, payout) => sum + payout.dividendPercent, 0),
-      ),
-      totalDividendPerShare: round(
-        payouts.reduce((sum, payout) => sum + payout.dividendPerShare, 0),
-      ),
-    };
-  }
-
-  return { ...stock, summary };
 }
 
 async function collectArchivePayouts() {
@@ -317,14 +281,14 @@ function mergeArchivePayouts(stocks, archivePayouts, archiveEnd) {
       added += 1;
     }
 
-    return rebuildSummary({
+    return applyFaceValue({
       ...stock,
       fiscalYears,
       currentFiscalYear: fiscalYears.at(-1),
       payouts: payouts.sort((a, b) =>
         a.announcedAt.localeCompare(b.announcedAt),
       ),
-    });
+    }, stock);
   });
 
   return { updatedStocks, added };

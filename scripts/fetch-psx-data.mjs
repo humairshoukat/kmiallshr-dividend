@@ -3,13 +3,13 @@ import path from "node:path";
 import process from "node:process";
 import { pathToFileURL } from "node:url";
 import { load } from "cheerio";
+import { fetchPSX } from "./psx-http.mjs";
+import { applyFaceValue, fetchFaceValues, requireFaceValueCoverage } from "./fetch-psx-face-values.mjs";
 
 const INDEX_URL = "https://dps.psx.com.pk/indices/KMIALLSHR";
 const PAYOUTS_URL = "https://dps.psx.com.pk/company/payouts";
 const COMPANY_URL = "https://dps.psx.com.pk/company";
-const FACE_VALUE_ASSUMPTION = 10;
 const CONCURRENCY = 3;
-let nextRequestAt = 0;
 
 function clean(value = "") {
   return value.replace(/\s+/g, " ").trim();
@@ -34,10 +34,6 @@ function getFiscalYearWindow() {
   return [2025, 2026];
 }
 
-function fiscalYearKey(year) {
-  return `fy${String(year).slice(-2)}`;
-}
-
 function dateKey(date) {
   const { year, month, day } = pakistanDateParts(date);
   return [year, month, day]
@@ -49,50 +45,6 @@ function dateKey(date) {
 
 function sourceDate(date = new Date()) {
   return dateKey(date);
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-async function fetchPSX(url, options = {}, attempts = 6) {
-  let lastError = null;
-
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try {
-      const wait = Math.max(0, nextRequestAt - Date.now());
-      nextRequestAt = Date.now() + wait + 1000;
-      if (wait > 0) await sleep(wait);
-      const response = await fetch(url, {
-        signal: AbortSignal.timeout(30_000),
-        ...options,
-        headers: {
-          "user-agent": "kmiallshr-data-import/1.0",
-          ...(options.headers ?? {}),
-        },
-      });
-
-      if (response.status === 429) {
-        const retryAfter = Number(response.headers.get("retry-after"));
-        const delay = retryAfter > 0
-          ? retryAfter * 1000
-          : Math.min(15_000 * 2 ** (attempt - 1), 60_000);
-        nextRequestAt = Math.max(nextRequestAt, Date.now() + delay);
-        process.stdout.write(`PSX rate limit; retrying ${url} after ${delay / 1000}s\n`);
-      }
-
-      if (response.status === 429 || response.status >= 500) {
-        throw new Error(`${response.status} ${url}`);
-      }
-
-      return response;
-    } catch (error) {
-      lastError = error;
-      if (attempt < attempts) await sleep(500 * attempt);
-    }
-  }
-
-  throw lastError;
 }
 
 async function fetchText(url, options = {}) {
@@ -170,24 +122,6 @@ function extractDividendPercent(detail) {
   const parsed = Number(nearestNumber);
 
   return Number.isFinite(parsed) ? parsed : 0;
-}
-
-function intervalLabelForCount(count) {
-  if (count <= 0) return "";
-  if (count === 1) return "Single";
-  if (count === 2) return "Biannual";
-  if (count === 3) return "Triannual";
-  if (count === 4) return "Quarterly";
-  return `${count} payouts`;
-}
-
-function zeroSummary() {
-  return {
-    payoutCount: 0,
-    intervalLabel: "",
-    totalDividendPercent: 0,
-    totalDividendPerShare: 0,
-  };
 }
 
 function round(value) {
@@ -281,10 +215,6 @@ async function buildStockRecord(
   const payoutRows = await fetchCompanyPayouts(stock.symbol, requestId);
   const dividendRows = payoutRows.filter((row) => row.detail.includes("(D)"));
 
-  const summaryBuckets = Object.fromEntries(
-    fiscalYears.map((year) => [year, []]),
-  );
-
   const payoutsByIdentity = new Map();
 
   for (const payout of previousRecord?.payouts ?? []) {
@@ -327,9 +257,6 @@ async function buildStockRecord(
       continue;
     }
 
-    const dividendPerShare =
-      (dividendPercent / 100) * FACE_VALUE_ASSUMPTION;
-
     const payout = {
       announcedAt: dateKey(announcedAt),
       periodLabel: row.periodLabel,
@@ -338,7 +265,6 @@ async function buildStockRecord(
       bookClosure: row.bookClosure,
       fiscalYear,
       dividendPercent: round(dividendPercent),
-      dividendPerShare: round(dividendPerShare),
     };
 
     const previousPayout = [...payoutsByIdentity.values()].find((item) => payoutsMatch(item, payout));
@@ -348,30 +274,7 @@ async function buildStockRecord(
 
   const payouts = [...payoutsByIdentity.values()];
 
-  for (const payout of payouts) {
-    summaryBuckets[payout.fiscalYear].push(payout);
-  }
-
-  const summary = Object.fromEntries(
-    fiscalYears.map((year) => [fiscalYearKey(year), zeroSummary()]),
-  );
-
-  for (const fy of fiscalYears) {
-    const key = fiscalYearKey(fy);
-    const items = summaryBuckets[fy];
-    summary[key] = {
-      payoutCount: items.length,
-      intervalLabel: intervalLabelForCount(items.length),
-      totalDividendPercent: round(
-        items.reduce((sum, item) => sum + item.dividendPercent, 0),
-      ),
-      totalDividendPerShare: round(
-        items.reduce((sum, item) => sum + item.dividendPerShare, 0),
-      ),
-    };
-  }
-
-  return {
+  return applyFaceValue({
     symbol: stock.symbol,
     name: stock.name,
     latestPrice: round(stock.latestPrice),
@@ -379,12 +282,10 @@ async function buildStockRecord(
     sourceAsOf,
     companyUrl: `${COMPANY_URL}/${stock.symbol}`,
     indexUrl: INDEX_URL,
-    faceValueAssumption: FACE_VALUE_ASSUMPTION,
     fiscalYears,
     currentFiscalYear: fiscalYears.at(-1),
-    summary,
     payouts: payouts.sort((a, b) => a.announcedAt.localeCompare(b.announcedAt)),
-  };
+  }, stock);
 }
 
 async function runPool(items, task, concurrency) {
@@ -435,11 +336,14 @@ async function main() {
     throw new Error("PSX returned no KMIALLSHR constituents; existing data was not changed.");
   }
 
+  const faceValues = await fetchFaceValues(sourceAsOf);
+  requireFaceValueCoverage(constituents, faceValues);
+
   const records = await runPool(
     constituents,
     async (stock) => {
       const record = await buildStockRecord(
-        stock,
+        { ...stock, ...faceValues.get(stock.symbol) },
         sourceAsOf,
         fiscalYears,
         previousRecordsBySymbol.get(stock.symbol),
