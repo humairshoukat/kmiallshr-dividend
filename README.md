@@ -7,6 +7,12 @@ The project stores a committed PSX data snapshot, so the dashboard works without
 making requests to PSX at page-load time. Separate importer scripts refresh that
 snapshot when required.
 
+## UI preview
+
+The Dividend Board running locally with the 3 November 2026 data snapshot.
+
+![KMIALLSHR Dividend Board showing summary cards, year filters, search, holding assumptions, and the ranked dividend table](docs/images/dividend-board.png)
+
 ## What the app shows
 
 ### Dividend Board (`/`)
