@@ -19,7 +19,7 @@ The Dividend Board running locally with the 3 November 2026 data snapshot.
 
 - Calendar-year dividend totals for 2025 and 2026 (January–December)
 - Dividend paid per share, payout count, and payout interval for each year
-- Estimated gross and net cash return for a configurable investment per stock
+- Estimated gross and net cash return for a configurable cash amount or share count per stock
 - Configurable withholding tax and zakat, with official per-company share face values
 - Search by company name or symbol
 - Ranking by net dividend yield for the selected financial year
@@ -90,6 +90,11 @@ npm run lint
 npm run build
 ```
 
+To check the holding controls in Chromium, install the browser with
+`npx playwright install chromium`. With the app running locally, run
+`npm run test:ui`. Set `TEST_BASE_URL` to check another deployment. These tests
+use the committed snapshot's FFC and EFERT dividend amounts.
+
 ## Data sources and refresh behavior
 
 The importer uses official PSX pages and endpoints:
@@ -151,8 +156,13 @@ both the live refresh and historical backfill.
 - This normalization addresses nominal share subdivisions. Bonus shares,
   rights, capital reductions, mergers, and changing historical holdings are not
   reconstructed as a total-return history.
-- Estimated shares held are `investment / latest price`; fractional shares are
-  therefore included in the estimate.
+- In **Adjust**, choose **Cash per stock** or **Shares per stock**. Cash mode
+  estimates shares as `investment / latest price`, including fractional shares.
+  Shares mode applies the entered count, initially 1,000, to every displayed
+  stock. Switching modes preserves each input for the current page session.
+- Gross income is `shares held × dividend per current share`. The income total
+  includes only the displayed stocks. Percentage yields use the latest market
+  price in both modes.
 - Net cash is gross dividend cash after the combined withholding-tax and zakat
   percentages entered in the dashboard.
 
