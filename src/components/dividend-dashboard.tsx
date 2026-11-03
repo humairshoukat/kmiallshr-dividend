@@ -33,6 +33,7 @@ function formatCurrency(value: number, digits = 2) {
   return new Intl.NumberFormat("en-PK", {
     style: "currency",
     currency: "PKR",
+    minimumFractionDigits: digits,
     maximumFractionDigits: digits,
   }).format(value);
 }
@@ -67,10 +68,16 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
   );
   const [search, setSearch] = useState("");
   const [investmentAmount, setInvestmentAmount] = useState("100000");
+  const [holdingBasis, setHoldingBasis] = useState<"cash" | "shares">("cash");
+  const [shareCount, setShareCount] = useState("1000");
   const [withholdingTax, setWithholdingTax] = useState("15");
   const [zakatRate, setZakatRate] = useState("0");
 
   const investment = Math.max(toNumber(investmentAmount), 0);
+  const shares = Math.max(toNumber(shareCount), 0);
+  const holdingDescription = holdingBasis === "cash"
+    ? formatCurrency(investment, 0)
+    : `${new Intl.NumberFormat("en-PK", { maximumFractionDigits: 4 }).format(shares)} ${shares === 1 ? "share" : "shares"}`;
   const wht = Math.max(toNumber(withholdingTax), 0);
   const zakat = Math.max(toNumber(zakatRate), 0);
   const combinedDeduction = Math.min((wht + zakat) / 100, 1);
@@ -78,10 +85,14 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
   const rows = stocks
     .map((stock) => {
       const summary = stock.summary[selectedYear] ?? EMPTY_SUMMARY;
-      const sharesHeld = stock.latestPrice > 0 ? investment / stock.latestPrice : 0;
+      const sharesHeld = holdingBasis === "shares"
+        ? shares
+        : stock.latestPrice > 0 ? investment / stock.latestPrice : 0;
       const grossDividendCash = sharesHeld * summary.totalDividendPerShare;
       const netDividendCash = grossDividendCash * (1 - combinedDeduction);
-      const netYield = investment > 0 ? (netDividendCash / investment) * 100 : 0;
+      const netYield = stock.latestPrice > 0
+        ? (summary.totalDividendPerShare / stock.latestPrice) * (1 - combinedDeduction) * 100
+        : 0;
 
       return {
         symbol: stock.symbol,
@@ -118,7 +129,6 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
     );
   const derived = {
     rows,
-    investment,
     sourceAsOf: stocks[0]?.sourceAsOf ?? "",
     dividendPayers: stocks.filter(
       (stock) => (stock.summary[selectedYear] ?? EMPTY_SUMMARY).payoutCount > 0,
@@ -157,7 +167,7 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
         <div className="ticker-item">
           <div className="stat-heading"><span className="stat-label">Estimated net income</span><Icon name="wallet" /></div>
           <strong className="cash-total">{formatCurrency(derived.totalNetCash, 0)}</strong>
-          <span className="stat-detail">{formatCurrency(derived.investment, 0)} per displayed stock</span>
+          <span className="stat-detail">{holdingDescription} per displayed stock</span>
         </div>
         <div className="ticker-item is-primary">
           <div className="stat-heading"><span className="stat-label">Highest net yield</span><Icon name="arrow" /></div>
@@ -190,13 +200,30 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
       <details className="assumptions-panel">
         <summary>
           <span className="assumptions-title"><Icon name="settings" /> Holding assumptions</span>
-          <span className="assumptions-preview">{formatCurrency(investment, 0)} / stock <span>·</span> {formatPercent(wht, 0)} WHT <span>·</span> {formatPercent(zakat, 0)} zakat</span>
+          <span className="assumptions-preview">{holdingDescription} / stock <span>·</span> {formatPercent(wht, 0)} WHT <span>·</span> {formatPercent(zakat, 0)} zakat</span>
           <span className="assumptions-edit">Adjust<Icon name="chevron" /></span>
         </summary>
         <div className="assumptions-content">
-          <p>Adjust your investment and deductions to estimate the cash return on each holding.</p>
+          <p>Apply the same cash amount or share count to each displayed stock, then adjust your deductions.</p>
+          <fieldset className="holding-basis">
+            <legend>Calculate holdings using</legend>
+            <div className="holding-options">
+              <label className="holding-option">
+                <input type="radio" name="holding-basis" value="cash" checked={holdingBasis === "cash"} onChange={() => setHoldingBasis("cash")} />
+                <span>Cash per stock</span>
+              </label>
+              <label className="holding-option">
+                <input type="radio" name="holding-basis" value="shares" checked={holdingBasis === "shares"} onChange={() => setHoldingBasis("shares")} />
+                <span>Shares per stock</span>
+              </label>
+            </div>
+          </fieldset>
           <div className="field-grid">
-            <label className="field"><span>Investment per stock (Rs)</span><input inputMode="decimal" value={investmentAmount} onChange={(event) => setInvestmentAmount(event.target.value)} /></label>
+            {holdingBasis === "cash" ? (
+              <label className="field"><span>Investment per stock (Rs)</span><input type="number" min="0" step="any" inputMode="decimal" value={investmentAmount} onChange={(event) => setInvestmentAmount(event.target.value)} /></label>
+            ) : (
+              <label className="field"><span>Shares per stock</span><input type="number" min="0" step="any" inputMode="decimal" value={shareCount} onChange={(event) => setShareCount(event.target.value)} /></label>
+            )}
             <label className="field"><span>Withholding tax (%)</span><input inputMode="decimal" value={withholdingTax} onChange={(event) => setWithholdingTax(event.target.value)} /></label>
             <label className="field"><span>Zakat (%)</span><input inputMode="decimal" value={zakatRate} onChange={(event) => setZakatRate(event.target.value)} /></label>
           </div>

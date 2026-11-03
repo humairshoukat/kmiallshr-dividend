@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint src scripts",
     "test:data": "node --test scripts/*.test.mjs",
+    "test:ui": "playwright test",
     "data:fetch": "node scripts/fetch-psx-data.mjs",
     "data:face-values": "node scripts/fetch-psx-face-values.mjs",
     "data:backfill": "node scripts/backfill-psx-archive.mjs",
@@ -20,6 +21,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
