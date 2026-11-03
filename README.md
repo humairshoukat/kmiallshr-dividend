@@ -95,6 +95,17 @@ To check the holding controls in Chromium, install the browser with
 `npm run test:ui`. Set `TEST_BASE_URL` to check another deployment. These tests
 use the committed snapshot's FFC and EFERT dividend amounts.
 
+## Deploy from main
+
+Production uses the `main` branch of
+[`humairshoukat/kmiallshr-dividend`](https://github.com/humairshoukat/kmiallshr-dividend).
+The Vercel project is `humair-shoukats-projects/kmiallshr-dividend`, and its
+production URL is <https://kmiallshr-dividend.vercel.app>.
+
+Vercel is connected to this repository with `main` as its production branch.
+Every push or merge to `main` builds and deploys production automatically.
+Feature branches must not be deployed to production with the CLI.
+
 ## Data sources and refresh behavior
 
 The importer uses official PSX pages and endpoints:

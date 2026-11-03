@@ -7,3 +7,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Production deployments
+
+- Deploy production from `main` only. Never deploy a feature branch or unmerged local changes to production.
+- Use the Vercel Git integration so pushes and merges to `main` deploy automatically to `https://kmiallshr-dividend.vercel.app`.
+- Before a manual production deployment, fetch `origin` and verify that the working tree is clean and `HEAD` matches `origin/main`.
