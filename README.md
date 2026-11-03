@@ -21,7 +21,7 @@ The Dividend Board running locally with the 3 November 2026 data snapshot.
 - Dividend paid per share, payout count, and payout interval for each year
 - Estimated gross and net cash return for a configurable cash amount or share count per stock
 - Configurable withholding tax and zakat, with official per-company share face values
-- Search by company name or symbol
+- Search by company name or symbol; separate multiple searches with commas, such as `FFC, EFERT, MARI`
 - Ranking by net dividend yield for the selected financial year
 
 The ranked table shows companies that paid a dividend in the selected year. The

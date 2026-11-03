@@ -33,10 +33,12 @@ export function PriceHikeDashboard({ stocks }: PriceHikeDashboardProps) {
   const [search, setSearch] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOrder>("price-desc");
   const sourceAsOf = stocks[0]?.sourceAsOf ?? "";
-  const query = search.trim().toLowerCase();
+  const searchTerms = search.toLowerCase().split(",").map((term) => term.trim()).filter(Boolean);
   const selectedSort = sortOptions[sortOrder];
   const rows = stocks
-    .filter((stock) => stock.symbol.toLowerCase().includes(query) || stock.name.toLowerCase().includes(query))
+    .filter((stock) => searchTerms.length === 0 || searchTerms.some((term) =>
+      stock.symbol.toLowerCase().includes(term) || stock.name.toLowerCase().includes(term)
+    ))
     .sort((a, b) => selectedSort.compare(a, b) || a.symbol.localeCompare(b.symbol));
 
   return (
@@ -57,7 +59,8 @@ export function PriceHikeDashboard({ stocks }: PriceHikeDashboardProps) {
           <input
             type="search"
             aria-label="Search symbol or company"
-            placeholder="Search symbol or company…"
+            placeholder="Search stocks: FFC, MEBL…"
+            title="Search symbols or company names, separated by commas"
             value={search}
             onChange={(event) => setSearch(event.target.value)}
           />

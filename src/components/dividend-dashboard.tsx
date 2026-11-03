@@ -81,7 +81,7 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
   const wht = Math.max(toNumber(withholdingTax), 0);
   const zakat = Math.max(toNumber(zakatRate), 0);
   const combinedDeduction = Math.min((wht + zakat) / 100, 1);
-  const term = search.trim().toLowerCase();
+  const searchTerms = search.toLowerCase().split(",").map((term) => term.trim()).filter(Boolean);
   const rows = stocks
     .map((stock) => {
       const summary = stock.summary[selectedYear] ?? EMPTY_SUMMARY;
@@ -115,8 +115,8 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
     })
     .filter((row) => row.payoutCount > 0)
     .filter((row) => {
-      if (!term) return true;
-      return (
+      if (searchTerms.length === 0) return true;
+      return searchTerms.some((term) =>
         row.symbol.toLowerCase().includes(term) ||
         row.name.toLowerCase().includes(term)
       );
@@ -192,7 +192,7 @@ export function DividendDashboard({ stocks }: DividendDashboardProps) {
         <label className="search-field">
           <Icon name="search" />
           <input type="search" aria-label="Search symbol or company" value={search}
-            onChange={(event) => setSearch(event.target.value)} placeholder="Search symbol or company…" />
+            onChange={(event) => setSearch(event.target.value)} placeholder="Search stocks: FFC, MEBL…" title="Search symbols or company names, separated by commas" />
           {search && <button type="button" className="clear-search" onClick={() => setSearch("")} aria-label="Clear search">×</button>}
         </label>
       </section>

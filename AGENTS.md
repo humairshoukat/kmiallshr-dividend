@@ -10,6 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Production deployments
 
+- Make changes on `main` and show the local view for review. Do not push or deploy until the user explicitly asks.
 - Deploy production from `main` only. Never deploy a feature branch or unmerged local changes to production.
 - Use the Vercel Git integration so pushes and merges to `main` deploy automatically to `https://kmiallshr-dividend.vercel.app`.
 - Before a manual production deployment, fetch `origin` and verify that the working tree is clean and `HEAD` matches `origin/main`.
