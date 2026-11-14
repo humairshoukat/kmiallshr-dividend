@@ -223,18 +223,6 @@
         "dividendPerShare": 1.75
       },
       {
-        "symbol": "AGIL",
-        "announcedAt": "2026-09-01",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "100%(F) (D)",
-        "bookClosure": "16-Oct-2026 - 22-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 100,
-        "dividendPerShare": 5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-01.pdf"
-      },
-      {
         "announcedAt": "2026-09-08",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -258,10 +246,10 @@
         "totalDividendPerShare": 1.75
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 200,
-        "totalDividendPerShare": 10
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 5
       }
     }
   },
@@ -710,18 +698,6 @@
         "dividendPerShare": 10
       },
       {
-        "symbol": "ARPL",
-        "announcedAt": "2026-09-14",
-        "periodLabel": "30/09/2026",
-        "periodEnd": "30/09/2026",
-        "detail": "450%(i) (D)",
-        "bookClosure": "",
-        "fiscalYear": 2026,
-        "dividendPercent": 450,
-        "dividendPerShare": 45,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-14.pdf"
-      },
-      {
         "announcedAt": "2026-09-15",
         "periodLabel": "-",
         "periodEnd": "2026-09-15",
@@ -745,10 +721,10 @@
         "totalDividendPerShare": 30
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 900,
-        "totalDividendPerShare": 90
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 450,
+        "totalDividendPerShare": 45
       }
     }
   },
@@ -1099,18 +1075,6 @@
         "fiscalYear": 2025,
         "dividendPercent": 20,
         "dividendPerShare": 2
-      },
-      {
-        "symbol": "BAFS",
-        "announcedAt": "2025-12-26",
-        "periodLabel": "30/09/2025(YR)",
-        "periodEnd": "30/09/2025",
-        "detail": "20%(F) (D)",
-        "bookClosure": "19-Jan-2026 - 26-Jan-2026",
-        "fiscalYear": 2025,
-        "dividendPercent": 20,
-        "dividendPerShare": 2,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-12-26.pdf"
       }
     ],
     "faceValue": 10,
@@ -1120,10 +1084,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 40,
-        "totalDividendPerShare": 4
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 20,
+        "totalDividendPerShare": 2
       },
       "fy26": {
         "payoutCount": 0,
@@ -1284,18 +1248,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "BERG",
-        "announcedAt": "2025-09-24",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "50%(F) (D)",
-        "bookClosure": "21-Oct-2025 - 27-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 50,
-        "dividendPerShare": 5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-24.pdf"
-      },
-      {
         "announcedAt": "2025-09-25",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -1323,10 +1275,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 100,
-        "totalDividendPerShare": 10
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       },
       "fy26": {
         "payoutCount": 1,
@@ -1510,18 +1462,6 @@
         "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-04-24.pdf"
       },
       {
-        "symbol": "BIFO",
-        "announcedAt": "2025-09-24",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "35%(F) (D)",
-        "bookClosure": "16-Oct-2025 - 23-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 35,
-        "dividendPerShare": 3.5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-24.pdf"
-      },
-      {
         "announcedAt": "2025-09-25",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -1559,10 +1499,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 85,
-        "totalDividendPerShare": 8.5
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       },
       "fy26": {
         "payoutCount": 2,
@@ -2527,18 +2467,6 @@
         "dividendPerShare": 2.5
       },
       {
-        "symbol": "CSAP",
-        "announcedAt": "2026-02-04",
-        "periodLabel": "31/12/2025(HYR)",
-        "periodEnd": "31/12/2025",
-        "detail": "20%(i) (D)",
-        "bookClosure": "18-Mar-2026 - 20-Mar-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 20,
-        "dividendPerShare": 2,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-02-04.pdf"
-      },
-      {
         "announcedAt": "2026-02-06",
         "periodLabel": "30/12/2025(HYR)",
         "periodEnd": "30/12/2025",
@@ -2572,10 +2500,10 @@
         "totalDividendPerShare": 7.5
       },
       "fy26": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 75,
-        "totalDividendPerShare": 7.5
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 55,
+        "totalDividendPerShare": 5.5
       }
     }
   },
@@ -3104,18 +3032,6 @@
         "dividendPerShare": 2
       },
       {
-        "symbol": "DOL",
-        "announcedAt": "2026-09-04",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "20%(F) (D)",
-        "bookClosure": "13-Oct-2026 - 20-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 20,
-        "dividendPerShare": 2,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-04.pdf"
-      },
-      {
         "announcedAt": "2026-09-08",
         "periodLabel": "30/06/2026(YR) - 30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -3139,10 +3055,10 @@
         "totalDividendPerShare": 4
       },
       "fy26": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 60,
-        "totalDividendPerShare": 6
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 40,
+        "totalDividendPerShare": 4
       }
     }
   },
@@ -3259,18 +3175,6 @@
         "dividendPerShare": 6.25
       },
       {
-        "symbol": "DYNO",
-        "announcedAt": "2026-09-09",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "185%(F) (D)",
-        "bookClosure": "15-Oct-2026 - 22-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 185,
-        "dividendPerShare": 9.25,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-09.pdf"
-      },
-      {
         "announcedAt": "2026-09-10",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -3294,10 +3198,10 @@
         "totalDividendPerShare": 15
       },
       "fy26": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 495,
-        "totalDividendPerShare": 24.75
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 310,
+        "totalDividendPerShare": 15.5
       }
     }
   },
@@ -3326,18 +3230,6 @@
         "dividendPerShare": 2
       },
       {
-        "symbol": "ECOP",
-        "announcedAt": "2026-09-14",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "30%(F) (D)",
-        "bookClosure": "15-Oct-2026 - 28-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 30,
-        "dividendPerShare": 3,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-14.pdf"
-      },
-      {
         "announcedAt": "2026-09-15",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -3361,10 +3253,10 @@
         "totalDividendPerShare": 2
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 60,
-        "totalDividendPerShare": 6
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 30,
+        "totalDividendPerShare": 3
       }
     }
   },
@@ -3719,18 +3611,6 @@
         "dividendPerShare": 0.5
       },
       {
-        "symbol": "EPQL",
-        "announcedAt": "2026-02-04",
-        "periodLabel": "31/12/2025(YR)",
-        "periodEnd": "31/12/2025",
-        "detail": "12.5%(F) (D)",
-        "bookClosure": "19-Mar-2026 - 25-Mar-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 12.5,
-        "dividendPerShare": 1.25,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-02-04.pdf"
-      },
-      {
         "announcedAt": "2026-02-06",
         "periodLabel": "31/12/2025(YR)",
         "periodEnd": "31/12/2025",
@@ -3774,10 +3654,10 @@
         "totalDividendPerShare": 10.5
       },
       "fy26": {
-        "payoutCount": 4,
-        "intervalLabel": "Quarterly",
-        "totalDividendPercent": 42.5,
-        "totalDividendPerShare": 4.25
+        "payoutCount": 3,
+        "intervalLabel": "Triannual",
+        "totalDividendPercent": 30,
+        "totalDividendPerShare": 3
       }
     }
   },
@@ -5180,18 +5060,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "GADT",
-        "announcedAt": "2026-08-04",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "50%(F) (D)",
-        "bookClosure": "",
-        "fiscalYear": 2026,
-        "dividendPercent": 50,
-        "dividendPerShare": 5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-08-04.pdf"
-      },
-      {
         "announcedAt": "2026-08-05",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -5215,10 +5083,10 @@
         "totalDividendPerShare": 0
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 100,
-        "totalDividendPerShare": 10
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       }
     }
   },
@@ -5473,18 +5341,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "GEMBCEM",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "3.9%(F) (D)",
-        "bookClosure": "21-Oct-2025 - 28-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 3.9,
-        "dividendPerShare": 0.39,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -5512,10 +5368,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 7.8,
-        "totalDividendPerShare": 0.78
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 3.9,
+        "totalDividendPerShare": 0.39
       },
       "fy26": {
         "payoutCount": 1,
@@ -5608,18 +5464,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "GEMPAPL",
-        "announcedAt": "2026-02-27",
-        "periodLabel": "31/12/2025(HYR)",
-        "periodEnd": "31/12/2025",
-        "detail": "5%(i) (D)",
-        "bookClosure": "10-Mar-2026 - 12-Mar-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 5,
-        "dividendPerShare": 0.5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-02-27.pdf"
-      },
-      {
         "announcedAt": "2026-03-02",
         "periodLabel": "31/12/2025(HYR)",
         "periodEnd": "31/12/2025",
@@ -5643,10 +5487,10 @@
         "totalDividendPerShare": 0
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 10,
-        "totalDividendPerShare": 1
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 5,
+        "totalDividendPerShare": 0.5
       }
     }
   },
@@ -5797,18 +5641,6 @@
         "dividendPerShare": 1
       },
       {
-        "symbol": "GHGL",
-        "announcedAt": "2026-07-01",
-        "periodLabel": "30/06/2026",
-        "periodEnd": "30/06/2026",
-        "detail": "5%(i) (D)",
-        "bookClosure": "04-Jul-2026 - 07-Jul-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 5,
-        "dividendPerShare": 0.5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-07-01.pdf"
-      },
-      {
         "announcedAt": "2026-07-01",
         "periodLabel": "-",
         "periodEnd": "2026-07-01",
@@ -5817,18 +5649,6 @@
         "fiscalYear": 2026,
         "dividendPercent": 10,
         "dividendPerShare": 1
-      },
-      {
-        "symbol": "GHGL",
-        "announcedAt": "2026-07-02",
-        "periodLabel": "30/06/2026",
-        "periodEnd": "30/06/2026",
-        "detail": "10%(i) (D)",
-        "bookClosure": "04-Jul-2026 - 07-Jul-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 10,
-        "dividendPerShare": 1,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-07-02.pdf"
       },
       {
         "announcedAt": "2026-08-27",
@@ -5864,10 +5684,10 @@
         "totalDividendPerShare": 2
       },
       "fy26": {
-        "payoutCount": 6,
-        "intervalLabel": "6 payouts",
-        "totalDividendPercent": 55,
-        "totalDividendPerShare": 5.5
+        "payoutCount": 4,
+        "intervalLabel": "Quarterly",
+        "totalDividendPercent": 40,
+        "totalDividendPerShare": 4
       }
     }
   },
@@ -6071,18 +5891,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "GOC",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "10%(F) (D)",
-        "bookClosure": "15-Oct-2025 - 22-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 10,
-        "dividendPerShare": 1,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -6110,10 +5918,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 20,
-        "totalDividendPerShare": 2
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 10,
+        "totalDividendPerShare": 1
       },
       "fy26": {
         "payoutCount": 1,
@@ -6520,18 +6328,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "HCAR",
-        "announcedAt": "2025-05-22",
-        "periodLabel": "31/03/2025(YR)",
-        "periodEnd": "31/03/2025",
-        "detail": "80%(F) (D)",
-        "bookClosure": "12-Jun-2025 - 24-Jun-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 80,
-        "dividendPerShare": 8,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-05-22.pdf"
-      },
-      {
         "announcedAt": "2025-05-23",
         "periodLabel": "31/03/2025(YR)",
         "periodEnd": "31/03/2025",
@@ -6540,18 +6336,6 @@
         "fiscalYear": 2025,
         "dividendPercent": 80,
         "dividendPerShare": 8
-      },
-      {
-        "symbol": "HCAR",
-        "announcedAt": "2026-05-19",
-        "periodLabel": "31/03/2026(YR)",
-        "periodEnd": "31/03/2026",
-        "detail": "90%(F) (D)",
-        "bookClosure": "16-Jun-2026 - 29-Jun-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 90,
-        "dividendPerShare": 9,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-05-19.pdf"
       },
       {
         "announcedAt": "2026-05-19",
@@ -6571,16 +6355,16 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 160,
-        "totalDividendPerShare": 16
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 80,
+        "totalDividendPerShare": 8
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 180,
-        "totalDividendPerShare": 18
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 90,
+        "totalDividendPerShare": 9
       }
     }
   },
@@ -7228,18 +7012,6 @@
         "dividendPerShare": 1
       },
       {
-        "symbol": "ILP",
-        "announcedAt": "2026-02-04",
-        "periodLabel": "31/12/2025(HYR)",
-        "periodEnd": "31/12/2025",
-        "detail": "20%(i) (D)",
-        "bookClosure": "17-Feb-2026 - 18-Feb-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 20,
-        "dividendPerShare": 2,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-02-04.pdf"
-      },
-      {
         "announcedAt": "2026-02-06",
         "periodLabel": "31/12/2025(YR)",
         "periodEnd": "31/12/2025",
@@ -7273,10 +7045,10 @@
         "totalDividendPerShare": 1
       },
       "fy26": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 60,
-        "totalDividendPerShare": 6
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 40,
+        "totalDividendPerShare": 4
       }
     }
   },
@@ -7535,18 +7307,6 @@
         "dividendPerShare": 0.2
       },
       {
-        "symbol": "IREIT",
-        "announcedAt": "2026-09-07",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "0.85%(F) (D)",
-        "bookClosure": "",
-        "fiscalYear": 2026,
-        "dividendPercent": 0.85,
-        "dividendPerShare": 0.085,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-07.pdf"
-      },
-      {
         "announcedAt": "2026-09-08",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -7555,30 +7315,6 @@
         "fiscalYear": 2026,
         "dividendPercent": 0.85,
         "dividendPerShare": 0.085
-      },
-      {
-        "symbol": "IREIT",
-        "announcedAt": "2026-09-11",
-        "periodLabel": "30/06/2027",
-        "periodEnd": "30/06/2027",
-        "detail": "1.45%(i) (D)",
-        "bookClosure": "",
-        "fiscalYear": 2026,
-        "dividendPercent": 1.45,
-        "dividendPerShare": 0.145,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-11.pdf"
-      },
-      {
-        "symbol": "IREIT",
-        "announcedAt": "2026-09-14",
-        "periodLabel": "30/06/2027",
-        "periodEnd": "30/06/2027",
-        "detail": "1.45%(i) (D)",
-        "bookClosure": "",
-        "fiscalYear": 2026,
-        "dividendPercent": 1.45,
-        "dividendPerShare": 0.145,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-14.pdf"
       },
       {
         "announcedAt": "2026-09-15",
@@ -7604,10 +7340,10 @@
         "totalDividendPerShare": 0
       },
       "fy26": {
-        "payoutCount": 6,
-        "intervalLabel": "6 payouts",
-        "totalDividendPercent": 8.05,
-        "totalDividendPerShare": 0.805
+        "payoutCount": 3,
+        "intervalLabel": "Triannual",
+        "totalDividendPercent": 4.3,
+        "totalDividendPerShare": 0.43
       }
     }
   },
@@ -7691,18 +7427,6 @@
         "dividendPerShare": 2.5
       },
       {
-        "symbol": "ISL",
-        "announcedAt": "2026-01-27",
-        "periodLabel": "31/12/2025(HYR)",
-        "periodEnd": "31/12/2025",
-        "detail": "20%(i) (D)",
-        "bookClosure": "10-Feb-2026 - 12-Feb-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 20,
-        "dividendPerShare": 2,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-01-27.pdf"
-      },
-      {
         "announcedAt": "2026-01-27",
         "periodLabel": "30/09/2025(HYR)",
         "periodEnd": "30/09/2025",
@@ -7736,10 +7460,10 @@
         "totalDividendPerShare": 2.5
       },
       "fy26": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 70,
-        "totalDividendPerShare": 7
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       }
     }
   },
@@ -8479,18 +8203,6 @@
         "fiscalYear": 2025,
         "dividendPercent": 20,
         "dividendPerShare": 0.4
-      },
-      {
-        "symbol": "KTML",
-        "announcedAt": "2025-09-02",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "20%(F) (D)",
-        "bookClosure": "10-Oct-2025 - 16-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 20,
-        "dividendPerShare": 0.4,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-02.pdf"
       }
     ],
     "faceValue": 2,
@@ -8500,10 +8212,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 40,
-        "totalDividendPerShare": 0.8
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 20,
+        "totalDividendPerShare": 0.4
       },
       "fy26": {
         "payoutCount": 0,
@@ -8812,18 +8524,6 @@
         "fiscalYear": 2026,
         "dividendPercent": 250,
         "dividendPerShare": 5
-      },
-      {
-        "symbol": "LUCK",
-        "announcedAt": "2026-08-11",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "250%(F) (D)",
-        "bookClosure": "",
-        "fiscalYear": 2026,
-        "dividendPercent": 250,
-        "dividendPerShare": 5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-08-11.pdf"
       }
     ],
     "faceValue": 2,
@@ -8839,10 +8539,10 @@
         "totalDividendPerShare": 4
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 500,
-        "totalDividendPerShare": 10
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 250,
+        "totalDividendPerShare": 5
       }
     }
   },
@@ -9058,18 +8758,6 @@
         "dividendPerShare": 7
       },
       {
-        "symbol": "MEBL",
-        "announcedAt": "2025-10-24",
-        "periodLabel": "30/09/2025(IIIQ)",
-        "periodEnd": "30/09/2025",
-        "detail": "70%(iii) (D)",
-        "bookClosure": "05-Nov-2025 - 07-Nov-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 70,
-        "dividendPerShare": 7,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-10-24.pdf"
-      },
-      {
         "announcedAt": "2025-10-27",
         "periodLabel": "30/09/2025(IIIQ)",
         "periodEnd": "30/09/2025",
@@ -9127,10 +8815,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 5,
-        "intervalLabel": "5 payouts",
-        "totalDividendPercent": 350,
-        "totalDividendPerShare": 35
+        "payoutCount": 4,
+        "intervalLabel": "Quarterly",
+        "totalDividendPercent": 280,
+        "totalDividendPerShare": 28
       },
       "fy26": {
         "payoutCount": 4,
@@ -9433,18 +9121,6 @@
         "dividendPerShare": 1.5
       },
       {
-        "symbol": "MRNS",
-        "announcedAt": "2026-05-15",
-        "periodLabel": "31/03/2026(HYR)",
-        "periodEnd": "31/03/2026",
-        "detail": "5%(ii) (D)",
-        "bookClosure": "04-Jun-2026 - 05-Jun-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 5,
-        "dividendPerShare": 0.5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-05-15.pdf"
-      },
-      {
         "announcedAt": "2026-05-15",
         "periodLabel": "31/03/2025(HYR)",
         "periodEnd": "31/03/2025",
@@ -9468,10 +9144,10 @@
         "totalDividendPerShare": 2.5
       },
       "fy26": {
-        "payoutCount": 4,
-        "intervalLabel": "Quarterly",
-        "totalDividendPercent": 55,
-        "totalDividendPerShare": 5.5
+        "payoutCount": 3,
+        "intervalLabel": "Triannual",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       }
     }
   },
@@ -10261,18 +9937,6 @@
         "dividendPerShare": 3.25
       },
       {
-        "symbol": "OGDC",
-        "announcedAt": "2026-09-04",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "60%(F) (D)",
-        "bookClosure": "09-Oct-2026 - 16-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 60,
-        "dividendPerShare": 6,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-04.pdf"
-      },
-      {
         "announcedAt": "2026-09-08",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -10306,10 +9970,10 @@
         "totalDividendPerShare": 15.55
       },
       "fy26": {
-        "payoutCount": 5,
-        "intervalLabel": "5 payouts",
-        "totalDividendPercent": 245,
-        "totalDividendPerShare": 24.5
+        "payoutCount": 4,
+        "intervalLabel": "Quarterly",
+        "totalDividendPercent": 185,
+        "totalDividendPerShare": 18.5
       }
     }
   },
@@ -10803,18 +10467,6 @@
         "dividendPerShare": 5
       },
       {
-        "symbol": "PIOC",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "50%(F) (D)",
-        "bookClosure": "21-Oct-2025 - 28-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 50,
-        "dividendPerShare": 5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -10832,10 +10484,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 150,
-        "totalDividendPerShare": 15
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 10
       },
       "fy26": {
         "payoutCount": 0,
@@ -11067,18 +10719,6 @@
         "dividendPerShare": 2
       },
       {
-        "symbol": "PPL",
-        "announcedAt": "2026-04-29",
-        "periodLabel": "31/03/2026(IIIQ)",
-        "periodEnd": "31/03/2026",
-        "detail": "20%(iii) (D)",
-        "bookClosure": "14-May-2026 - 18-May-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 20,
-        "dividendPerShare": 2,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-04-29.pdf"
-      },
-      {
         "announcedAt": "2026-04-29",
         "periodLabel": "31/12/2025(YR)",
         "periodEnd": "31/12/2025",
@@ -11087,18 +10727,6 @@
         "fiscalYear": 2026,
         "dividendPercent": 20,
         "dividendPerShare": 2
-      },
-      {
-        "symbol": "PPL",
-        "announcedAt": "2026-09-14",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "60%(F) (D)",
-        "bookClosure": "21-Oct-2026 - 27-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 60,
-        "dividendPerShare": 6,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-14.pdf"
       },
       {
         "announcedAt": "2026-09-15",
@@ -11134,10 +10762,10 @@
         "totalDividendPerShare": 7.5
       },
       "fy26": {
-        "payoutCount": 6,
-        "intervalLabel": "6 payouts",
-        "totalDividendPercent": 200,
-        "totalDividendPerShare": 20
+        "payoutCount": 4,
+        "intervalLabel": "Quarterly",
+        "totalDividendPercent": 120,
+        "totalDividendPerShare": 12
       }
     }
   },
@@ -11166,18 +10794,6 @@
         "dividendPerShare": 5
       },
       {
-        "symbol": "PPP",
-        "announcedAt": "2026-09-09",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "80%(F) (D)",
-        "bookClosure": "19-Oct-2026 - 21-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 80,
-        "dividendPerShare": 8,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-09.pdf"
-      },
-      {
         "announcedAt": "2026-09-10",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -11201,10 +10817,10 @@
         "totalDividendPerShare": 5
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 160,
-        "totalDividendPerShare": 16
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 80,
+        "totalDividendPerShare": 8
       }
     }
   },
@@ -11469,18 +11085,6 @@
         "dividendPerShare": 2
       },
       {
-        "symbol": "PTL",
-        "announcedAt": "2026-09-04",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "20%(F) (D)",
-        "bookClosure": "14-Oct-2026 - 20-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 20,
-        "dividendPerShare": 2,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-04.pdf"
-      },
-      {
         "announcedAt": "2026-09-08",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -11504,10 +11108,10 @@
         "totalDividendPerShare": 0
       },
       "fy26": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 60,
-        "totalDividendPerShare": 6
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 40,
+        "totalDividendPerShare": 4
       }
     }
   },
@@ -12012,18 +11616,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "SARC",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "15%(F) (D)",
-        "bookClosure": "21-Oct-2025 - 27-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 15,
-        "dividendPerShare": 1.5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -12051,10 +11643,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 30,
-        "totalDividendPerShare": 3
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 15,
+        "totalDividendPerShare": 1.5
       },
       "fy26": {
         "payoutCount": 1,
@@ -12526,18 +12118,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "SHDT",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "12.5%(F) (D)",
-        "bookClosure": "22-Oct-2025 - 28-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 12.5,
-        "dividendPerShare": 1.25,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -12565,10 +12145,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 25,
-        "totalDividendPerShare": 2.5
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 12.5,
+        "totalDividendPerShare": 1.25
       },
       "fy26": {
         "payoutCount": 1,
@@ -12603,18 +12183,6 @@
         "dividendPerShare": 5
       },
       {
-        "symbol": "SHFA",
-        "announcedAt": "2026-09-14",
-        "periodLabel": "30/06/2026(YR)",
-        "periodEnd": "30/06/2026",
-        "detail": "50%(F) (D)",
-        "bookClosure": "16-Oct-2026 - 24-Oct-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 50,
-        "dividendPerShare": 5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-09-14.pdf"
-      },
-      {
         "announcedAt": "2026-09-15",
         "periodLabel": "30/06/2026(YR)",
         "periodEnd": "30/06/2026",
@@ -12638,10 +12206,10 @@
         "totalDividendPerShare": 5
       },
       "fy26": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 100,
-        "totalDividendPerShare": 10
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       }
     }
   },
@@ -13109,18 +12677,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "SNGP",
-        "announcedAt": "2025-04-28",
-        "periodLabel": "30/09/2024(YR)",
-        "periodEnd": "30/09/2024",
-        "detail": "75%(F) (D)",
-        "bookClosure": "15-May-2025 - 22-May-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 75,
-        "dividendPerShare": 7.5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-04-28.pdf"
-      },
-      {
         "announcedAt": "2025-04-28",
         "periodLabel": "30/06/2024(YR)",
         "periodEnd": "30/06/2024",
@@ -13158,10 +12714,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 180,
-        "totalDividendPerShare": 18
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 105,
+        "totalDividendPerShare": 10.5
       },
       "fy26": {
         "payoutCount": 1,
@@ -13829,18 +13385,6 @@
         "dividendPerShare": 0.75
       },
       {
-        "symbol": "STYLERS",
-        "announcedAt": "2026-02-27",
-        "periodLabel": "31/12/2025(HYR)",
-        "periodEnd": "31/12/2025",
-        "detail": "2.5%(i) (D)",
-        "bookClosure": "10-Mar-2026 - 12-Mar-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 2.5,
-        "dividendPerShare": 0.25,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-02-27.pdf"
-      },
-      {
         "announcedAt": "2026-03-02",
         "periodLabel": "31/12/2025(YR)",
         "periodEnd": "31/12/2025",
@@ -13894,10 +13438,10 @@
         "totalDividendPerShare": 1
       },
       "fy26": {
-        "payoutCount": 5,
-        "intervalLabel": "5 payouts",
-        "totalDividendPercent": 20,
-        "totalDividendPerShare": 2
+        "payoutCount": 4,
+        "intervalLabel": "Quarterly",
+        "totalDividendPercent": 17.5,
+        "totalDividendPerShare": 1.75
       }
     }
   },
@@ -13950,18 +13494,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "SURC",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "50%(F) (D)",
-        "bookClosure": "21-Oct-2025 - 27-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 50,
-        "dividendPerShare": 5,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -13989,10 +13521,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 100,
-        "totalDividendPerShare": 10
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 50,
+        "totalDividendPerShare": 5
       },
       "fy26": {
         "payoutCount": 1,
@@ -14796,18 +14328,6 @@
         "dividendPerShare": 30
       },
       {
-        "symbol": "UDPL",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "12.5%(F) (D)",
-        "bookClosure": "21-Oct-2025 - 27-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 12.5,
-        "dividendPerShare": 1.25,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -14855,10 +14375,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 6,
-        "intervalLabel": "6 payouts",
-        "totalDividendPercent": 527.5,
-        "totalDividendPerShare": 52.75
+        "payoutCount": 5,
+        "intervalLabel": "5 payouts",
+        "totalDividendPercent": 515,
+        "totalDividendPerShare": 51.5
       },
       "fy26": {
         "payoutCount": 2,
@@ -14917,18 +14437,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "UPFL",
-        "announcedAt": "2025-02-28",
-        "periodLabel": "31/12/2024(YR)",
-        "periodEnd": "31/12/2024",
-        "detail": "6000%(F) (D)",
-        "bookClosure": "18-Apr-2025 - 22-Apr-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 6000,
-        "dividendPerShare": 600,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-02-28.pdf"
-      },
-      {
         "announcedAt": "2025-03-03",
         "periodLabel": "31/12/2024(YR)",
         "periodEnd": "31/12/2024",
@@ -14979,18 +14487,6 @@
         "dividendPerShare": 216
       },
       {
-        "symbol": "UPFL",
-        "announcedAt": "2026-02-25",
-        "periodLabel": "31/12/2025(YR)",
-        "periodEnd": "31/12/2025",
-        "detail": "2160%(F) (D)",
-        "bookClosure": "18-Apr-2026 - 22-Apr-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 2160,
-        "dividendPerShare": 216,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-02-25.pdf"
-      },
-      {
         "announcedAt": "2026-04-28",
         "periodLabel": "31/03/2026(IQ)",
         "periodEnd": "31/03/2026",
@@ -15028,16 +14524,16 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 5,
-        "intervalLabel": "5 payouts",
-        "totalDividendPercent": 26350,
-        "totalDividendPerShare": 2635
+        "payoutCount": 4,
+        "intervalLabel": "Quarterly",
+        "totalDividendPercent": 20350,
+        "totalDividendPerShare": 2035
       },
       "fy26": {
-        "payoutCount": 5,
-        "intervalLabel": "5 payouts",
-        "totalDividendPercent": 14250,
-        "totalDividendPerShare": 1425
+        "payoutCount": 4,
+        "intervalLabel": "Quarterly",
+        "totalDividendPercent": 12090,
+        "totalDividendPerShare": 1209
       }
     }
   },
@@ -15064,18 +14560,6 @@
         "fiscalYear": 2025,
         "dividendPercent": 30,
         "dividendPerShare": 3
-      },
-      {
-        "symbol": "WAFI",
-        "announcedAt": "2026-02-27",
-        "periodLabel": "31/12/2025(YR)",
-        "periodEnd": "31/12/2025",
-        "detail": "40%(F) (D)",
-        "bookClosure": "21-Apr-2026 - 29-Apr-2026",
-        "fiscalYear": 2026,
-        "dividendPercent": 40,
-        "dividendPerShare": 4,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2026-02-27.pdf"
       },
       {
         "announcedAt": "2026-03-02",
@@ -15111,10 +14595,10 @@
         "totalDividendPerShare": 3
       },
       "fy26": {
-        "payoutCount": 3,
-        "intervalLabel": "Triannual",
-        "totalDividendPercent": 120,
-        "totalDividendPerShare": 12
+        "payoutCount": 2,
+        "intervalLabel": "Biannual",
+        "totalDividendPercent": 80,
+        "totalDividendPerShare": 8
       }
     }
   },
@@ -15167,18 +14651,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "WAHN",
-        "announcedAt": "2025-09-24",
-        "periodLabel": "-",
-        "periodEnd": "2025-09-24",
-        "detail": "100%(F) (D)",
-        "bookClosure": "20-Oct-2025 - 27-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 100,
-        "dividendPerShare": 10,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-24.pdf"
-      },
-      {
         "announcedAt": "2025-09-25",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -15206,10 +14678,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 200,
-        "totalDividendPerShare": 20
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 10
       },
       "fy26": {
         "payoutCount": 1,
@@ -15336,18 +14808,6 @@
     "currentFiscalYear": 2026,
     "payouts": [
       {
-        "symbol": "ZAL",
-        "announcedAt": "2025-09-26",
-        "periodLabel": "30/06/2025(YR)",
-        "periodEnd": "30/06/2025",
-        "detail": "10%(F) (D)",
-        "bookClosure": "21-Oct-2025 - 27-Oct-2025",
-        "fiscalYear": 2025,
-        "dividendPercent": 10,
-        "dividendPerShare": 0.1,
-        "archiveUrl": "https://dps.psx.com.pk/download/announce/2025-09-26.pdf"
-      },
-      {
         "announcedAt": "2025-09-29",
         "periodLabel": "30/06/2025(YR)",
         "periodEnd": "30/06/2025",
@@ -15375,10 +14835,10 @@
     "dividendPerShareBasis": "current-face-value",
     "summary": {
       "fy25": {
-        "payoutCount": 2,
-        "intervalLabel": "Biannual",
-        "totalDividendPercent": 110,
-        "totalDividendPerShare": 1.1
+        "payoutCount": 1,
+        "intervalLabel": "Single",
+        "totalDividendPercent": 100,
+        "totalDividendPerShare": 1
       },
       "fy26": {
         "payoutCount": 1,

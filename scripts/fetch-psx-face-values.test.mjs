@@ -45,8 +45,8 @@ test("face-value lookup fails on missing or conflicting values instead of assumi
 
 test("dividends use each stock's current face value and recalculate saved historical payouts", () => {
   const stock = { symbol: "TEST", fiscalYears: [2025, 2026], faceValueAssumption: 10, payouts: [
-    { fiscalYear: 2025, dividendPercent: 100, dividendPerShare: 10 },
-    { fiscalYear: 2026, dividendPercent: 50, dividendPerShare: 5 },
+    { announcedAt: "2025-02-01", periodEnd: "31/12/2024", fiscalYear: 2025, dividendPercent: 100, dividendPerShare: 10 },
+    { announcedAt: "2026-02-01", periodEnd: "31/12/2025", fiscalYear: 2026, dividendPercent: 50, dividendPerShare: 5 },
   ] };
   for (const faceValue of [1, 2, 3, 3.5, 5, 10]) {
     const record = applyFaceValue(stock, metadata(faceValue));

@@ -8,6 +8,13 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
+## Financial data sources
+
+- Get and verify dividend data only from PSX's own payout tables and announcement sheets.
+- Do not use company financial reports, annual reports, or other company files to obtain or verify dividends, including company files hosted on PSX.
+- Consult company files only when necessary to verify the exact current face value of a stock or share. Prefer PSX's current official par-value quotations when sufficient.
+- PSX-hosted company profile pages and their payout feeds are PSX data sources. They are distinct from company reports and attachments.
+
 ## Production deployments
 
 - Make changes on `main` and show the local view for review. Do not push or deploy until the user explicitly asks.

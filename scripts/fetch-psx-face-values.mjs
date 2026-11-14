@@ -5,6 +5,7 @@ import process from "node:process";
 import { promisify } from "node:util";
 import { pathToFileURL } from "node:url";
 import { fetchPSX } from "./psx-http.mjs";
+import { reconcilePayouts } from "./payout-reconciliation.mjs";
 
 const execFileAsync = promisify(execFile);
 const QUOTATION_BASE_URL = "https://dps.psx.com.pk/download/quote";
@@ -59,7 +60,7 @@ function applyFaceValue(stock, metadata) {
   if (!Number.isFinite(faceValue) || faceValue <= 0 || !faceValueSourceUrl || !faceValueSourceAsOf || !Number.isInteger(faceValueSourcePage) || faceValueSourcePage <= 0) {
     throw new Error(`Missing verified face value for ${stock.symbol}; existing data was not changed.`);
   }
-  const payouts = stock.payouts.map((payout) => ({
+  const payouts = reconcilePayouts(stock.payouts, stock.symbol).map((payout) => ({
     ...payout,
     // Express every dividend on today's nominal share basis. This normalizes
     // pre-split percentages to current shares without inventing historical

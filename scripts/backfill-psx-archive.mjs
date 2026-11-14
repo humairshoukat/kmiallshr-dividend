@@ -5,6 +5,7 @@ import process from "node:process";
 import { promisify } from "node:util";
 import { pathToFileURL } from "node:url";
 import { applyFaceValue } from "./fetch-psx-face-values.mjs";
+import { reconcilePayouts } from "./payout-reconciliation.mjs";
 import {
   fetchPSX,
   financialYearFromPayoutDate,
@@ -93,7 +94,7 @@ function extractArchivePayouts(text, announcedAt) {
     }
 
     const dividendKind = dividend[2]?.trim() ?? "";
-    const closureDates = [...row.matchAll(/\b\d{2}-[A-Za-z]{3}-\d{4}\b/g)].map(
+    const closureDates = [...row.matchAll(/\b\d{2}-[A-Za-z]{3,4}-\d{4}\b/g)].map(
       (match) => match[0],
     );
     const normalizedPeriodEnd = period?.[2].replace(/\s+/g, "");
@@ -176,10 +177,6 @@ async function runPool(items, task, concurrency) {
   return results;
 }
 
-function archivePayoutIdentity(payout) {
-  return [payout.announcedAt, payout.periodEnd.replace(/\s+/g, "")].join("|");
-}
-
 function normalizeArchivedPayout(payout) {
   if (!payout.archiveUrl) return payout;
 
@@ -243,6 +240,7 @@ function mergeArchivePayouts(stocks, archivePayouts, archiveEnd) {
   for (const originalPayout of archivePayouts) {
     const payout = {
       ...originalPayout,
+      archiveUrl: originalPayout.archiveUrl ?? `${ARCHIVE_BASE_URL}/${originalPayout.announcedAt}.pdf`,
       fiscalYear: financialYearFromDateKey(originalPayout.announcedAt),
     };
     if (!fiscalYears.includes(payout.fiscalYear) || payout.announcedAt > archiveEnd) {
@@ -264,22 +262,9 @@ function mergeArchivePayouts(stocks, archivePayouts, archiveEnd) {
       .filter((payout) =>
         fiscalYears.includes(payout.fiscalYear) && payout.announcedAt <= archiveEnd,
       );
-    const payouts = [];
-    for (const payout of normalizedPayouts) {
-      const existingIndex = payouts.findIndex((existing) => payoutsMatch(existing, payout));
-      if (existingIndex < 0) payouts.push(payout);
-      else if (payouts[existingIndex].archiveUrl && !payout.archiveUrl) payouts[existingIndex] = payout;
-    }
-    const identities = new Set(payouts.map(archivePayoutIdentity));
-
-    for (const payout of payoutsBySymbol.get(stock.symbol) ?? []) {
-      const identity = archivePayoutIdentity(payout);
-      if (identities.has(identity) || payouts.some((existing) => payoutsMatch(existing, payout))) continue;
-
-      identities.add(identity);
-      payouts.push(payout);
-      added += 1;
-    }
+    const previousPayouts = reconcilePayouts(normalizedPayouts, stock.symbol);
+    const payouts = reconcilePayouts([...previousPayouts, ...(payoutsBySymbol.get(stock.symbol) ?? [])], stock.symbol);
+    added += payouts.filter((payout) => !previousPayouts.some((existing) => payoutsMatch(existing, payout, stock.symbol))).length;
 
     return applyFaceValue({
       ...stock,

@@ -1,0 +1,46 @@
+[
+  {
+    "symbol": "CSAP",
+    "archive": { "announcedAt": "2026-02-04", "periodEnd": "31/12/2025", "kind": "i" },
+    "live": { "announcedAt": "2026-02-06", "periodEnd": "30/12/2025", "kind": "i" },
+    "dividendPercent": 20,
+    "reason": "The same half-year dividend has conflicting period and closure dates in the two PSX sources.",
+    "sources": [
+      "https://dps.psx.com.pk/download/announce/2026-02-04.pdf",
+      "https://dps.psx.com.pk/company/CSAP"
+    ]
+  },
+  {
+    "symbol": "MRNS",
+    "archive": { "announcedAt": "2026-05-15", "periodEnd": "31/03/2026", "kind": "ii" },
+    "live": { "announcedAt": "2026-05-15", "periodEnd": "31/03/2025", "kind": "ii" },
+    "dividendPercent": 5,
+    "reason": "The same second interim dividend has conflicting period years and closure dates in the two PSX sources.",
+    "sources": [
+      "https://dps.psx.com.pk/download/announce/2026-05-15.pdf",
+      "https://dps.psx.com.pk/company/MRNS"
+    ]
+  },
+  {
+    "symbol": "BWHL",
+    "archive": { "announcedAt": "2025-02-04", "periodEnd": "31/12/2024", "kind": "i" },
+    "live": { "announcedAt": "2025-02-04", "periodEnd": "31/12/2024", "kind": "ii" },
+    "dividendPercent": 60,
+    "reason": "The same 60% half-year dividend has conflicting interim sequence labels. Announcement, period, amount and closure agree.",
+    "sources": [
+      "https://dps.psx.com.pk/download/announce/2025-02-04.pdf",
+      "https://dps.psx.com.pk/company/BWHL"
+    ]
+  },
+  {
+    "symbol": "PPL",
+    "archive": { "announcedAt": "2026-02-13", "periodEnd": "31/12/2025", "kind": "ii" },
+    "live": { "announcedAt": "2026-02-13", "periodEnd": "31/12/2025", "kind": "f" },
+    "dividendPercent": 20,
+    "reason": "The same 20% half-year dividend is labelled second interim in the archive and final in the company feed. Announcement, period, amount and closure agree.",
+    "sources": [
+      "https://dps.psx.com.pk/download/announce/2026-02-13.pdf",
+      "https://dps.psx.com.pk/company/PPL"
+    ]
+  }
+]

@@ -1,6 +1,10 @@
 import { expect, test } from "@playwright/test";
+import stocks from "../data/stocks.json";
 
 test("switches between cash and shares and remembers both holding amounts", async ({ page }) => {
+  const ffcStock = stocks.find((stock) => stock.symbol === "FFC");
+  if (!ffcStock) throw new Error("The snapshot must include FFC for this test.");
+  const cashForThousandShares = (ffcStock.latestPrice * 1000).toFixed(2);
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/");
@@ -11,7 +15,7 @@ test("switches between cash and shares and remembers both holding amounts", asyn
   const gross = ffc.getByRole("cell").nth(5);
   const net = ffc.getByRole("cell").nth(6);
   await expect(page.getByRole("radio", { name: "Cash per stock", exact: true })).toBeChecked();
-  await page.getByLabel("Investment per stock (Rs)", { exact: true }).fill("564660");
+  await page.getByLabel("Investment per stock (Rs)", { exact: true }).fill(cashForThousandShares);
   await expect(gross).toContainText("50,000");
   await expect(net).toContainText("42,500");
 
@@ -39,7 +43,7 @@ test("switches between cash and shares and remembers both holding amounts", asyn
   await shares.fill("2000");
   await expect(gross).toContainText("100,000");
   await page.getByRole("radio", { name: "Cash per stock", exact: true }).check();
-  await expect(page.getByLabel("Investment per stock (Rs)", { exact: true })).toHaveValue("564660");
+  await expect(page.getByLabel("Investment per stock (Rs)", { exact: true })).toHaveValue(cashForThousandShares);
   await expect(gross).toContainText("50,000");
   await page.getByRole("radio", { name: "Shares per stock", exact: true }).check();
   await expect(shares).toHaveValue("2000");

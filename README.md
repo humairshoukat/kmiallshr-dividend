@@ -108,12 +108,18 @@ Feature branches must not be deployed to production with the CLI.
 
 ## Data sources and refresh behavior
 
+Dividend amounts and verification use only PSX's own payout tables and
+announcement sheets. Company financial reports, annual reports, and other
+company files are consulted only when necessary to verify the exact current
+share face value, including when those files are hosted on PSX. The current
+face-value importer uses PSX's official par-value quotations.
+
 The importer uses official PSX pages and endpoints:
 
 - KMIALLSHR constituents and latest prices:
   `https://dps.psx.com.pk/indices/KMIALLSHR`
-- Company details: `https://dps.psx.com.pk/company/<SYMBOL>`
-- Company payout feed: `https://dps.psx.com.pk/company/payouts`
+- PSX-hosted company profile: `https://dps.psx.com.pk/company/<SYMBOL>`
+- PSX payout feed: `https://dps.psx.com.pk/company/payouts`
   (POST with the company page's `window.__ps._k` value in `X-Req-Id` and
   `X-Requested-With: XMLHttpRequest`; requests without the ID return 404)
 - Historical announcement sheets:
@@ -129,13 +135,15 @@ The importer uses official PSX pages and endpoints:
 2. Downloads the most recent published PSX quotation PDF (looking back at most
    14 days for weekends and holidays) and verifies that every constituent has a
    readable par value. Missing values stop the import without changing the snapshot.
-3. Fetches each constituent's company page and payout rows.
+3. Fetches each constituent's PSX profile and PSX payout rows. It does not open
+   company reports or attachments for dividends.
 4. Keeps only announcements dated in calendar years 2025 and 2026 through today.
 5. Merges previously observed payouts from the existing snapshot, preserving
    records that may have rolled out of PSX's finite live feed.
-6. Recalculates every dividend using that company's current official face value,
+6. Reconciles archive copies and correction sheets with live payout events.
+7. Recalculates every dividend using that company's current official face value,
    including previously saved and archived payouts.
-7. Writes the new snapshot atomically only after every constituent succeeds.
+8. Writes the new snapshot atomically only after every constituent succeeds.
 
 Each stock stores its face value, the quotation's actual publication date, source
 URL, PDF page, and dividend calculation basis. The face-value badge on both
@@ -149,6 +157,20 @@ text with `pdftotext`, and merges matching dividend announcements into the
 current snapshot without duplicating live-feed records. Missing, placeholder,
 or unreadable sheets cannot contribute records. Run `npm run data:refresh` for
 both the live refresh and historical backfill.
+
+Archive publication dates can differ from company-feed posting dates. The shared
+reconciler matches dividend kind and normalized book-closure dates, or equal
+amounts with the same period within 31 days. When a period is missing, the fallback
+window is seven days. Final and interim dividends remain separate, even with the
+same closure dates. Broader matching applies only to comparisons involving an
+archive record. Ambiguous matches stop the import. Live payout rows take precedence
+over archive copies; among archive copies, later corrections take precedence.
+September dates accept both `Sep` and `Sept`.
+
+Four verified PSX field conflicts are documented with source links in
+`data/psx-payout-aliases.json`. These identify duplicate events without guessing
+across unrelated financial periods. The November 2026 accuracy review and repair
+are recorded in [the dividend audit](docs/dividend-audit-2026-11-14.md).
 
 ## Financial-year and return methodology
 

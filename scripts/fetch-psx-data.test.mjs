@@ -248,3 +248,98 @@ Revised dates of Book Closure for the Entitlement of Dividend already announced 
   assert.ok(payoutsMatch(payouts[1],{...payouts[1],periodEnd:"30/06/2026"}));
   assert.ok(!payoutsMatch(payouts[1],{...payouts[1],dividendPercent:50,periodEnd:"30/06/2026"}));
 });
+
+test("archive and live copies merge despite posting dates and period typos", () => {
+  const payout = {
+    announcedAt: "2026-09-01", periodEnd: "30/06/2026", periodLabel: "30/06/2026(YR)",
+    detail: "100%(F) (D)", dividendPercent: 100, bookClosure: "16-Oct-2026 - 22-Oct-2026",
+    archiveUrl: "archive",
+  };
+  assert.ok(payoutsMatch(payout, { ...payout, archiveUrl: undefined,
+    announcedAt: "2026-09-08", bookClosure: "16/10/2026 - 22/10/2026" }));
+  assert.ok(payoutsMatch(payout, { ...payout, archiveUrl: undefined,
+    periodEnd: "31/06/2026", bookClosure: "16/10/2026 - 22/10/2026" }));
+  assert.ok(!payoutsMatch(payout, { ...payout, archiveUrl: undefined,
+    detail: "100%(i) (D)" }));
+});
+
+test("corrections replace archive copies while separate final and interim payouts survive", () => {
+  const payout = (announcedAt, dividendPercent, kind, periodEnd, bookClosure, archive = true) => ({
+    announcedAt, dividendPercent, detail: `${dividendPercent}%(${kind}) (D)`,
+    periodEnd, periodLabel: periodEnd, bookClosure, ...(archive ? { archiveUrl: "archive" } : {}),
+  });
+  const ghgl = { symbol: "GHGL", ...FACE_VALUE_DATA, fiscalYears: [2025, 2026], payouts: [
+    payout("2026-07-01", 5, "i", "30/06/2026", "04-Jul-2026 - 07-Jul-2026"),
+    payout("2026-07-01", 10, "i", "2026-07-01", "04/07/2026 - 07/07/2026", false),
+    payout("2026-07-02", 10, "i", "30/06/2026", "04-Jul-2026 - 07-Jul-2026"),
+  ] };
+  const ireit = { symbol: "IREIT", ...FACE_VALUE_DATA, fiscalYears: [2025, 2026], payouts: [
+    payout("2026-09-07", 0.85, "F", "30/06/2026", ""),
+    payout("2026-09-08", 0.85, "F", "30/06/2026", "15/09/2026 - 16/09/2026", false),
+    payout("2026-09-11", 1.45, "i", "30/06/2027", ""),
+    payout("2026-09-14", 1.45, "i", "30/06/2027", ""),
+    payout("2026-09-15", 1.45, "i", "2026-09-15", "15/09/2026 - 16/09/2026", false),
+  ] };
+  const { updatedStocks } = mergeArchivePayouts([ghgl, ireit], [], "2026-11-10");
+  assert.equal(updatedStocks[0].summary.fy26.totalDividendPerShare, 1);
+  assert.equal(updatedStocks[0].payouts.length, 1);
+  assert.equal(updatedStocks[0].payouts[0].archiveUrl, undefined);
+  assert.equal(updatedStocks[1].summary.fy26.totalDividendPerShare, 0.23);
+  assert.equal(updatedStocks[1].payouts.length, 2);
+  assert.deepEqual(mergeArchivePayouts(updatedStocks, [], "2026-11-10").updatedStocks, updatedStocks);
+  const archiveCopies = [ghgl, ireit].flatMap((stock) => stock.payouts
+    .filter((payout) => payout.archiveUrl).map((payout) => ({ ...payout, symbol: stock.symbol })));
+  const backfilled = mergeArchivePayouts(updatedStocks, archiveCopies, "2026-11-10");
+  assert.deepEqual(backfilled.updatedStocks, updatedStocks);
+  assert.equal(backfilled.added, 0);
+  const archiveOnly = mergeArchivePayouts([{ ...ghgl, payouts: ghgl.payouts.filter((p) => p.archiveUrl) }], [], "2026-11-10");
+  assert.equal(archiveOnly.updatedStocks[0].summary.fy26.totalDividendPerShare, 1);
+  assert.equal(archiveOnly.updatedStocks[0].payouts[0].announcedAt, "2026-07-02");
+});
+
+test("archive dates accept PSX's Sept spelling", () => {
+  const [payout] = extractArchivePayouts(`1 ARPL Archroma Pakistan
+30-09-2026\nDividend 450%(i)\n24-Sept-2026 24-Sept-2026
+`, "2026-09-14");
+  assert.equal(payout.bookClosure, "24-Sept-2026 - 24-Sept-2026");
+});
+
+test("equal dividends for different periods and separate live rows remain distinct", () => {
+  const payout = {
+    announcedAt: "2026-05-15", periodEnd: "30/06/2024", periodLabel: "30/06/2024(YR)",
+    detail: "50%(F) (D)", dividendPercent: 50, bookClosure: "", archiveUrl: "archive",
+  };
+  assert.ok(!payoutsMatch(payout, { ...payout, archiveUrl: undefined, periodEnd: "30/06/2025" }));
+  assert.ok(!payoutsMatch({ ...payout, archiveUrl: undefined }, {
+    ...payout, archiveUrl: undefined, announcedAt: "2026-05-16",
+  }));
+});
+
+test("verified PSX aliases resolve conflicting fields without guessing for other stocks", () => {
+  for (const [symbol, archiveDate, archivePeriod, liveDate, livePeriod, percent, archiveKind, liveKind] of [
+    ["CSAP", "2026-02-04", "31/12/2025", "2026-02-06", "30/12/2025", 20, "i", "i"],
+    ["MRNS", "2026-05-15", "31/03/2026", "2026-05-15", "31/03/2025", 5, "ii", "ii"],
+    ["BWHL", "2025-02-04", "31/12/2024", "2025-02-04", "31/12/2024", 60, "i", "ii"],
+    ["PPL", "2026-02-13", "31/12/2025", "2026-02-13", "31/12/2025", 20, "ii", "f"],
+  ]) {
+    const archive = { announcedAt: archiveDate, periodEnd: archivePeriod, dividendPercent: percent,
+      detail: `${percent}%(${archiveKind}) (D)`, archiveUrl: "archive" };
+    const live = { ...archive, announcedAt: liveDate, periodEnd: livePeriod,
+      detail: `${percent}%(${liveKind}) (D)`, archiveUrl: undefined };
+    assert.ok(payoutsMatch(archive, live, symbol));
+    assert.ok(!payoutsMatch(archive, live, "OTHER"));
+    assert.ok(!payoutsMatch(archive, { ...live, dividendPercent: percent + 1 }, symbol));
+  }
+});
+
+test("missing periods cannot merge multiple distinct financial periods", () => {
+  const payout = (announcedAt, periodEnd, archive = true) => ({
+    announcedAt, periodEnd, periodLabel: periodEnd, detail: "50%(F) (D)", dividendPercent: 50,
+    ...(archive ? { archiveUrl: "archive" } : {}),
+  });
+  const stock = { symbol: "TEST", ...FACE_VALUE_DATA, fiscalYears: [2025, 2026], payouts: [
+    payout("2026-05-14", "30/06/2024"), payout("2026-05-15", "30/06/2025"),
+    payout("2026-05-16", "2026-05-16", false),
+  ] };
+  assert.throws(() => mergeArchivePayouts([stock], [], "2026-11-10"), /Ambiguous PSX payout matches/);
+});

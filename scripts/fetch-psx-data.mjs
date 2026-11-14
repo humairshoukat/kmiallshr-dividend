@@ -4,6 +4,7 @@ import process from "node:process";
 import { pathToFileURL } from "node:url";
 import { load } from "cheerio";
 import { fetchPSX } from "./psx-http.mjs";
+import { payoutsMatch } from "./payout-reconciliation.mjs";
 import { applyFaceValue, fetchFaceValues, requireFaceValueCoverage } from "./fetch-psx-face-values.mjs";
 
 const INDEX_URL = "https://dps.psx.com.pk/indices/KMIALLSHR";
@@ -192,19 +193,6 @@ async function fetchCompanyDetails(symbol) {
   return { fiscalYearEndLabel, requestId };
 }
 
-function payoutIdentity(payout) {
-  // Archive and live feeds can use different suffixes for the same period.
-  return [payout.announcedAt, payout.periodEnd.replace(/\s+/g, "")].join("|");
-}
-
-function payoutsMatch(left, right) {
-  if (left.announcedAt !== right.announcedAt) return false;
-  if (payoutIdentity(left) === payoutIdentity(right)) return true;
-  // When PSX omits the period, the announcement date is the fallback period end.
-  return (left.periodEnd === left.announcedAt || right.periodEnd === right.announcedAt)
-    && left.dividendPercent === right.dividendPercent;
-}
-
 async function buildStockRecord(
   stock,
   sourceAsOf,
@@ -215,7 +203,7 @@ async function buildStockRecord(
   const payoutRows = await fetchCompanyPayouts(stock.symbol, requestId);
   const dividendRows = payoutRows.filter((row) => row.detail.includes("(D)"));
 
-  const payoutsByIdentity = new Map();
+  const payouts = [];
 
   for (const payout of previousRecord?.payouts ?? []) {
     const announcedAt = parseAnnouncementDate(payout.announcedAt);
@@ -227,14 +215,7 @@ async function buildStockRecord(
     const fiscalYear = financialYearFromPayoutDate(announcedAt);
 
     if (fiscalYears.includes(fiscalYear) && dateKey(announcedAt) <= sourceAsOf) {
-      const reassignedPayout = { ...payout, fiscalYear };
-      const existingPayout = [...payoutsByIdentity.values()].find((item) => payoutsMatch(item, reassignedPayout));
-      if (existingPayout && !existingPayout.archiveUrl && reassignedPayout.archiveUrl) continue;
-      if (existingPayout) payoutsByIdentity.delete(payoutIdentity(existingPayout));
-      payoutsByIdentity.set(
-        payoutIdentity(reassignedPayout),
-        reassignedPayout,
-      );
+      payouts.push({ ...payout, fiscalYear });
     }
   }
 
@@ -267,12 +248,8 @@ async function buildStockRecord(
       dividendPercent: round(dividendPercent),
     };
 
-    const previousPayout = [...payoutsByIdentity.values()].find((item) => payoutsMatch(item, payout));
-    if (previousPayout) payoutsByIdentity.delete(payoutIdentity(previousPayout));
-    payoutsByIdentity.set(payoutIdentity(payout), payout);
+    payouts.push(payout);
   }
-
-  const payouts = [...payoutsByIdentity.values()];
 
   return applyFaceValue({
     symbol: stock.symbol,
